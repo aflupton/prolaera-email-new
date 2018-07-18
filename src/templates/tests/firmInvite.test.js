@@ -3,11 +3,12 @@ import Adapter from 'enzyme-adapter-react-16';
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Button from '../../components/button';
-import GenericInfo from '../../components/generic/GenericInfo';
+import GenericInfo from '../../components/generic/genericInfo';
 import writeFile from '../../helpers/writeFileHelper';
 import firmInviteBuilder from '../builders/firmInviteBuilder';
 
 Enzyme.configure({ adapter: new Adapter() });
+
 const user = { email: 'test@email.com' };
 const company = { company_name: 'Test CPA Firm' };
 const headerText = <p>You've been added to {company.company_name} on Prolaera</p>;

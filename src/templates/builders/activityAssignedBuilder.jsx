@@ -3,7 +3,7 @@ import { Email, renderEmail } from 'react-html-email';
 import ActivityInfo from '../../components/activity/activityInfo';
 import Footer from '../../components/footer';
 import buildHeader from '../../components/header';
-import SubHeader from '../../components/SubHeader';
+import SubHeader from '../../components/subHeader';
 import css from '../templateCSS';
 
 const activityAssignedEmail = async (activity, user, imageUrl) => {

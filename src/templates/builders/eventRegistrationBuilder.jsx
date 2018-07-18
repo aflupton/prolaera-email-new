@@ -4,7 +4,7 @@ import EventInfo from '../../components/event/eventInfo';
 import Footer from '../../components/footer';
 import builderHeader from '../../components/header';
 import SubFooter from '../../components/subFooter';
-import SubHeader from '../../components/SubHeader';
+import SubHeader from '../../components/subHeader';
 import css from '../templateCSS.js';
 
 const registrationEmail = async (event, imageUrl) => {

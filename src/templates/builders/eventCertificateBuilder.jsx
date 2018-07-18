@@ -5,7 +5,7 @@ import EventCertificate from '../../components/certificate/eventCertificate';
 import EventInfo from '../../components/event/eventInfo';
 import Footer from '../../components/footer';
 import buildHeader from '../../components/header';
-import SubHeader from '../../components/SubHeader';
+import SubHeader from '../../components/subHeader';
 import css from '../templateCSS';
 
 const eventCertificateEmail = async (event, user, certificate, imageUrl) => {

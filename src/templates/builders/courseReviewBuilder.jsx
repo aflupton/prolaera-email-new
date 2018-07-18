@@ -3,7 +3,7 @@ import { Email, renderEmail } from 'react-html-email';
 import CourseInfo from '../../components/course/courseInfo';
 import Footer from '../../components/footer';
 import builderHeader from '../../components/header';
-import SubHeader from '../../components/SubHeader';
+import SubHeader from '../../components/subHeader';
 import css from '../templateCSS';
 
 const courseReviewBuilder = async (completeCourse, imageUrl) => {

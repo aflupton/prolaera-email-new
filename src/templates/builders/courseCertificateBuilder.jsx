@@ -5,7 +5,7 @@ import CourseCertificate from '../../components/certificate/courseCertificate';
 import CourseInfo from '../../components/course/courseInfo';
 import Footer from '../../components/footer';
 import buildHeader from '../../components/header';
-import SubHeader from '../../components/SubHeader';
+import SubHeader from '../../components/subHeader';
 import css from '../templateCSS';
 
 const courseCertificateEmail = async (course, user, certificate, imageUrl) => {
