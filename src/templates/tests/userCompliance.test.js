@@ -1,7 +1,7 @@
 import renderer from 'react-test-renderer';
 import writeFile from '../../helpers/writeFileHelper';
 import userCompliance from '../builders/userCompliance';
-import completeCompliance from './json/completeCompliance';
+import completeCompliance from './json/completeCompliance.json';
 
 describe('Email compliance Report', () => {
   const logoUrl = 'https://assets.prolaera.com/prolaeraLogo_fullText.png';
@@ -17,7 +17,7 @@ describe('Email compliance Report', () => {
     expect(userComplianceJson).toMatchSnapshot();
   });
 
-  it('it writes an html file', async () => {
+  it.skip('it writes an html file', async () => {
     const email = await userCompliance(completeCompliance, logoUrl);
     const saved = await writeFile(email, 'userComplianceTest.html');
     expect(saved).toEqual(true);

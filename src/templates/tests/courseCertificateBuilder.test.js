@@ -1,8 +1,8 @@
 import renderer from 'react-test-renderer';
 import writeFile from '../../helpers/writeFileHelper';
-import course from '../../templates/tests/json/completeCourse';
-import user from '../../templates/tests/json/completeUser';
-import certificate from '../../templates/tests/json/completeCertificate';
+import course from '../../templates/tests/json/completeCourse.json';
+import user from '../../templates/tests/json/completeUser.json';
+import certificate from '../../templates/tests/json/completeCertificate.json';
 import courseCertificateEmail from '../builders/courseCertificateBuilder';
 
 describe('eventCertificateBuilder', () => {
@@ -15,7 +15,7 @@ describe('eventCertificateBuilder', () => {
     expect(certificateJSON).toMatchSnapshot();
   });
 
-  it('writes an HTML file', async () => {
+  it.skip('writes an HTML file', async () => {
     const email = await courseCertificateEmail(course, user, certificate, logoUrl);
     const saved = await writeFile(email, 'courseCertificateTest.html');
     expect(saved).toEqual(true);

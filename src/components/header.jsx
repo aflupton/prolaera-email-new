@@ -1,4 +1,6 @@
-import probe from 'probe-image-size';
+import url from 'url';
+import https from 'https';
+import sizeOf from 'image-size';
 import React from 'react';
 import { Box, Image, Item } from 'react-html-email';
 
@@ -52,13 +54,36 @@ class Header extends React.Component {
 
 const buildHeader = async imageUrl => {
   try {
-    const { url, height, width } = await probe(imageUrl);
-    const image = { url, height, width };
+    const { height, width } = await imageSize(imageUrl);
+    const image = { url: imageUrl, height, width };
     return props => <Header {...props} {...image} />;
   } catch (error) {
     throw error;
+    // return props => <Header {...props} />;
   }
 };
+
+function imageSize(imgUrl) {
+  try {
+    const options = url.parse(imgUrl);
+    return new Promise(resolve => {
+      https.get(options, function(response) {
+        var chunks = [];
+        response
+          .on('data', function(chunk) {
+            chunks.push(chunk);
+          })
+          .on('end', function() {
+            var buffer = Buffer.concat(chunks);
+            const dimensions = sizeOf(buffer);
+            resolve({ height: dimensions.height, width: dimensions.width });
+          });
+      });
+    });
+  } catch (error) {
+    throw error;
+  }
+}
 
 export default buildHeader;
 

@@ -3,7 +3,7 @@ import Adapter from 'enzyme-adapter-react-16';
 import React from 'react';
 import renderer from 'react-test-renderer';
 import setInnerHtml from '../../helpers/domHelpers';
-import Event from '../../templates/tests/json/event';
+import Event from '../../templates/tests/json/event.json';
 import EventInfo from '../event/eventInfo';
 
 Enzyme.configure({

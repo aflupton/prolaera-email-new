@@ -1,4 +1,11 @@
 {
-  "presets": ["env", "react"],
-  "plugins": ["transform-runtime", "transform-object-rest-spread"]
+  "presets": [
+    "env",
+    "react"
+  ],
+  "plugins": [
+    "inline-json-import",
+    "transform-runtime",
+    "transform-object-rest-spread"
+  ]
 }

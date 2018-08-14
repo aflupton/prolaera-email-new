@@ -1,6 +1,6 @@
 import renderer from 'react-test-renderer';
 import writeFile from '../../helpers/writeFileHelper';
-import event from '../../templates/tests/json/event';
+import event from '../../templates/tests/json/event.json';
 import registrationEmail from '../builders/eventRegistrationBuilder';
 describe('registration Email', () => {
   const logoUrl = 'https://assets.prolaera.com/prolaeraLogo_fullText.png';
@@ -16,7 +16,7 @@ describe('registration Email', () => {
     expect(registrationJson).toMatchSnapshot();
   });
 
-  it('writes an html file', async () => {
+  it.skip('writes an html file', async () => {
     const email = await registrationEmail(event, logoUrl);
     const saved = await writeFile(email, 'eventTest.html');
     expect(saved).toEqual(true);

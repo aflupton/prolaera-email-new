@@ -38,7 +38,7 @@ describe('Firm Invite component', () => {
   });
 });
 
-describe('create html test file', () => {
+describe.skip('create html test file', () => {
   it('writes an html file to firmInviteTest.html', async () => {
     const firmInviteEmail = await firmInviteBuilder(
       user,
