@@ -37,10 +37,10 @@ export default () => (
     <Item align="center" style={{ fontSize: '12px', ...FooterText }}>
       © Prolaera 2017
     </Item> */}
-    <Item>
-      <Grid align="center">
+    <Item align="center">
+      <Grid>
         <Row className="show-grid">
-          <Col md={6}>
+          <Col className="col-6">
             <Item style={{ fontSize: '12px', ...FooterText }}>Powered By</Item>
             <Item>
               <Image
@@ -51,7 +51,7 @@ export default () => (
               />
             </Item>
           </Col>
-          <Col md={6}>
+          <Col className="col-6">
             <Item style={{ fontSize: '12px', ...FooterText }}>© Prolaera 2017</Item>
           </Col>
         </Row>

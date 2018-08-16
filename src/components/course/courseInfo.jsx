@@ -37,10 +37,11 @@ class CourseInfo extends React.Component {
           marginLeft: 'auto',
           marginRight: 'auto',
           textAlign: 'center',
-          borderRadius: '5px',
+          borderRadius: '2px',
           maxWidth: '500px',
           padding: '20px',
           fontFamily: 'source-sans-pro, sans-serif',
+          fontWeight: '100',
           marginBottom: '20px',
           backgroundColor: 'white'
         }}

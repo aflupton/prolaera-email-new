@@ -3,6 +3,7 @@ import { Box, Item } from 'react-html-email';
 import deliveryHelper from '../../helpers/deliveryHelper';
 import { CycleDates, RangeDate, PrettyDate } from '../../helpers/dateHelpers';
 import Button from '../button';
+import { Grid, Row, Col } from 'react-bootstrap';
 
 class CourseCertificate extends React.Component {
   render() {
@@ -29,39 +30,41 @@ class CourseCertificate extends React.Component {
       <div
         style={{
           display: 'block',
-          marginLeft: 'auto',
-          marginRight: 'auto',
+          // marginLeft: 'auto',
+          // marginRight: 'auto',
           marginBottom: '20px',
+          borderRadius: '2px',
           textAlign: 'center',
-          borderRadius: '5px',
-          maxWidth: '500px',
-          padding: '20px',
+          maxWidth: '540px',
+          paddingBottom: '25px',
           fontFamily: 'source-sans-pro, sans-serif',
-          backgroundColor: '#FFFFFF'
+          backgroundColor: '#FFFFFF',
+          height: 'auto'
         }}
       >
         <Box align="center" width="100%">
           <Item>
             <div
+              className="show-grid"
               style={{
-                maxWidth: '100%',
-                marginLeft: 'auto',
-                marginRight: 'auto',
-                border: '1px solid lightgray',
-                borderRadius: '5px',
-                background: '#2F4050',
-                color: '#FFFFFF',
+                maxWidth: '500px',
+                padding: '25px',
+                backgroundColor: '#2F4050',
                 fontFamily: 'source-sans-pro, sans-serif',
                 fontStyle: 'normal',
-                fontWeight: 'lighter'
+                fontWeight: '100',
+                letterSpacing: '3px'
               }}
             >
-              <p style={{ marginBottom: '5px', fontSize: '30px', letterSpacing: '3px' }}>{name}</p>
-              <p style={{ padding: '5px', fontSize: '18px' }}>{PrettyDate(date)}</p>
+              <p style={{ marginBottom: '5px', fontSize: '28px', color: '#FFFFFF' }}>{name}</p>
+              <p style={{ padding: '5px', fontSize: '18px', color: 'lightgray' }}>{PrettyDate(date)}</p>
             </div>
           </Item>
           <Item>
-            <table id="subHeaderTable" style={{ textAlign: 'center', marginLeft: 'auto', marginRight: 'auto' }}>
+            <table
+              id="subHeaderTable"
+              style={{ textAlign: 'center', marginLeft: 'auto', marginRight: 'auto', padding: '20px' }}
+            >
               <tr>
                 <td>
                   <p>{message}</p>
@@ -81,16 +84,31 @@ class CourseCertificate extends React.Component {
                 marginRight: 'auto'
               }}
             >
-              <tr>
-                <td>
+              <tr className="row" style={{}}>
+                <td
+                  className="col-md-6"
+                  style={{
+                    backgroundColor: '#72C02C',
+                    borderRadius: '5px',
+                    width: '200px',
+                    height: 'auto'
+                  }}
+                >
                   <Button text={button1Text} link={button1Link} />
                 </td>
-                <td>
+                <td
+                  className="col-md-6"
+                  style={{
+                    backgroundColor: '#2F4050',
+                    borderRadius: '5px',
+                    width: '200px',
+                    height: 'auto'
+                  }}
+                >
                   <Button text={button2Text} link={button2Link} />
                 </td>
               </tr>
             </table>
-            {/* <hr style={{ width: '45px' }} /> */}
           </Item>
         </Box>
       </div>
