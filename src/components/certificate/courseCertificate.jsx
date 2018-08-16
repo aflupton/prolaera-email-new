@@ -1,20 +1,24 @@
 import React from 'react';
 import { Box, Item } from 'react-html-email';
 import deliveryHelper from '../../helpers/deliveryHelper';
+import { CycleDates, RangeDate, PrettyDate } from '../../helpers/dateHelpers';
 import Button from '../button';
 
 class CourseCertificate extends React.Component {
   render() {
     const {
       name = '',
-      by = '',
-      delivery_method = 1,
       first = '',
-      header = 'Congratulations',
       body = '',
       profile_uid,
       course_id,
       pdf,
+      date = '',
+      message = '',
+      certMessage = 'Congratulations ' +
+        `${first}` +
+        '! ' +
+        "You've been issued a new certificate of completion. Please take a few moments to complete an evaluation to help us improve by clicking the Complete Evaluation button below.",
       button1Text = 'View Certificate',
       button2Text = 'Complete Evaluation',
       button1Link = `${pdf}`,
@@ -32,36 +36,61 @@ class CourseCertificate extends React.Component {
           borderRadius: '5px',
           maxWidth: '500px',
           padding: '20px',
-          fontFamily: 'Arial, sans-serif',
-          backgroundColor: 'white'
+          fontFamily: 'source-sans-pro, sans-serif',
+          backgroundColor: '#FFFFFF'
         }}
       >
         <Box align="center" width="100%">
           <Item>
             <div
               style={{
-                maxWidth: '300px',
+                maxWidth: '100%',
                 marginLeft: 'auto',
                 marginRight: 'auto',
                 border: '1px solid lightgray',
-                borderRadius: '8px',
-                background: 'linear-gradient(to bottom right, #ffd11a, #fff0b3, #ffd633)',
-                boxShadow: '1px 1px 8px darkgray'
+                borderRadius: '5px',
+                background: '#2F4050',
+                color: '#FFFFFF',
+                fontFamily: 'source-sans-pro, sans-serif',
+                fontStyle: 'normal',
+                fontWeight: 'lighter'
               }}
             >
-              <h3 style={{ marginBottom: '5px' }}>{name}</h3>
-              <h6 style={{ marginTop: '0px' }}>
-                Instructor: {by} ({deliveryHelper(delivery_method)})
-              </h6>
+              <p style={{ marginBottom: '5px', fontSize: '30px', letterSpacing: '3px' }}>{name}</p>
+              <p style={{ padding: '5px', fontSize: '18px' }}>{PrettyDate(date)}</p>
             </div>
+          </Item>
+          <Item>
+            <table id="subHeaderTable" style={{ textAlign: 'center', marginLeft: 'auto', marginRight: 'auto' }}>
+              <tr>
+                <td>
+                  <p>{message}</p>
+                  <div>{profile_uid ? <p>{certMessage}</p> : <div />}</div>
+                </td>
+              </tr>
+            </table>
           </Item>
           <Item>
             <p>{body}</p>
           </Item>
-          <Item>
-            <Button text={button1Text} link={button1Link} />
-            <hr style={{ width: '45px' }} />
-            <Button text={button2Text} link={button2Link} />
+          <Item align="center">
+            <table
+              style={{
+                textAlign: 'center',
+                marginLeft: 'auto',
+                marginRight: 'auto'
+              }}
+            >
+              <tr>
+                <td>
+                  <Button text={button1Text} link={button1Link} />
+                </td>
+                <td>
+                  <Button text={button2Text} link={button2Link} />
+                </td>
+              </tr>
+            </table>
+            {/* <hr style={{ width: '45px' }} /> */}
           </Item>
         </Box>
       </div>
