@@ -32,7 +32,7 @@ class CourseCertificate extends React.Component {
           marginLeft: 'auto',
           marginRight: 'auto',
           height: 'auto',
-          marginBottom: '20px',
+          marginBottom: '0px',
           borderRadius: '2px',
           textAlign: 'center',
           maxWidth: '540px',

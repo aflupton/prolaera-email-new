@@ -42,7 +42,7 @@ class CourseInfo extends React.Component {
           padding: '20px',
           fontFamily: 'source-sans-pro, sans-serif',
           fontWeight: '100',
-          marginBottom: '20px',
+          marginBottom: '0px',
           backgroundColor: 'white'
         }}
       >

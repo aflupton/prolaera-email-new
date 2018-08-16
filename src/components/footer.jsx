@@ -1,5 +1,5 @@
 import React from 'react';
-import { A, Box, Image, Item } from 'react-html-email';
+import { A, Box, Image, Item, Span } from 'react-html-email';
 
 const FooterText = {
   fontFamily: 'Helvetica',
@@ -8,7 +8,7 @@ const FooterText = {
 };
 
 export default () => (
-  <Box align="center" width="100%" cellSpacing={20} style={{ backgroundColor: '#333333' }}>
+  <Box align="center" width="540px" cellSpacing={20} style={{ backgroundColor: '#333333' }}>
     {/* <Item align="center" style={{ fontSize: '19px', ...FooterText }}>
       Something not right?{' '}
     </Item>
@@ -38,21 +38,23 @@ export default () => (
       © Prolaera 2017
     </Item> */}
     <Item>
-      <table style={{ marginLeft: '36%' }}>
-        <tr>
-          <td style={{ ...FooterText }}>Powered By</td>
-          <td style={{ marginRight: '1px', ...FooterText }}>
-            <Image
-              src="https://gallery.mailchimp.com/eb930e30a15249a18d658c183/images/196fa069-3113-464c-a304-a1aa9f99fe22.png"
-              alt="react"
-              height={23}
-              width={100}
-              marginRight={'1em'}
-            />
-          </td>
-          <td style={{ ...FooterText }}>© Prolaera 2017</td>
-        </tr>
-      </table>
+      <Span>
+        <td style={{ ...FooterText, float: 'right' }}>Powered By</td>
+      </Span>
+      <Span>
+        <td style={{ ...FooterText }}>
+          <Image
+            src="https://gallery.mailchimp.com/eb930e30a15249a18d658c183/images/196fa069-3113-464c-a304-a1aa9f99fe22.png"
+            alt="react"
+            height={23}
+            width={100}
+            marginRight={'1em'}
+          />
+        </td>
+      </Span>
+      <Span>
+        <td style={{ ...FooterText }}>© Prolaera 2017</td>
+      </Span>
     </Item>
   </Box>
 );
