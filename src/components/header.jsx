@@ -22,7 +22,11 @@ class Header extends React.Component {
     return (
       <Box className="emailHeader" align="center" width="100%" style={{ backgroundColor: '#F7F7F7' }}>
         <Item align="center">
-          <table align="center" cellSpacing={0} style={{ padding: '15px', maxWidth: '584px' }}>
+          <table
+            align="center"
+            cellSpacing={0}
+            style={{ padding: '15px', maxWidth: '584px', marginTop: '25px', marginBottom: '20px' }}
+          >
             <tr align="left">
               <td width="292px">
                 <Image className="headerLogo" alt="logo" src={url} width={resizedWidth} height={resizedHeight} />
@@ -30,14 +34,24 @@ class Header extends React.Component {
               <td width="252px" style={{ textAlign: 'center' }}>
                 <div>
                   {event_id && course_id ? (
-                    <a href={'https://app.prolaera.com/#/events/' + `${event_id}`}>View Event</a>
+                    <a
+                      href={'https://app.prolaera.com/#/events/' + `${event_id}`}
+                      style={{ textDecoration: 'none', color: '#2F4050', float: 'right', paddingRight: '5px' }}
+                    >
+                      View Event
+                    </a>
                   ) : (
                     <div />
                   )}{' '}
                 </div>
                 <div>
                   {!event_id && course_id ? (
-                    <a href={'https://app.prolaera.com/#/courses/' + `${course_id}`}>View Course</a>
+                    <a
+                      href={'https://app.prolaera.com/#/courses/' + `${course_id}`}
+                      style={{ textDecoration: 'none', color: '#2F4050', float: 'right', paddingRight: '5px' }}
+                    >
+                      View Course
+                    </a>
                   ) : (
                     <div />
                   )}{' '}

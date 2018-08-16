@@ -1,10 +1,10 @@
 import React from 'react';
 import { A, Box, Image, Item } from 'react-html-email';
-import { Grid, Row, Col } from 'react-bootstrap';
 
 const FooterText = {
   fontFamily: 'Helvetica',
-  color: '#ffffff'
+  color: '#ffffff',
+  fontSize: '12pt'
 };
 
 export default () => (
@@ -37,25 +37,22 @@ export default () => (
     <Item align="center" style={{ fontSize: '12px', ...FooterText }}>
       © Prolaera 2017
     </Item> */}
-    <Item align="center">
-      <Grid>
-        <Row className="show-grid">
-          <Col className="col-6">
-            <Item style={{ fontSize: '12px', ...FooterText }}>Powered By</Item>
-            <Item>
-              <Image
-                src="https://gallery.mailchimp.com/eb930e30a15249a18d658c183/images/196fa069-3113-464c-a304-a1aa9f99fe22.png"
-                alt="react"
-                height={23}
-                width={100}
-              />
-            </Item>
-          </Col>
-          <Col className="col-6">
-            <Item style={{ fontSize: '12px', ...FooterText }}>© Prolaera 2017</Item>
-          </Col>
-        </Row>
-      </Grid>
+    <Item>
+      <table style={{ marginLeft: '36%' }}>
+        <tr>
+          <td style={{ ...FooterText }}>Powered By</td>
+          <td style={{ marginRight: '1px', ...FooterText }}>
+            <Image
+              src="https://gallery.mailchimp.com/eb930e30a15249a18d658c183/images/196fa069-3113-464c-a304-a1aa9f99fe22.png"
+              alt="react"
+              height={23}
+              width={100}
+              marginRight={'1em'}
+            />
+          </td>
+          <td style={{ ...FooterText }}>© Prolaera 2017</td>
+        </tr>
+      </table>
     </Item>
   </Box>
 );

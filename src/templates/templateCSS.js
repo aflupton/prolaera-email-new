@@ -42,8 +42,8 @@ only screen and (max-width: 600px),
 		/* Behave  like a "row" */
 		border: none;
 		border-bottom: 1px solid #eee;
-    position: relative;
-    text-align: center;
+    	position: relative;
+    	text-align: center;
 	}
 
 	.report td:before {
