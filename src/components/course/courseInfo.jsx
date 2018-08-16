@@ -43,7 +43,7 @@ class CourseInfo extends React.Component {
           fontFamily: 'source-sans-pro, sans-serif',
           fontWeight: '100',
           marginBottom: '0px',
-          backgroundColor: 'white'
+          backgroundColor: '#FFFFFF'
         }}
       >
         <Box className="courseReview" align="center" width="100%">

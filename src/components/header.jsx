@@ -27,11 +27,11 @@ class Header extends React.Component {
             cellSpacing={0}
             style={{ padding: '15px', maxWidth: '584px', marginTop: '25px', marginBottom: '20px' }}
           >
-            <tr align="left">
+            <tr align="center">
               <td width="292px">
                 <Image className="headerLogo" alt="logo" src={url} width={resizedWidth} height={resizedHeight} />
               </td>
-              <td width="252px" style={{ textAlign: 'center' }}>
+              {/* <td width="252px" style={{ textAlign: 'center' }}>
                 <div>
                   {event_id && course_id ? (
                     <a
@@ -57,7 +57,7 @@ class Header extends React.Component {
                   )}{' '}
                 </div>
                 <div>{!event_id && !course_id ? <a href={link}>{text}</a> : <div />} </div>
-              </td>
+              </td> */}
             </tr>
           </table>
         </Item>

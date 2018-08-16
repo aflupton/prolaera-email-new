@@ -43,22 +43,30 @@ class CourseCertificate extends React.Component {
       >
         <Box align="center" width="100%">
           <Item>
-            <div
-              style={{
-                maxWidth: '540px',
-                padding: '15px',
-                backgroundColor: '#2F4050',
-                borderRadius: '2px 2px 0px 0px',
-                fontFamily: 'source-sans-pro, sans-serif',
-                fontStyle: 'normal',
-                fontWeight: '100'
-              }}
+            <a
+              href={'https://app.prolaera.com/#/courses/' + `${course_id}`}
+              style={{ textDecoration: 'none', color: '#2F4050', paddingRight: '5px' }}
             >
-              <p style={{ marginBottom: '5px', fontSize: '28px', color: 'lightgray', letterSpacing: '5px' }}>{name}</p>
-              <p style={{ padding: '5px', fontSize: '18px', color: 'lightgray', letterSpacing: '3px' }}>
-                {PrettyDate(date)}
-              </p>
-            </div>
+              <div
+                style={{
+                  maxWidth: '540px',
+                  padding: '15px',
+                  backgroundColor: '#2F4050',
+                  borderRadius: '2px 2px 0px 0px',
+                  fontFamily: 'source-sans-pro, sans-serif',
+                  fontStyle: 'normal',
+                  fontWeight: '100'
+                }}
+              >
+                {name}
+                <p style={{ marginBottom: '5px', fontSize: '28px', color: 'lightgray', letterSpacing: '5px' }}>
+                  {name}
+                </p>
+                <p style={{ padding: '5px', fontSize: '18px', color: 'lightgray', letterSpacing: '3px' }}>
+                  {PrettyDate(date)}
+                </p>
+              </div>
+            </a>
           </Item>
           <Item>
             <table
