@@ -2,9 +2,10 @@ import React from 'react';
 import { A, Box, Image, Item, Span } from 'react-html-email';
 
 const FooterText = {
-  fontFamily: 'Helvetica',
+  fontFamily: 'source-sans-pro, sans-serif',
   color: '#ffffff',
-  fontSize: '12pt'
+  fontSize: '12pt',
+  fontWeight: '100'
 };
 
 export default () => (
@@ -37,24 +38,17 @@ export default () => (
     <Item align="center" style={{ fontSize: '12px', ...FooterText }}>
       © Prolaera 2017
     </Item> */}
-    <Item>
-      <Span>
-        <td style={{ ...FooterText, float: 'right' }}>Powered By</td>
-      </Span>
-      <Span>
-        <td style={{ ...FooterText }}>
-          <Image
-            src="https://gallery.mailchimp.com/eb930e30a15249a18d658c183/images/196fa069-3113-464c-a304-a1aa9f99fe22.png"
-            alt="react"
-            height={23}
-            width={100}
-            marginRight={'1em'}
-          />
-        </td>
-      </Span>
-      <Span>
-        <td style={{ ...FooterText }}>© Prolaera 2017</td>
-      </Span>
+    <Item style={{}}>
+      <td>
+        <Span style={{ ...FooterText, float: 'left', padding: '5px 7px 2px 0px' }}>Powered By</Span>
+        <Image
+          src="https://gallery.mailchimp.com/eb930e30a15249a18d658c183/images/196fa069-3113-464c-a304-a1aa9f99fe22.png"
+          alt="react"
+          height={23}
+          width={100}
+        />
+      </td>
+      <td style={{ ...FooterText, float: 'right', paddingTop: '5px', paddingRight: '5px' }}>© Prolaera 2017</td>
     </Item>
   </Box>
 );

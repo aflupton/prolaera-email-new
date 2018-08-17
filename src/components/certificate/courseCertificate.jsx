@@ -68,7 +68,7 @@ class CourseCertificate extends React.Component {
           <Item>
             <table
               id="subHeaderTable"
-              style={{ textAlign: 'center', marginLeft: 'auto', marginRight: 'auto', padding: '20px' }}
+              style={{ textAlign: 'center', marginLeft: 'auto', marginRight: 'auto', padding: '30px 20px 20px' }}
             >
               <tr>
                 <td>
