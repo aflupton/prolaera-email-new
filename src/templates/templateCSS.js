@@ -27,6 +27,9 @@ only screen and (max-width: 600px),
 	.emailHeader td {
 		width: 100%;
 	}
+	.emailFooter {
+		width: 90%;
+	}
 
 	.emailHeader td img {
 		margin-left: auto;

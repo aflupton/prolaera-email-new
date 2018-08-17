@@ -8,7 +8,7 @@ const FooterText = {
 };
 
 export default () => (
-  <Box align="center" width="540px" cellSpacing={20} style={{ backgroundColor: '#333333' }}>
+  <Box className="emailFooter" align="center" width="540px" cellSpacing={20} style={{ backgroundColor: '#333333' }}>
     {/* <Item align="center" style={{ fontSize: '19px', ...FooterText }}>
       Something not right?{' '}
     </Item>
