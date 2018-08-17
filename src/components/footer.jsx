@@ -1,11 +1,12 @@
 import React from 'react';
-import { A, Box, Image, Item, Span } from 'react-html-email';
+import { Box, Image, Item, Span } from 'react-html-email';
 
 const FooterText = {
   fontFamily: 'source-sans-pro, sans-serif',
-  color: '#ffffff',
-  fontSize: '12pt',
-  fontWeight: '100'
+  color: '#F7F7F7',
+  fontSize: '10pt',
+  fontWeight: '100',
+  letterSpacing: '1pt'
 };
 
 export default () => (
@@ -38,17 +39,22 @@ export default () => (
     <Item align="center" style={{ fontSize: '12px', ...FooterText }}>
       © Prolaera 2017
     </Item> */}
-    <Item style={{}}>
-      <td>
-        <Span style={{ ...FooterText, float: 'left', padding: '5px 7px 2px 0px' }}>Powered By</Span>
+    <Item>
+      <td style={{ float: 'left' }}>
+        <Span style={{ ...FooterText, float: 'left', padding: '10px 5px 5px 0px' }}>Powered By</Span>
         <Image
           src="https://gallery.mailchimp.com/eb930e30a15249a18d658c183/images/196fa069-3113-464c-a304-a1aa9f99fe22.png"
           alt="react"
           height={23}
           width={100}
+          style={{ paddingTop: '5px' }}
         />
       </td>
-      <td style={{ ...FooterText, float: 'right', paddingTop: '5px', paddingRight: '5px' }}>© Prolaera 2017</td>
+      <td
+        style={{ ...FooterText, textAlign: 'right', paddingTop: '10px', paddingRight: '10px', paddingBottom: '10px' }}
+      >
+        © Prolaera 2017
+      </td>
     </Item>
   </Box>
 );

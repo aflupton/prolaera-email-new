@@ -2,6 +2,7 @@ const css = `
 
 body {
 	background-color: #F7F7F7;
+	font-family: source-sans-pro, sans-serif;
 }
 
 #subHeaderWrapper {
@@ -27,14 +28,23 @@ only screen and (max-width: 600px),
 	.emailHeader td {
 		width: 100%;
 	}
-	.emailFooter {
-		width: 90%;
-	}
 
 	.emailHeader td img {
 		margin-left: auto;
 		margin-right: auto;
 	} 
+
+	.emailFooter {
+		width: 100%;
+		color: #F7F7F7
+		margin-right: auto;
+		margin-left: auto;
+		font-size: 10pt;
+	}
+	.emailFooter td {
+		padding: 0px 10px 5px 10px;
+		font-size: 10pt;
+	}
 
 	#subHeaderWrapper {
 		width: 100%;
