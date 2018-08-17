@@ -32,6 +32,7 @@ class CourseCertificate extends React.Component {
           marginLeft: 'auto',
           marginRight: 'auto',
           height: 'auto',
+          marginTop: '0px',
           marginBottom: '0px',
           borderRadius: '2px',
           textAlign: 'center',
@@ -42,15 +43,15 @@ class CourseCertificate extends React.Component {
         }}
       >
         <Box align="center" width="100%">
-          <Item>
+          <Item style={{ backgroundColor: '#2F4050' }}>
             <a
               href={'https://app.prolaera.com/#/courses/' + `${course_id}`}
-              style={{ textDecoration: 'none', color: '#2F4050', paddingRight: '5px' }}
+              style={{ textDecoration: 'none', color: '#2F4050', height: '100%' }}
             >
               <div
                 style={{
                   maxWidth: '540px',
-                  padding: '15px',
+                  padding: '10px 15px 20px',
                   backgroundColor: '#2F4050',
                   borderRadius: '2px 2px 0px 0px',
                   fontFamily: 'source-sans-pro, sans-serif',
@@ -59,12 +60,8 @@ class CourseCertificate extends React.Component {
                 }}
               >
                 {name}
-                <p style={{ marginBottom: '5px', fontSize: '28px', color: 'lightgray', letterSpacing: '5px' }}>
-                  {name}
-                </p>
-                <p style={{ padding: '5px', fontSize: '18px', color: 'lightgray', letterSpacing: '3px' }}>
-                  {PrettyDate(date)}
-                </p>
+                <p style={{ fontSize: '28px', color: 'lightgray', letterSpacing: '5px' }}>{name}</p>
+                <p style={{ fontSize: '18px', color: 'lightgray', letterSpacing: '3px' }}>{PrettyDate(date)}</p>
               </div>
             </a>
           </Item>
