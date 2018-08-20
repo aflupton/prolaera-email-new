@@ -59,7 +59,7 @@ only screen and (max-width: 600px),
 		border: none;
 		border-bottom: 1px solid #eee;
     	position: relative;
-    	text-align: center;
+    	text-align: top;
 	}
 
 	.report td:before {
