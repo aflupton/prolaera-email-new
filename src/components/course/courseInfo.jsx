@@ -71,9 +71,12 @@ class CourseInfo extends React.Component {
               <h4>
                 Price: <span style={{ fontWeight: 'normal' }}>{{ price } > 0 ? { price } : 'Free'}</span>
               </h4>
-              <h4>
-                Target Audience: <span style={{ fontWeight: 'normal' }}>{courseAudience}</span>
-              </h4>
+              <h4 style={{ marginBottom: '0px' }}>Target Audience:</h4>
+              <div
+                className="innerHtmlStyles"
+                style={{ fontWeight: 'normal' }}
+                dangerouslySetInnerHTML={setInnerHtml(courseAudience)}
+              />
               <h4 style={{ marginBottom: '0px' }}>Prep:</h4>
               <div
                 className="innerHtmlStyles"
