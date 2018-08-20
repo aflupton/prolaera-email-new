@@ -8,7 +8,7 @@ const FooterText = {
   fontWeight: '100',
   letterSpacing: '1pt'
 };
-
+var now = new Date();
 export default () => (
   <Box className="emailFooter" align="center" width="540px" cellSpacing={20} style={{ backgroundColor: '#333333' }}>
     {/* <Item align="center" style={{ fontSize: '19px', ...FooterText }}>
@@ -53,7 +53,7 @@ export default () => (
       <td
         style={{ ...FooterText, textAlign: 'right', paddingTop: '10px', paddingRight: '10px', paddingBottom: '10px' }}
       >
-        © Prolaera 2018
+        © Prolaera {now.getFullYear()}
       </td>
     </Item>
   </Box>
