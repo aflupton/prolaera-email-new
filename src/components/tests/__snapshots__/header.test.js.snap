@@ -25,13 +25,15 @@ exports[`Header component tests creates and checks snapshot of Header html 1`] =
           cellSpacing={0}
           style={
             Object {
+              "marginBottom": "20px",
+              "marginTop": "25px",
               "maxWidth": "584px",
               "padding": "15px",
             }
           }
         >
           <tr
-            align="left"
+            align="center"
           >
             <td
               width="292px"
@@ -50,31 +52,6 @@ exports[`Header component tests creates and checks snapshot of Header html 1`] =
                 }
                 width={200}
               />
-            </td>
-            <td
-              style={
-                Object {
-                  "textAlign": "center",
-                }
-              }
-              width="252px"
-            >
-              <div>
-                <div />
-                 
-              </div>
-              <div>
-                <div />
-                 
-              </div>
-              <div>
-                <a
-                  href="https://app.prolaera.com"
-                >
-                  prolaera.com
-                </a>
-                 
-              </div>
             </td>
           </tr>
         </table>
@@ -277,13 +254,15 @@ exports[`buildHeader image resizing tests resizes image successfully a-lign logo
           cellSpacing={0}
           style={
             Object {
+              "marginBottom": "20px",
+              "marginTop": "25px",
               "maxWidth": "584px",
               "padding": "15px",
             }
           }
         >
           <tr
-            align="left"
+            align="center"
           >
             <td
               width="292px"
@@ -291,7 +270,7 @@ exports[`buildHeader image resizing tests resizes image successfully a-lign logo
               <img
                 alt="logo"
                 height={47}
-                src="http://assets.prolaera.com/a-lign-lg.png"
+                src="https://prolaera.s3-us-west-2.amazonaws.com/sponsors/def4c2bf-0485-4eda-9b2b-0e4055ef0dbe.logo.png"
                 style={
                   Object {
                     "border": "none",
@@ -300,33 +279,8 @@ exports[`buildHeader image resizing tests resizes image successfully a-lign logo
                     "textDecoration": "none",
                   }
                 }
-                width={203.01388888888889}
+                width={199.08130081300814}
               />
-            </td>
-            <td
-              style={
-                Object {
-                  "textAlign": "center",
-                }
-              }
-              width="252px"
-            >
-              <div>
-                <div />
-                 
-              </div>
-              <div>
-                <div />
-                 
-              </div>
-              <div>
-                <a
-                  href="https://app.prolaera.com"
-                >
-                  prolaera.com
-                </a>
-                 
-              </div>
             </td>
           </tr>
         </table>

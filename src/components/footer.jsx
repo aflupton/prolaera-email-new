@@ -53,7 +53,7 @@ export default () => (
       <td
         style={{ ...FooterText, textAlign: 'right', paddingTop: '10px', paddingRight: '10px', paddingBottom: '10px' }}
       >
-        © Prolaera 2017
+        © Prolaera 2018
       </td>
     </Item>
   </Box>

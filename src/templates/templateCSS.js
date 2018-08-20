@@ -36,7 +36,8 @@ only screen and (max-width: 600px),
 
 	.emailFooter {
 		width: 100%;
-		color: #F7F7F7
+		minHeight: 100%;
+		color: #F7F7F7;
 		margin-right: auto;
 		margin-left: auto;
 		font-size: 10pt;

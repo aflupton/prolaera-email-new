@@ -4,11 +4,12 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
 <div
   style={
     Object {
-      "backgroundColor": "white",
-      "borderRadius": "5px",
+      "backgroundColor": "#FFFFFF",
+      "borderRadius": "2px",
       "display": "block",
-      "fontFamily": "Arial, sans-serif",
-      "marginBottom": "20px",
+      "fontFamily": "source-sans-pro, sans-serif",
+      "fontWeight": "100",
+      "marginBottom": "0px",
       "marginLeft": "auto",
       "marginRight": "auto",
       "maxWidth": "500px",
@@ -258,9 +259,7 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
                 href="https://app.prolaera.com/#/admin/testAdminProfileId/testButtonLink/review"
                 style={
                   Object {
-                    "backgroundColor": "#72C02C",
-                    "borderRadius": "10px",
-                    "boxShadow": "1px 1px 8px darkgray",
+                    "borderRadius": "3px",
                     "color": "white",
                     "padding": "14px 14px 14px 14px",
                     "textDecoration": "none",

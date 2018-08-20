@@ -78,9 +78,7 @@ exports[`Firm Invite component creates and checks snapshot of FirmInvite compone
                   href="https://app.prolaera.com/#/users/test@email.com"
                   style={
                     Object {
-                      "backgroundColor": "#72C02C",
-                      "borderRadius": "10px",
-                      "boxShadow": "1px 1px 8px darkgray",
+                      "borderRadius": "3px",
                       "color": "white",
                       "padding": "14px 14px 14px 14px",
                       "textDecoration": "none",
