@@ -13,7 +13,6 @@ class CourseCertificate extends React.Component {
       profile_uid,
       course_id,
       pdf,
-      date = '',
       message = '',
       certMessage = 'Congratulations ' +
         `${first}` +
@@ -24,6 +23,7 @@ class CourseCertificate extends React.Component {
       button1Link = `${pdf}`,
       button2Link = 'https://app.prolaera.com/#/users/' + `${profile_uid}` + '/courses/' + `${course_id}` + '/review'
     } = this.props;
+    var now = new Date();
 
     return (
       <div
@@ -45,7 +45,7 @@ class CourseCertificate extends React.Component {
           <Item style={{ backgroundColor: '#2F4050' }}>
             <a
               href={'https://app.prolaera.com/#/courses/' + `${course_id}`}
-              style={{ textDecoration: 'none', color: '#2F4050', height: '100%' }}
+              style={{ textDecoration: 'none', color: 'inherit', height: '100%' }}
             >
               <div
                 style={{
@@ -55,12 +55,12 @@ class CourseCertificate extends React.Component {
                   borderRadius: '2px 2px 0px 0px',
                   fontFamily: 'source-sans-pro, sans-serif',
                   fontStyle: 'normal',
+                  color: '#F7F7F7',
                   fontWeight: '100'
                 }}
               >
-                {name}
-                <p style={{ fontSize: '28px', color: '#F7F7F7', letterSpacing: '5px' }}>{name}</p>
-                <p style={{ fontSize: '18px', color: '#F7F7F7', letterSpacing: '3px' }}>{PrettyDate(date)}</p>
+                <p style={{ fontSize: '28px', letterSpacing: '3px' }}>{name}</p>
+                <p style={{ fontSize: '18px', letterSpacing: '3px' }}>{PrettyDate(now)}</p>
               </div>
             </a>
           </Item>

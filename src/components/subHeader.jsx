@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Item } from 'react-html-email';
+// import { CycleDates, RangeDate, PrettyDate } from '../../helpers/dateHelpers';
 
 class SubHeader extends React.Component {
   render() {
@@ -14,6 +15,7 @@ class SubHeader extends React.Component {
         '! ' +
         "You've been issued a new certificate of completion. Please take a few moments to complete an evaluation to help us improve by clicking the Complete Evaluation button below."
     } = this.props;
+    var now = new Date();
 
     return (
       <div
@@ -26,11 +28,13 @@ class SubHeader extends React.Component {
           marginBottom: '0px',
           maxWidth: '500px',
           fontFamily: 'source-sans-pro, sans-serif',
+          fontStyle: 'normal',
           color: '#F7F7F7',
           borderRadius: '2px',
           backgroundColor: '#2F4050',
           fontWeight: '100',
           letterSpacing: '3pt'
+          // padding: '30px'
         }}
       >
         <Box className="subHeader" align="center" width="100%">
@@ -43,9 +47,14 @@ class SubHeader extends React.Component {
               </tr>
               <tr>
                 <td>
-                  <p style={{ fontSize: '30px', marginTop: '0px', marginBottom: '5px' }}>{header}</p>
+                  <p style={{ fontSize: '28px', marginTop: '0px', marginBottom: '5px' }}>{header}</p>
                 </td>
               </tr>
+              {/* <tr>
+                <td>
+                  <p style={{ fontSize: '14px' }}>{PrettyDate(now)}</p>
+                </td>
+              </tr> */}
               <tr>
                 <td>
                   <p>{message}</p>

@@ -15,6 +15,7 @@ class Button extends React.Component {
             width: '200px',
             padding: '14px 14px 14px 14px',
             color: 'white',
+            // backgroundColor: '#2F4050',
             textDecoration: 'none',
             borderRadius: '3px'
           }}
