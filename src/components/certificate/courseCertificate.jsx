@@ -68,7 +68,13 @@ class CourseCertificate extends React.Component {
           <Item>
             <table
               id="subHeaderTable"
-              style={{ textAlign: 'center', marginLeft: 'auto', marginRight: 'auto', padding: '30px 20px 20px' }}
+              style={{
+                textAlign: 'center',
+                fontSize: '14pt',
+                marginLeft: 'auto',
+                marginRight: 'auto',
+                padding: '30px 20px 20px'
+              }}
             >
               <tr>
                 <td>
@@ -87,15 +93,14 @@ class CourseCertificate extends React.Component {
                 textAlign: 'center',
                 marginLeft: 'auto',
                 marginRight: 'auto',
-                borderSpacing: '10px',
-                borderCollapse: 'separate'
+                borderSpacing: '10px'
               }}
             >
               <tr>
                 <td
                   style={{
                     backgroundColor: '#72C02C',
-                    borderRadius: '2px',
+                    borderRadius: '3px',
                     width: '200px',
                     height: '50px',
                     margin: 'auto',
@@ -107,7 +112,7 @@ class CourseCertificate extends React.Component {
                 <td
                   style={{
                     backgroundColor: '#2F4050',
-                    borderRadius: '2px',
+                    borderRadius: '3px',
                     width: '200px',
                     height: '50px',
                     margin: 'auto'
