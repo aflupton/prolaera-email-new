@@ -33,11 +33,19 @@ class teamInfo extends React.Component {
           </Item>
           <Item align="left">
             <p>More information about your team can be found by navigating to the Prolaera website.</p>
-            {buttonLink ? (
+            <div
+              style={{
+                backgroundColor: '#72C02C',
+                borderRadius: '3px',
+                width: '200px',
+                height: '50px',
+                margin: 'auto',
+                marginBottom: '0px',
+                textAlign: 'middle'
+              }}
+            >
               <Button text={buttonText} link={'https://app.prolaera.com/#/admin/' + buttonLink + '/dashboard'} />
-            ) : (
-              <span className="buttonSpan" />
-            )}
+            </div>
           </Item>
         </Box>
       </div>
