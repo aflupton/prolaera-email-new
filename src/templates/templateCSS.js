@@ -45,7 +45,8 @@ only screen and (max-width: 600px),
 	.emailFooter td {
 		padding: 0px 10px 5px 10px;
 		font-size: 10pt;
-		height:20px;
+		height:25px;
+		vertical-align:middle;
 	}
 
 	#subHeaderWrapper {
