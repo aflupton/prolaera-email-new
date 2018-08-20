@@ -16,7 +16,7 @@ class teamInfo extends React.Component {
           width: '500px',
           padding: '20px',
           fontFamily: 'Arial, sans-serif',
-          marginBottom: '20px',
+          marginBottom: '0px',
           backgroundColor: 'white'
         }}
       >
