@@ -53,7 +53,7 @@ export default () => (
       <td
         style={{ ...FooterText, textAlign: 'right', paddingTop: '10px', paddingRight: '10px', paddingBottom: '10px' }}
       >
-        ©Prolaera {now.getFullYear()}
+        © Prolaera {now.getFullYear()}
       </td>
     </Item>
   </Box>
