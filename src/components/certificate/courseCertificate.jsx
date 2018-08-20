@@ -87,7 +87,8 @@ class CourseCertificate extends React.Component {
                 textAlign: 'center',
                 marginLeft: 'auto',
                 marginRight: 'auto',
-                borderSpacing: '10px'
+                borderSpacing: '10px',
+                borderCollapse: 'separate'
               }}
             >
               <tr>
@@ -97,7 +98,8 @@ class CourseCertificate extends React.Component {
                     borderRadius: '2px',
                     width: '200px',
                     height: '50px',
-                    margin: 'auto'
+                    margin: 'auto',
+                    marginBottom: '10px'
                   }}
                 >
                   <Button text={button1Text} link={button1Link} />
