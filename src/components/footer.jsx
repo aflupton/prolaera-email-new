@@ -41,7 +41,7 @@ export default () => (
     </Item> */}
 
     <td style={{ float: 'left' }}>
-      <Span style={{ ...FooterText, float: 'left', padding: '10px 5px 5px 0px' }}>Powered By</Span>
+      <Span style={{ ...FooterText, float: 'left', padding: '10px 5px 10px 10px' }}>Powered By</Span>
       <Image
         src="https://gallery.mailchimp.com/eb930e30a15249a18d658c183/images/196fa069-3113-464c-a304-a1aa9f99fe22.png"
         alt="react"
@@ -50,7 +50,7 @@ export default () => (
         style={{ paddingTop: '5px' }}
       />
     </td>
-    <td style={{ ...FooterText, textAlign: 'right', paddingTop: '10px', paddingRight: '10px', paddingBottom: '10px' }}>
+    <td style={{ ...FooterText, textAlign: 'right', padding: '10px 10px 10px 10px' }}>
       © Prolaera {now.getFullYear()}
     </td>
   </Box>

@@ -36,17 +36,16 @@ only screen and (max-width: 600px),
 
 	.emailFooter {
 		width: 100%;
-		minHeight: 200%;
 		color: #F7F7F7;
 		margin-right: auto;
 		margin-left: auto;
 		font-size: 10pt;
+		padding: 15px 0px 10px 0px;
 	}
 	.emailFooter td {
-		padding: 0px 10px 5px 10px;
 		font-size: 10pt;
 		height:25px;
-		vertical-align:middle;
+		// vertical-align: middle;
 	}
 
 	#subHeaderWrapper {
