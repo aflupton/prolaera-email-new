@@ -11,6 +11,7 @@ class CourseInfo extends React.Component {
       buttonText,
       buttonLink,
       name = '',
+      course_id,
       by = '',
       hours = [{ credits: '', subject_area: '' }],
       delivery_method = 1,
