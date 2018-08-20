@@ -86,7 +86,8 @@ class CourseCertificate extends React.Component {
               style={{
                 textAlign: 'center',
                 marginLeft: 'auto',
-                marginRight: 'auto'
+                marginRight: 'auto',
+                borderSpacing: '10px'
               }}
             >
               <tr>
