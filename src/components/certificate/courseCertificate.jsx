@@ -37,7 +37,6 @@ class CourseCertificate extends React.Component {
           borderRadius: '2px',
           textAlign: 'center',
           maxWidth: '540px',
-          paddingBottom: '25px',
           fontFamily: 'source-sans-pro, sans-serif',
           backgroundColor: '#FFFFFF'
         }}
@@ -67,17 +66,15 @@ class CourseCertificate extends React.Component {
           </Item>
           <Item>
             <table
-              id="subHeaderTable"
               style={{
                 textAlign: 'center',
                 fontSize: '14pt',
                 marginLeft: 'auto',
-                marginRight: 'auto',
-                padding: '30px 20px 20px'
+                marginRight: 'auto'
               }}
             >
               <tr>
-                <td>
+                <td style={{ padding: '30px 30px 10px 30px' }}>
                   <p>{message}</p>
                   <div>{profile_uid ? <p>{certMessage}</p> : <div />}</div>
                 </td>
