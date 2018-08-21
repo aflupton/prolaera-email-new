@@ -119,12 +119,18 @@ class CourseInfo extends React.Component {
             </div>
           </Item>
           <Item align="left">
-            <div>
-              {buttonLink ? (
-                <Button text={buttonText} link={'https://app.prolaera.com/#/' + newButtonLink} />
-              ) : (
-                <span className="buttonSpan" />
-              )}
+            <div
+              style={{
+                backgroundColor: '#72C02C',
+                borderRadius: '1px',
+                width: '200px',
+                height: '50px',
+                margin: 'auto',
+                marginBottom: '3px',
+                textAlign: 'middle'
+              }}
+            >
+              <Button text={buttonText} link={'https://app.prolaera.com/#/' + newButtonLink} />
             </div>
           </Item>
         </Box>
