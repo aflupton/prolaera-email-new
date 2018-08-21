@@ -23,9 +23,9 @@ class ActivityInfo extends React.Component {
           marginBottom: '20px',
           textAlign: 'center',
           borderRadius: '5px',
-          maxWidth: '500px',
+          maxWidth: '540px',
           padding: '20px',
-          fontFamily: 'Arial, sans-serif',
+          fontFamily: 'source-sans-pro, sans-serif',
           backgroundColor: 'white'
         }}
       >
