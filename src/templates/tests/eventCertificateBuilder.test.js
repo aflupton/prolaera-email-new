@@ -21,4 +21,3 @@ describe('eventCertificateBuilder', () => {
     expect(saved).toEqual(true);
   });
 });
-fdfsf;
