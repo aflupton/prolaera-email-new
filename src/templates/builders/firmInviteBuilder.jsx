@@ -5,7 +5,7 @@ import Footer from '../../components/footer';
 import GenericInfo from '../../components/generic/genericInfo';
 import builderHeader from '../../components/header';
 import SubHeader from '../../components/subHeader';
-import css from '../templateCSS.js';
+import css from '../templateCSS';
 
 const firmInviteBuilder = async (completeUser, completeCompany, imageUrl) => {
   try {
@@ -22,10 +22,22 @@ const firmInviteBuilder = async (completeUser, completeCompany, imageUrl) => {
     const footerText = (
       <div>
         <p>That's it! You're ready to explore the new tools and resources you have access to.</p>
-        <Button
-          text={'Create Your Account'}
-          link={'https://app.prolaera.com/#/registration?email=${' + completeUser.email + '}' + "'"}
-        />
+        <div
+          style={{
+            backgroundColor: '#72C02C',
+            borderRadius: '1px',
+            width: '200px',
+            height: '50px',
+            margin: 'auto',
+            marginBottom: '3px',
+            textAlign: 'middle'
+          }}
+        >
+          <Button
+            text={'Create Your Account'}
+            link={'https://app.prolaera.com/#/registration?email=${' + completeUser.email + '}' + "'"}
+          />
+        </div>
       </div>
     );
     const Header = await builderHeader(imageUrl);

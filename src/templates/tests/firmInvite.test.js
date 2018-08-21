@@ -5,7 +5,7 @@ import renderer from 'react-test-renderer';
 import Button from '../../components/button';
 import GenericInfo from '../../components/generic/genericInfo';
 import writeFile from '../../helpers/writeFileHelper';
-import firmInviteBuilder from '../builders/firmInviteBuilder';
+import firmInviteBuilder from '../builders/FirmInviteBuilder.jsx';
 
 Enzyme.configure({ adapter: new Adapter() });
 
@@ -23,7 +23,7 @@ const bodyText = (
 );
 const footerText = (
   <div>
-    <p>That's it! You're ready to explore the new tools and resources you have access to.</p>
+    <p>You're ready to explore the new tools and resources you have access to.</p>
     <Button text={'Create Your Account'} link={'https://app.prolaera.com/#/users/' + user.email} />
   </div>
 );

@@ -49,8 +49,7 @@
       "nationalRegistry": "123456"
     },
     "addressTwo": "Suite 1200",
-    "sponsorStatement":
-      "In accordance with the standards of the National Registry of CPE Sponsors and as set forth in Circular 230 Section 10.6, credits have been granted based on a 50-minute hour. State boards of accountancy, state bars, and other state regulatory bodies have final authority on the acceptance of courses for continuing education credit. Please check with your state board regarding applicability of this course towards your continuing education requirement.",
+    "sponsorStatement": "In accordance with the standards of the National Registry of CPE Sponsors and as set forth in Circular 230 Section 10.6, credits have been granted based on a 50-minute hour. State boards of accountancy, state bars, and other state regulatory bodies have final authority on the acceptance of courses for continuing education credit. Please check with your state board regarding applicability of this course towards your continuing education requirement.",
     "name": "BowmanKnopp",
     "style": "portrait",
     "state": "California",
@@ -59,8 +58,7 @@
     "signature": {
       "name": "Jane Doe",
       "title": "Director, Learning & Development",
-      "imageUrl":
-        "https://prolaera.s3-us-west-2.amazonaws.com/sponsors/def4c2bf-0485-4eda-9b2b-0e4055ef0dbe.signature.jpg"
+      "imageUrl": "https://prolaera.s3-us-west-2.amazonaws.com/sponsors/def4c2bf-0485-4eda-9b2b-0e4055ef0dbe.signature.jpg"
     },
     "active": true,
     "archived": false
