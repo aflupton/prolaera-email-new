@@ -36,11 +36,11 @@ class teamInfo extends React.Component {
             <div
               style={{
                 backgroundColor: '#72C02C',
-                borderRadius: '3px',
+                borderRadius: '1px',
                 width: '200px',
                 height: '50px',
                 margin: 'auto',
-                marginBottom: '0px',
+                marginBottom: '3px',
                 textAlign: 'middle'
               }}
             >
