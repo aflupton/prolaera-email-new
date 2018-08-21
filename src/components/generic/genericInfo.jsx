@@ -16,7 +16,7 @@ class GenericInfo extends React.Component {
           maxWidth: '500px',
           padding: '20px',
           fontFamily: 'Arial, sans-serif',
-          marginBottom: '20px',
+          marginBottom: '0px',
           backgroundColor: 'white'
         }}
       >

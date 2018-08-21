@@ -11,7 +11,7 @@ class SubFooter extends React.Component {
           display: 'block',
           marginLeft: 'auto',
           marginRight: 'auto',
-          marginBottom: '20px',
+          marginBottom: '0px',
           textAlign: 'center',
           fontFamily: 'Arial, sans-serif',
           borderRadius: '5px',

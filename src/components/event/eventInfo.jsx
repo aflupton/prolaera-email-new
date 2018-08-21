@@ -32,7 +32,7 @@ class EventInfo extends React.Component {
           display: 'block',
           marginLeft: 'auto',
           marginRight: 'auto',
-          marginBottom: '20px',
+          marginBottom: '0px',
           textAlign: 'center',
           borderRadius: '5px',
           maxWidth: '500px',
@@ -78,7 +78,11 @@ class EventInfo extends React.Component {
                 Delivery Method: <span style={{ fontWeight: 'normal' }}>{deliveryHelper(delivery_method)}</span>
               </h4>
               <h4>
-                Price: <span style={{ fontWeight: 'normal' }}>${price}.00</span>
+                Price:{' '}
+                <span style={{ fontWeight: 'normal' }}>
+                  ${price}
+                  .00
+                </span>
               </h4>
               <h4>
                 Target Audience: <span style={{ fontWeight: 'normal' }}>{courseAudience}</span>
