@@ -6,7 +6,7 @@ body {
 }
 
 #subHeaderWrapper {
-	padding: 20px;
+	// padding: 20px;
 }
 
 .innerHtmlStyles {
