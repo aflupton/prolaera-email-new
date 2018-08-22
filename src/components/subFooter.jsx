@@ -7,21 +7,20 @@ class SubFooter extends React.Component {
 
     return (
       <div
+        id="subHeaderWrapper"
         style={{
           display: 'block',
           marginLeft: 'auto',
           marginRight: 'auto',
           marginBottom: '0px',
-          textAlign: 'center',
-          fontFamily: 'Arial, sans-serif',
-          borderRadius: '5px',
+          fontFamily: 'source-sans-pro, sans-serif',
           padding: '20px',
           maxWidth: '500px',
           backgroundColor: 'white'
         }}
       >
         <Box className="subFooter" align="center" width="100%">
-          <Item align="center">
+          <Item align="justify" style={{ paddingLeft: '30px', paddingRight: '30px' }}>
             <p>{text}</p>
             <p>{subtext}</p>
           </Item>

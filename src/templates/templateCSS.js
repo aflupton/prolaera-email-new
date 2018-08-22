@@ -9,7 +9,7 @@ body {
 }
 
 #subHeaderWrapper {
-	// padding: 20px;
+	padding: 20px;
 }
 
 .innerHtmlStyles {
@@ -25,14 +25,13 @@ only screen and (max-width: 600px),
 
 	/* Force table to not be like tables anymore */
 	table, thead, tbody, th, td, tr {
-		display: block;
-		margin: auto;
-		
+		display: block;		
 	}
 	.courseCertificate {
 		width: 100%;
 		margin: auto;
 	}
+	
 	.emailHeader td {
 		width: 100%;
 	}
@@ -48,7 +47,7 @@ only screen and (max-width: 600px),
 		margin-right: auto;
 		margin-left: auto;
 		font-size: 10pt;
-		padding: 15px 0px 10px 0px;
+		// padding: 15px 0px 10px 0px;
 	}
 	.emailFooter td {
 		width: 100%;
@@ -61,7 +60,6 @@ only screen and (max-width: 600px),
 
 	#subHeaderWrapper {
 		width: 100%;
-		padding: 0px;
 	}
 
 	.report td {
