@@ -27,6 +27,9 @@ only screen and (max-width: 600px),
 	table, thead, tbody, th, td, tr {
 		display: block;		
 	}
+	#courseCertificate {
+		max-width: 100%;
+	}
 	.courseCertificate {
 		width: 100%;
 		margin: auto;
