@@ -27,7 +27,7 @@ class CourseCertificate extends React.Component {
 
     return (
       <div
-        id="subHeaderWrapper"
+        id="courseCertificate"
         style={{
           display: 'block',
           marginLeft: 'auto',
@@ -35,14 +35,13 @@ class CourseCertificate extends React.Component {
           height: 'auto',
           marginBottom: '0px',
           textAlign: 'center',
-          maxWidth: '500px',
-          padding: '20px',
+          maxWidth: '540px',
           fontFamily: 'source-sans-pro, sans-serif',
           backgroundColor: '#FFFFFF'
         }}
       >
         <Box className="courseCertificate" align="center" width="100%">
-          <Item style={{ backgroundColor: '#2F4050', width: '100%' }}>
+          <Item style={{ backgroundColor: '#2F4050', maxWidth: '100%' }}>
             <a
               href={'https://app.prolaera.com/#/courses/' + `${course_id}`}
               style={{ textDecoration: 'none', color: 'inherit', height: '100%' }}
@@ -72,9 +71,11 @@ class CourseCertificate extends React.Component {
               }}
             >
               <tr>
-                <td style={{ width: '85%' }}>
+                <td>
                   <p>{message}</p>
-                  <div style={{ padding: '10px 10px 0px 10px' }}>{profile_uid ? <p>{certMessage}</p> : <div />}</div>
+                  <div style={{ maxWidth: '420px', padding: '10px 10px 0px 10px' }}>
+                    {profile_uid ? <p>{certMessage}</p> : <div />}
+                  </div>
                 </td>
               </tr>
             </table>
