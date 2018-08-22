@@ -118,13 +118,15 @@ class CourseInfo extends React.Component {
               />
             </div>
           </Item>
-          <Item align="left">
+          <Item>
             <div
               style={{
                 backgroundColor: '#72C02C',
-                borderRadius: '1px',
+                color: 'white',
+                borderRadius: '3px',
                 width: '200px',
                 height: '50px',
+                padding: '0px 0px 5px 0px',
                 margin: 'auto',
                 marginBottom: '3px',
                 textAlign: 'middle'

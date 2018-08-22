@@ -9,7 +9,6 @@ class ActivityInfo extends React.Component {
       author = '',
       profile_uid,
       activity_id,
-      header = 'You have been assigned to a new Activity:',
       buttonText = 'View Details',
       button1Link = 'https://app.prolaera.com/#/users/' + `${profile_uid}` + '/activities' + `${activity_id}`
     } = this.props;
@@ -32,7 +31,6 @@ class ActivityInfo extends React.Component {
       >
         <Box align="center" width="100%">
           <Item>
-            <h4>{header}</h4>
             <div
               style={{
                 marginLeft: 'auto',
@@ -42,9 +40,7 @@ class ActivityInfo extends React.Component {
                 backgroundColor: '#FFFFFF'
               }}
             >
-              <h3 style={{ marginBottom: '0px' }}>
-                <em>{name}</em>
-              </h3>
+              <h3 style={{ marginBottom: '0px', fontSize: '16pt' }}>{name}</h3>
               <h4 style={{ marginTop: '7px' }}>
                 By: <span style={{ fontWeight: 'normal' }}>{author}</span>
               </h4>

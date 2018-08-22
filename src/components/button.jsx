@@ -13,9 +13,9 @@ class Button extends React.Component {
           href={link}
           style={{
             width: '200px',
+            height: '50px',
             padding: '14px 14px 14px 14px',
-            color: 'white',
-            // backgroundColor: '#2F4050',
+            color: '#ffffff',
             textDecoration: 'none',
             borderRadius: '3px'
           }}

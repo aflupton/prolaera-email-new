@@ -29,14 +29,15 @@ class teamInfo extends React.Component {
               Name: <span style={{ fontWeight: 'normal' }}>{name}</span>
             </h4>
             <h4 style={{ marginBottom: '0px' }}>Description:</h4>
-            <p style={{ marginTop: '10px' }}>{description}</p>
+            <p style={{ marginTop: '10px', letterSpacing: '1pt' }}>{description}</p>
           </Item>
           <Item align="left">
             <p>More information about your team can be found by navigating to the Prolaera website.</p>
             <div
               style={{
                 backgroundColor: '#72C02C',
-                borderRadius: '1px',
+                color: '#FFFFFF',
+                borderRadius: '3px',
                 width: '200px',
                 height: '50px',
                 margin: 'auto',

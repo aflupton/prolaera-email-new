@@ -30,11 +30,10 @@ class SubHeader extends React.Component {
           fontFamily: 'source-sans-pro, sans-serif',
           fontStyle: 'normal',
           color: '#F7F7F7',
-          borderRadius: '2px',
+          borderRadius: '0px',
           backgroundColor: '#2F4050',
           fontWeight: '100',
           letterSpacing: '3pt'
-          // padding: '30px'
         }}
       >
         <Box className="subHeader" align="center" width="100%">
@@ -42,7 +41,7 @@ class SubHeader extends React.Component {
             <table id="subHeaderTable" style={{ textAlign: 'center', marginLeft: 'auto', marginRight: 'auto' }}>
               <tr>
                 <td>
-                  <p style={{ fontSize: '14pt', marginBottom: '5px' }}>{subText}</p>
+                  <p style={{ fontSize: '18pt', marginBottom: '5px' }}>{subText}</p>
                 </td>
               </tr>
               <tr>
@@ -56,8 +55,8 @@ class SubHeader extends React.Component {
                 </td>
               </tr> */}
               <tr>
-                <td>
-                  <p>{message}</p>
+                <td style={{ width: '500px' }}>
+                  <p style={{ letterSpacing: '2pt' }}>{message}</p>
                   <div>{profile_uid ? <p>{certMessage}</p> : <div />}</div>
                 </td>
               </tr>
