@@ -8,7 +8,7 @@ class ComplianceReport extends React.Component {
     const { flatCompliance, compliance, regulator, index } = this.props;
     return (
       <Item align="center" style={{ backgroundColor: '#FFFFFF' }}>
-        <div style={{ padding: '15px' }}>
+        <div style={{ padding: '15px', width: '500px' }}>
           <ComplianceHeader {...this.props} />
           <ComplianceRows
             regulator={regulator}
