@@ -30,6 +30,7 @@ class EventInfo extends React.Component {
 
     return (
       <div
+        id="subHeaderWrapper"
         style={{
           display: 'block',
           marginLeft: 'auto',
@@ -151,7 +152,7 @@ class EventInfo extends React.Component {
                 {buttonText ? <Button text={buttonText} link={buttonLink} /> : <span className="buttonSpan" />}
               </div>
             ) : (
-              <span className="buttonSpan" />
+              <span style={{ backgroundColor: '#72C02C' }} className="buttonSpan" />
             )}
           </Item>
         </Box>
