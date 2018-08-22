@@ -14,8 +14,8 @@ class SubFooter extends React.Component {
           marginRight: 'auto',
           marginBottom: '0px',
           fontFamily: 'source-sans-pro, sans-serif',
-          padding: '20px',
           maxWidth: '500px',
+          padding: '20px',
           backgroundColor: 'white'
         }}
       >

@@ -25,7 +25,7 @@ const firmInviteBuilder = async (completeUser, completeCompany, imageUrl) => {
         <div
           style={{
             backgroundColor: '#72C02C',
-            borderRadius: '1px',
+            borderRadius: '3px',
             width: '200px',
             height: '50px',
             margin: 'auto',

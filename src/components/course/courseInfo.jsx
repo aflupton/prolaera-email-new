@@ -33,12 +33,12 @@ class CourseInfo extends React.Component {
 
     return (
       <div
+        id="subHeaderWrapper"
         style={{
           display: 'block',
           marginLeft: 'auto',
           marginRight: 'auto',
           textAlign: 'center',
-          borderRadius: '2px',
           maxWidth: '500px',
           padding: '20px',
           fontFamily: 'source-sans-pro, sans-serif',

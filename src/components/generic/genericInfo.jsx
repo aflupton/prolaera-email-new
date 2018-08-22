@@ -7,15 +7,15 @@ class GenericInfo extends React.Component {
 
     return (
       <div
+        id="subHeaderWrapper"
         style={{
           display: 'block',
           marginLeft: 'auto',
           marginRight: 'auto',
           textAlign: 'left',
-          borderRadius: '5px',
           maxWidth: '500px',
           padding: '20px',
-          fontFamily: 'Arial, sans-serif',
+          fontFamily: 'source-sans-pro, sans-serif',
           marginBottom: '0px',
           backgroundColor: 'white'
         }}

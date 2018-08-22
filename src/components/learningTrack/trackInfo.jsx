@@ -8,20 +8,20 @@ class TrackInfo extends React.Component {
 
     return (
       <div
+        id="subHeaderWrapper"
         style={{
           display: 'block',
           marginLeft: 'auto',
           marginRight: 'auto',
           textAlign: 'center',
-          borderRadius: '5px',
-          width: '500px',
+          maxWidth: '500px',
           padding: '20px',
-          fontFamily: 'Arial, sans-serif',
+          fontFamily: 'source-sans-pro, sans-serif',
           marginBottom: '0px',
-          backgroundColor: 'white'
+          backgroundColor: '#ffffff'
         }}
       >
-        <Box className="trackInfo" align="center" width="500px">
+        <Box className="trackInfo" align="center" width="100%">
           <Item>
             <h3 style={{ marginTop: '0px' }}>Learning Track Information:</h3>
           </Item>
@@ -41,11 +41,12 @@ class TrackInfo extends React.Component {
               <div
                 style={{
                   backgroundColor: '#72C02C',
-                  borderRadius: '1px',
+                  borderRadius: '3px',
                   width: '200px',
                   height: '50px',
                   margin: 'auto',
                   marginBottom: '3px',
+                  paddingBottom: '5px',
                   textAlign: 'middle'
                 }}
               >
