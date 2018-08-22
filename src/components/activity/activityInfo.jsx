@@ -20,12 +20,13 @@ class ActivityInfo extends React.Component {
           display: 'block',
           marginLeft: 'auto',
           marginRight: 'auto',
-          marginBottom: '20px',
+          marginBottom: '0px',
           textAlign: 'center',
-          borderRadius: '5px',
           maxWidth: '500px',
           padding: '20px',
-          fontFamily: 'Arial, sans-serif',
+          fontFamily: 'source-sans-pro, sans-serif',
+          fontStyle: 'normal',
+          fontWeight: '100',
           backgroundColor: 'white'
         }}
       >
@@ -36,10 +37,9 @@ class ActivityInfo extends React.Component {
               style={{
                 marginLeft: 'auto',
                 marginRight: 'auto',
-                marginBottom: '15px',
-                border: '1px solid lightgray',
-                boxShadow: '1px 1px 8px darkgray',
-                maxWidth: '300px'
+                marginBottom: '10px',
+                maxWidth: '300px',
+                backgroundColor: '#FFFFFF'
               }}
             >
               <h3 style={{ marginBottom: '0px' }}>
@@ -50,8 +50,18 @@ class ActivityInfo extends React.Component {
               </h4>
             </div>
           </Item>
-          <Item>
-            <Button text={buttonText} link={button1Link} />
+          <Item style={{ paddingBottom: '15px' }}>
+            <div
+              style={{
+                backgroundColor: '#72C02C',
+                borderRadius: '3px',
+                width: '200px',
+                marginLeft: 'auto',
+                marginRight: 'auto'
+              }}
+            >
+              <Button text={buttonText} link={button1Link} />
+            </div>
           </Item>
         </Box>
       </div>
