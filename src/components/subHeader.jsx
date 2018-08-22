@@ -1,6 +1,5 @@
 import React from 'react';
 import { Box, Item } from 'react-html-email';
-// import { CycleDates, RangeDate, PrettyDate } from '../../helpers/dateHelpers';
 
 class SubHeader extends React.Component {
   render() {
@@ -38,7 +37,10 @@ class SubHeader extends React.Component {
       >
         <Box className="subHeader" align="center" width="100%">
           <Item>
-            <table id="subHeaderTable" style={{ textAlign: 'center', marginLeft: 'auto', marginRight: 'auto' }}>
+            <table
+              id="subHeaderTable"
+              style={{ textAlign: 'center', marginLeft: 'auto', marginRight: 'auto', marginBottom: '10px' }}
+            >
               <tr>
                 <td>
                   <p style={{ fontSize: '18pt', marginBottom: '5px' }}>{subText}</p>
@@ -46,17 +48,12 @@ class SubHeader extends React.Component {
               </tr>
               <tr>
                 <td>
-                  <p style={{ fontSize: '28px', marginTop: '0px', marginBottom: '5px' }}>{header}</p>
+                  <p style={{ fontSize: '28px', marginTop: '0px', marginBottom: '0px' }}>{header}</p>
                 </td>
               </tr>
-              {/* <tr>
-                <td>
-                  <p style={{ fontSize: '14px' }}>{PrettyDate(now)}</p>
-                </td>
-              </tr> */}
-              <tr>
-                <td style={{ width: '100%' }}>
-                  <p style={{ letterSpacing: '2pt', padding: '0px 20px 10px 20px' }}>{message}</p>
+              <tr style={{ margin: 'auto', padding: '0px 10px 10px 10px' }}>
+                <td style={{ width: '85%', padding: '10px' }}>
+                  <div style={{ letterSpacing: '2pt' }}>{message}</div>
                   <div>{profile_uid ? <p>{certMessage}</p> : <div />}</div>
                 </td>
               </tr>

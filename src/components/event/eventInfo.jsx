@@ -26,6 +26,8 @@ class EventInfo extends React.Component {
       summary = ''
     } = this.props;
 
+    let newPrerequisites = prerequisites.trim();
+
     return (
       <div
         style={{
@@ -34,10 +36,9 @@ class EventInfo extends React.Component {
           marginRight: 'auto',
           marginBottom: '0px',
           textAlign: 'center',
-          borderRadius: '5px',
           maxWidth: '500px',
           padding: '20px',
-          fontFamily: 'Arial, sans-serif',
+          fontFamily: 'source-sans-pro, sans-serif',
           backgroundColor: 'white'
         }}
       >
@@ -54,12 +55,18 @@ class EventInfo extends React.Component {
           </Item>
           <Item align="left">
             <div style={{ paddingLeft: '30px' }}>
-              <h4>
-                Start Time: <span style={{ fontWeight: 'normal' }}>{PrettyDate(delivery_date)}</span>
-              </h4>
-              <h4>
-                End Time: <span style={{ fontWeight: 'normal' }}>{PrettyDate(delivery_end_date)}</span>
-              </h4>
+              <h4>Start Time:</h4>
+              <div
+                className="innerHtmlStyles"
+                style={{ fontWeight: 'normal' }}
+                dangerouslySetInnerHTML={setInnerHtml(PrettyDate(delivery_date))}
+              />
+              <h4>End Time:</h4>
+              <div
+                className="innerHtmlStyles"
+                style={{ fontWeight: 'normal' }}
+                dangerouslySetInnerHTML={setInnerHtml(PrettyDate(delivery_end_date))}
+              />
               <h4 style={{ marginBottom: '0px' }}>Recommended CPE Credit(s):</h4>
               <ul style={{ marginTop: '10px' }}>
                 {hours.map((hour, index) => (
@@ -68,36 +75,63 @@ class EventInfo extends React.Component {
                   </li>
                 ))}
               </ul>
-              <h4>
-                Location:
-                <a href={'https://www.google.com/maps/place/' + `${delivery_location}`}>
+              <h4>Location:</h4>
+              <div className="innerHtmlStyles" style={{ fontWeight: 'normal' }}>
+                <a
+                  style={{ textDecoration: 'underline', color: 'inherit' }}
+                  href={'https://www.google.com/maps/place/' + `${delivery_location}`}
+                >
                   <span style={{ fontWeight: 'normal' }}>{delivery_location}</span>
                 </a>
-              </h4>
-              <h4>
-                Delivery Method: <span style={{ fontWeight: 'normal' }}>{deliveryHelper(delivery_method)}</span>
-              </h4>
-              <h4>
-                Price:{' '}
-                <span style={{ fontWeight: 'normal' }}>
-                  ${price}
-                  .00
-                </span>
-              </h4>
-              <h4>
-                Target Audience: <span style={{ fontWeight: 'normal' }}>{courseAudience}</span>
-              </h4>
+              </div>
+              <h4>Delivery Method:</h4>
+              <div
+                className="innerHtmlStyles"
+                style={{ fontWeight: 'normal' }}
+                dangerouslySetInnerHTML={setInnerHtml(deliveryHelper(delivery_method))}
+              />
+              <h4>Price: </h4>
+              <div
+                className="innerHtmlStyles"
+                style={{ fontWeight: 'normal' }}
+                dangerouslySetInnerHTML={setInnerHtml('$' + price + '.00')}
+              />
+              <h4>Target Audience:</h4>
+              <div
+                className="innerHtmlStyles"
+                style={{ fontWeight: 'normal' }}
+                dangerouslySetInnerHTML={setInnerHtml(courseAudience)}
+              />
               <h4 style={{ marginBottom: '0px' }}>Prep:</h4>
-              <div className="innerHtmlStyles" dangerouslySetInnerHTML={setInnerHtml(prep)} />
+              <div
+                className="innerHtmlStyles"
+                style={{ fontWeight: 'normal' }}
+                dangerouslySetInnerHTML={setInnerHtml(prep)}
+              />
               <h4 style={{ marginBottom: '0px' }}>Prerequisites:</h4>
-              <div className="innerHtmlStyles" dangerouslySetInnerHTML={setInnerHtml(prerequisites)} />
-              <h4>
-                Level: <span style={{ fontWeight: 'normal' }}>{level}</span>
-              </h4>
+              <div
+                className="innerHtmlStyles"
+                style={{ fontWeight: 'normal' }}
+                dangerouslySetInnerHTML={setInnerHtml(newPrerequisites)}
+              />
+              <h4>Level:</h4>
+              <div
+                className="innerHtmlStyles"
+                style={{ fontWeight: 'normal' }}
+                dangerouslySetInnerHTML={setInnerHtml(level)}
+              />
               <h4 style={{ marginBottom: '0px' }}>Learning Objectives:</h4>
-              <div className="innerHtmlStyles" dangerouslySetInnerHTML={setInnerHtml(objectives)} />
+              <div
+                className="innerHtmlStyles"
+                style={{ fontWeight: 'norma;' }}
+                dangerouslySetInnerHTML={setInnerHtml(objectives)}
+              />
               <h4 style={{ marginBottom: '0px' }}>Summary:</h4>
-              <div className="innerHtmlStyles" dangerouslySetInnerHTML={setInnerHtml(summary)} />
+              <div
+                className="innerHtmlStyles"
+                style={{ fontWeight: 'normal' }}
+                dangerouslySetInnerHTML={setInnerHtml(summary)}
+              />
             </div>
           </Item>
           <Item align="center">

@@ -14,7 +14,7 @@ const eventCertificateEmail = async (event, user, certificate, imageUrl) => {
     return renderEmail(
       <Email title="You have completed an event" headCSS={css}>
         <Header text="Complete Evaluation" {...event} {...certificate} />
-        <SubHeader {...user} subText="You have received a" header="Certificate" />
+        <SubHeader {...user} subText="You have received an" header="Event Certificate" />
         <EventCertificate {...event} {...user} {...certificate} />
         <EventInfo {...event} />
         <Footer />
