@@ -2,6 +2,8 @@ const css = `
 
 body {
 	background-color: #F7F7F7;
+	margin-left: auto;
+	margin-right: auto;
 	font-family: source-sans-pro, sans-serif;
 }
 
@@ -23,8 +25,12 @@ only screen and (max-width: 600px),
 	/* Force table to not be like tables anymore */
 	table, thead, tbody, th, td, tr {
 		display: block;
+		margin: auto;
 	}
-
+	.courseCertificate {
+		width: 100%;
+		margin: auto;
+	}
 	.emailHeader td {
 		width: 100%;
 	}

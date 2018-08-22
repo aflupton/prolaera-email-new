@@ -12,7 +12,7 @@ const activityAssignedEmail = async (activity, user, imageUrl) => {
     return renderEmail(
       <Email title="You have been Assigned" headCSS={css}>
         <Header />
-        <SubHeader subText="You have been" header="Assigned" />
+        <SubHeader subText="You have been" header="Assigned" message="A new Activity" />
         <ActivityInfo {...user} {...activity} />
         <Footer />
       </Email>

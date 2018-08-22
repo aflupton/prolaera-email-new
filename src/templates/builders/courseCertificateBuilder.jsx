@@ -14,9 +14,8 @@ const courseCertificateEmail = async (course, user, certificate, imageUrl) => {
     return renderEmail(
       <Email title="You have completed a course" headCSS={css}>
         <Header text="Complete Evaluation" {...certificate} {...course} />
-        {/* <SubHeader {...user} subText="You have received a" header="Certificate" /> */}
         <CourseCertificate {...certificate} {...course} {...user} />
-        <CourseInfo {...course} />
+        <CourseInfo {...course} buttonText={'View Course'} />
         <Footer />
       </Email>
     );

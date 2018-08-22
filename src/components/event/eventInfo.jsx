@@ -105,7 +105,8 @@ class EventInfo extends React.Component {
               <div
                 style={{
                   backgroundColor: '#72C02C',
-                  borderRadius: '1px',
+                  borderRadius: '3px',
+                  color: '#ffffff',
                   width: '200px',
                   height: '50px',
                   margin: 'auto',
