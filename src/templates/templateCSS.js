@@ -5,6 +5,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	font-family: source-sans-pro, sans-serif;
+	
 }
 
 #subHeaderWrapper {
@@ -26,6 +27,7 @@ only screen and (max-width: 600px),
 	table, thead, tbody, th, td, tr {
 		display: block;
 		margin: auto;
+		
 	}
 	.courseCertificate {
 		width: 100%;
