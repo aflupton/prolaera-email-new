@@ -17,7 +17,7 @@ class TrackInfo extends React.Component {
           width: '500px',
           padding: '20px',
           fontFamily: 'Arial, sans-serif',
-          marginBottom: '20px',
+          marginBottom: '0px',
           backgroundColor: 'white'
         }}
       >
@@ -38,10 +38,26 @@ class TrackInfo extends React.Component {
           <Item align="left">
             <p>More information about this track can be found by navigating to the Prolaera website.</p>
             {profileId ? (
-              <Button
-                text={buttonText}
-                link={'https://app.prolaera.com/#/users/' + profileId + '/learning/track?track=' + trackId}
-              />
+              <div
+                style={{
+                  backgroundColor: '#72C02C',
+                  borderRadius: '1px',
+                  width: '200px',
+                  height: '50px',
+                  margin: 'auto',
+                  marginBottom: '3px',
+                  textAlign: 'middle'
+                }}
+              >
+                {profileId ? (
+                  <Button
+                    text={buttonText}
+                    link={'https://app.prolaera.com/#/users/' + profileId + '/learning/track?track=' + trackId}
+                  />
+                ) : (
+                  <span className="buttonSpan" />
+                )}
+              </div>
             ) : (
               <span className="buttonSpan" />
             )}
