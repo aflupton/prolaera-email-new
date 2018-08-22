@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Item } from 'react-html-email';
 import Button from '../../components/button';
+import setInnerHtml from '../../helpers/domHelpers';
 
 class teamInfo extends React.Component {
   render() {
@@ -8,30 +9,37 @@ class teamInfo extends React.Component {
 
     return (
       <div
+        id="subHeaderWrapper"
         style={{
           display: 'block',
           marginLeft: 'auto',
           marginRight: 'auto',
           textAlign: 'center',
-          width: '500px',
-          padding: '20px',
-          fontFamily: 'Arial, sans-serif',
+          maxWidth: '500px',
+          fontFamily: 'sans-source-pro, sans-serif',
           marginBottom: '0px',
-          backgroundColor: 'white'
+          backgroundColor: '#ffffff'
         }}
       >
-        <Box className="teamInfo" align="center" width="500px">
+        <Box className="teamInfo" align="center" style={{ padding: '0px 30px 0px 30px' }}>
           <Item align="center">
-            <h3 style={{ marginTop: '0px' }}>Team Information:</h3>
+            <h3 style={{ marginTop: '0px', fontSize: '16pt' }}>Team Information:</h3>
           </Item>
           <Item align="left">
-            <h4 style={{ marginTop: '0px' }}>
-              Name: <span style={{ fontWeight: 'normal' }}>{name}</span>
-            </h4>
-            <h4 style={{ marginBottom: '0px' }}>Description:</h4>
-            <p style={{ marginTop: '10px', letterSpacing: '1pt' }}>{description}</p>
+            <h4 style={{}}>Name:</h4>
+            <div
+              className="innerHtmlStyles"
+              style={{ fontWeight: 'normal' }}
+              dangerouslySetInnerHTML={setInnerHtml(name)}
+            />
+            <h4 style={{}}>Description:</h4>
+            <div
+              className="innerHtmlStyles"
+              style={{ fontWeight: 'normal' }}
+              dangerouslySetInnerHTML={setInnerHtml(description)}
+            />
           </Item>
-          <Item align="left">
+          <Item align="left" style={{ align: 'justify', paddingTop: '20px' }}>
             <p>More information about your team can be found by navigating to the Prolaera website.</p>
             <div
               style={{

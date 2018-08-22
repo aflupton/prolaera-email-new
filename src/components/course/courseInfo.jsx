@@ -122,7 +122,7 @@ class CourseInfo extends React.Component {
             <div
               style={{
                 backgroundColor: '#72C02C',
-                color: 'white',
+                color: '#ffffff',
                 borderRadius: '3px',
                 width: '200px',
                 height: '50px',

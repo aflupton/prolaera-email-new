@@ -26,7 +26,6 @@ class SubHeader extends React.Component {
           marginTop: '0px',
           marginBottom: '0px',
           maxWidth: '500px',
-          padding: '20px',
           fontFamily: 'source-sans-pro, sans-serif',
           fontStyle: 'normal',
           color: '#F7F7F7',
