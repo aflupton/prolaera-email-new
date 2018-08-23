@@ -72,7 +72,9 @@ class CourseCertificate extends React.Component {
               <tr>
                 <td>
                   <p>{message}</p>
-                  <div style={{ padding: '10px 5% 5% 0px' }}>{profile_uid ? <p>{certMessage}</p> : <div />}</div>
+                  <div style={{ boxSizing: 'border-box', padding: '5px 30px' }}>
+                    {profile_uid ? <p>{certMessage}</p> : <div />}
+                  </div>
                 </td>
               </tr>
             </table>
