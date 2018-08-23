@@ -88,7 +88,7 @@ only screen and (max-width: 768px)  {
 		
 	}
 }
-	@media (min-width: 769px) and (max-width: 1440px) {
+	@media (min-width: 769px) {
 		html{
 			padding-left:25%;
 		}
@@ -160,9 +160,7 @@ only screen and (max-width: 768px)  {
 			padding-right: 10px;
 			white-space: nowrap;
 		}
-		.custom{
-			padding-left:50px;
-		}
+	
 		.customButton:hover {
 			color:black;
 			
