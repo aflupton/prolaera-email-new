@@ -9,12 +9,10 @@ class SubFooter extends React.Component {
       <div
         id="subHeaderWrapper"
         style={{
-          display: 'block',
           marginLeft: 'auto',
           marginRight: 'auto',
           marginBottom: '0px',
           fontFamily: 'source-sans-pro, sans-serif',
-          maxWidth: '500px',
           padding: '20px',
           backgroundColor: 'white'
         }}

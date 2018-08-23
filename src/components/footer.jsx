@@ -15,7 +15,6 @@ export default () => (
       id="subHeaderWrapper"
       className="emailFooter"
       align="center"
-      width="540px"
       cellSpacing={20}
       style={{ backgroundColor: '#333333' }}
     >

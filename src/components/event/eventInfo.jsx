@@ -37,7 +37,6 @@ class EventInfo extends React.Component {
           marginRight: 'auto',
           marginBottom: '0px',
           textAlign: 'center',
-          maxWidth: '500px',
           padding: '20px',
           fontFamily: 'source-sans-pro, sans-serif',
           backgroundColor: 'white'

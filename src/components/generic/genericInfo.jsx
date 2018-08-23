@@ -13,7 +13,6 @@ class GenericInfo extends React.Component {
           marginLeft: 'auto',
           marginRight: 'auto',
           textAlign: 'left',
-          maxWidth: '500px',
           padding: '20px',
           fontFamily: 'source-sans-pro, sans-serif',
           marginBottom: '0px',

@@ -31,7 +31,6 @@ class EventCertificate extends React.Component {
           marginBottom: '0px',
           textAlign: 'center',
           borderRadius: '0px',
-          maxWidth: '500px',
           padding: '20px',
           fontFamily: 'source-sans-pro, sans-serif',
           backgroundColor: '#ffffff'

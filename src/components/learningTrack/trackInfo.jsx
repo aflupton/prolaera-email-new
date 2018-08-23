@@ -14,7 +14,6 @@ class TrackInfo extends React.Component {
           marginLeft: 'auto',
           marginRight: 'auto',
           textAlign: 'center',
-          maxWidth: '500px',
           padding: '20px',
           fontFamily: 'source-sans-pro, sans-serif',
           marginBottom: '0px',

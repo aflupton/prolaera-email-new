@@ -35,7 +35,6 @@ class CourseCertificate extends React.Component {
           height: 'auto',
           marginBottom: '0px',
           textAlign: 'center',
-          maxWidth: '540px',
           fontFamily: 'source-sans-pro, sans-serif',
           backgroundColor: '#FFFFFF'
         }}
@@ -74,7 +73,7 @@ class CourseCertificate extends React.Component {
                 <td>
                   <p>{message}</p>
                   <div style={{ maxWidth: '420px', padding: '10px 10px 0px 10px' }}>
-                    {profile_uid ? <p>{certMessage}</p> : <div />}
+                    {profile_uid ? <p className="custom">{certMessage}</p> : <div />}
                   </div>
                 </td>
               </tr>

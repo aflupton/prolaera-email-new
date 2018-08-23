@@ -1,15 +1,9 @@
 const css = `
 
-body {
-	background-color: #F7F7F7;
-	margin-left: auto;
-	margin-right: auto;
-	font-family: source-sans-pro, sans-serif;
-	
-}
 
 #subHeaderWrapper {
-	padding: 20px;
+	padding-top: 20px;
+	padding-bottom:20px;
 }
 
 .innerHtmlStyles {
@@ -20,9 +14,14 @@ body {
 }
 
 @media
-only screen and (max-width: 600px),
-(min-device-width: 600px) and (max-device-width: 1024px)  {
-
+only screen and (max-width: 768px)  {
+	body{
+		background-color: #F7F7F7;
+		margin-left: auto;
+		margin-right: auto;
+		font-family: source-sans-pro, sans-serif;
+		
+	}
 	/* Force table to not be like tables anymore */
 	table, thead, tbody, th, td, tr {
 		display: block;		
@@ -45,7 +44,7 @@ only screen and (max-width: 600px),
 	} 
 
 	.emailFooter {
-		width: 100%;
+		width:500px
 		color: #F7F7F7;
 		margin-right: auto;
 		margin-left: auto;
@@ -53,12 +52,12 @@ only screen and (max-width: 600px),
 		// padding: 15px 0px 10px 0px;
 	}
 	.emailFooter td {
-		width: 100%;
+	
 		color: #F7F7F7;
 		margin-right: auto;
 		margin-left: auto;
 		font-size: 10pt;
-		padding: 15px 0px 10px 0px;
+		
 	}
 
 	#subHeaderWrapper {
@@ -88,8 +87,88 @@ only screen and (max-width: 600px),
 		color:black;
 		
 	}
+}
+	@media (min-width: 769px) and (max-width: 1440px) {
+		html{
+			padding-left:25%;
+		}
+		body{
+			background-color: #F7F7F7;
+			margin-left: auto;
+			margin-right: auto;
+			font-family: source-sans-pro, sans-serif;
+			max-width:55%;
+			
+		}
+		/* Force table to not be like tables anymore */
+		table, thead, tbody, th, td, tr {
+			display: block;		
+		}
+		#courseCertificate {
+			max-width: 100%;
+		}
+		.courseCertificate {
+			width: 100%;
+			margin: auto;
+		}
+		
+		.emailHeader td {
+			
+		}
+	
+		.emailHeader td img {
+			margin-left: auto;
+			margin-right: auto;
+		} 
+	
+		.emailFooter {
+			width:100%;
+			color: #F7F7F7;
+			margin-right: auto;
+			margin-left: auto;
+			font-size: 10pt;
+			// padding: 15px 0px 10px 0px;
+		}
+		.emailFooter td {
+			width:100%;
+			color: #F7F7F7;
+			margin-right: auto;
+			margin-left: auto;
+			font-size: 10pt;
+			
+		}
+	
+		#subHeaderWrapper {
+			
+		}
+	
+		.report td {
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid #eee;
+			position: relative;
+			text-align: top;
+		}
+	
+		.report td:before {
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 6px;
+			left: 6px;
+			width: 45%;
+			padding-right: 10px;
+			white-space: nowrap;
+		}
+		.custom{
+			padding-left:50px;
+		}
+		.customButton:hover {
+			color:black;
+			
 
-
+		
+	  }
 /*End of media query*/
 }
 
