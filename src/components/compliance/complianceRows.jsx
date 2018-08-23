@@ -8,7 +8,7 @@ class ComplianceRows extends React.Component {
     const { flatCompliance } = this.props;
     const categories = Object.keys(flatCompliance.applied).filter(key => key !== 'total');
     return (
-      <table className={'report'}>
+      <table style={{ textAlign: 'center' }} className={'report'}>
         <TotalRow {...this.props} />
         <YearRow {...this.props} />
         {categories.map((category, index) => (
