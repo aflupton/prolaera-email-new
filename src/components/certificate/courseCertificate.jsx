@@ -85,11 +85,12 @@ class CourseCertificate extends React.Component {
           <Item align="center">
             <table
               style={{
-                display: 'inline-block',
+                // display: 'inline-block',
                 textAlign: 'center',
                 marginLeft: 'auto',
                 marginRight: 'auto',
-                borderSpacing: '10px'
+                borderSpacing: '10px',
+                width: '70%'
               }}
             >
               <tr>
@@ -98,7 +99,8 @@ class CourseCertificate extends React.Component {
                     backgroundColor: '#72C02C',
                     borderRadius: '3px',
                     margin: 'auto',
-                    marginBottom: '10px'
+                    width: '50%'
+                    // marginBottom: '10px'
                   }}
                 >
                   <Button text={button1Text} link={button1Link} />
@@ -107,7 +109,8 @@ class CourseCertificate extends React.Component {
                   style={{
                     backgroundColor: '#2F4050',
                     borderRadius: '3px',
-                    margin: 'auto'
+                    margin: 'auto',
+                    width: '50%'
                   }}
                 >
                   <Button text={button2Text} link={button2Link} />
