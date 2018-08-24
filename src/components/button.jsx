@@ -14,7 +14,8 @@ class Button extends React.Component {
             style={{
               height: '100%',
               padding: '14px 14px 14px 14px',
-              color: 'black',
+              color: '#ffffff',
+              backgroundColor: '#72C02C',
               width: '100%',
               textDecoration: 'none',
               borderRadius: '3px'
