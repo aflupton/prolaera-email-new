@@ -1,5 +1,13 @@
 const css = `
 
+@import {
+	font-family: "source-sans-pro";
+	url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+}
+html {
+	font-family: 'Source Sans Pro', sans-serif;
+}
 
 #subHeaderWrapper {
 	padding-top: 20px;
