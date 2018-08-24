@@ -32,27 +32,28 @@ class CourseCertificate extends React.Component {
           display: 'block',
           marginLeft: 'auto',
           marginRight: 'auto',
+          marginTop: 'auto',
           height: 'auto',
           marginBottom: '0px',
           textAlign: 'center',
           fontFamily: 'source-sans-pro, sans-serif',
-          backgroundColor: '#FFFFFF'
+          backgroundColor: '#ffffff'
         }}
       >
         <Box className="courseCertificate" align="center" width="100%">
-          <Item style={{ backgroundColor: '#2F4050', maxWidth: '100%' }}>
+          <Item style={{ backgroundColor: '#ffffff', maxWidth: '100%' }}>
             <a
               href={'https://app.prolaera.com/#/courses/' + `${course_id}`}
-              style={{ textDecoration: 'none', color: 'inherit', height: '100%' }}
+              style={{ textDecoration: 'none', color: '#333333', height: '100%' }}
             >
               <div
                 style={{
-                  padding: '10px 15px 20px',
-                  backgroundColor: '#2F4050',
+                  padding: '20px 15px 20px',
+                  backgroundColor: '#ffffff',
                   fontFamily: 'source-sans-pro, sans-serif',
                   fontStyle: 'normal',
-                  color: '#F7F7F7',
-                  fontWeight: '100'
+                  color: '#333333',
+                  fontWeight: '400'
                 }}
               >
                 <p style={{ fontSize: '28px', letterSpacing: '3px' }}>{name}</p>
@@ -85,10 +86,8 @@ class CourseCertificate extends React.Component {
           <Item align="center">
             <table
               style={{
-                // display: 'inline-block',
                 textAlign: 'center',
-                marginLeft: 'auto',
-                marginRight: 'auto',
+                margin: 'auto',
                 borderSpacing: '10px',
                 width: '70%'
               }}
@@ -100,7 +99,6 @@ class CourseCertificate extends React.Component {
                     borderRadius: '3px',
                     margin: 'auto',
                     width: '50%'
-                    // marginBottom: '10px'
                   }}
                 >
                   <Button text={button1Text} link={button1Link} />
