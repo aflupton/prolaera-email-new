@@ -85,6 +85,7 @@ class CourseCertificate extends React.Component {
           <Item align="center">
             <table
               style={{
+                display: 'inline-block',
                 textAlign: 'center',
                 marginLeft: 'auto',
                 marginRight: 'auto',
