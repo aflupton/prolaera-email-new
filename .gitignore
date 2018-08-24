@@ -1,7 +1,7 @@
+#ignored files
 node_modules
 yarn.lock
 test.html
 .DS_Store
-yarn.lock
-package.lock.json
 lib/
+templates/tests/*

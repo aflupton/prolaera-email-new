@@ -23,13 +23,11 @@ class SubHeader extends React.Component {
           display: 'block',
           marginLeft: 'auto',
           marginRight: 'auto',
-          marginTop: '0px',
-          marginBottom: '0px',
           fontFamily: 'source-sans-pro, sans-serif',
           fontStyle: 'normal',
-          color: '#F7F7F7',
-          backgroundColor: '#2F4050',
-          fontWeight: '100',
+          color: '#333333',
+          backgroundColor: '#ffffff',
+          fontWeight: '400',
           letterSpacing: '3pt'
         }}
       >

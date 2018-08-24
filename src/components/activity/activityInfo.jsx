@@ -25,7 +25,7 @@ class ActivityInfo extends React.Component {
           fontFamily: 'source-sans-pro, sans-serif',
           fontStyle: 'normal',
           fontWeight: '100',
-          backgroundColor: 'white'
+          backgroundColor: '#ffffff'
         }}
       >
         <Box align="center" width="100%">
@@ -39,10 +39,10 @@ class ActivityInfo extends React.Component {
                 backgroundColor: '#FFFFFF'
               }}
             >
-              <h3 style={{ marginBottom: '0px', fontSize: '16pt' }}>{name}</h3>
-              <h4 style={{ marginTop: '7px' }}>
-                By: <span style={{ fontWeight: 'normal' }}>{author}</span>
-              </h4>
+              <p style={{ marginBottom: '0px', fontSize: '16pt' }}>{name}</p>
+              <p style={{ marginTop: '7px' }}>
+                By: <span style={{ fontWeight: '300' }}>{author}</span>
+              </p>
             </div>
           </Item>
           <Item style={{ paddingBottom: '15px' }}>
@@ -50,9 +50,8 @@ class ActivityInfo extends React.Component {
               style={{
                 backgroundColor: '#72C02C',
                 borderRadius: '3px',
-                width: '200px',
-                marginLeft: 'auto',
-                marginRight: 'auto'
+                width: '50%',
+                margin: 'auto'
               }}
             >
               <Button text={buttonText} link={button1Link} />
