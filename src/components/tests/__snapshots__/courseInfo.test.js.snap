@@ -2,17 +2,16 @@
 
 exports[`CourseInfo component custom input tests creates and checks a snapshot of CourseInfo html 1`] = `
 <div
+  id="subHeaderWrapper"
   style={
     Object {
       "backgroundColor": "#FFFFFF",
-      "borderRadius": "2px",
       "display": "block",
       "fontFamily": "source-sans-pro, sans-serif",
       "fontWeight": "100",
       "marginBottom": "0px",
       "marginLeft": "auto",
       "marginRight": "auto",
-      "maxWidth": "500px",
       "padding": "20px",
       "textAlign": "center",
     }
@@ -36,7 +35,8 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
             align="center"
             style={
               Object {
-                "marginTop": "0px",
+                "fontSize": "16pt",
+                "marginTop": "5px",
               }
             }
           >
@@ -51,12 +51,23 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
               }
             }
           >
-            <em>
-              Tax Preparation 102
-               (
-              Group-Live
-              )
-            </em>
+            <a
+              href="https://app.prolaera.com/#/courses/1234-1234-1234-1234"
+              style={
+                Object {
+                  "color": "#2F4050",
+                  "height": "100%",
+                  "textDecoration": "underline",
+                }
+              }
+            >
+              <em>
+                Tax Preparation 102
+                 (
+                Group-Live
+                )
+              </em>
+            </a>
           </h4>
         </td>
       </tr>
@@ -112,30 +123,6 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
                  Hour(s)
               </li>
             </ul>
-            <h4>
-              Price: 
-              <span
-                style={
-                  Object {
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Free
-              </span>
-            </h4>
-            <h4>
-              Target Audience: 
-              <span
-                style={
-                  Object {
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Accountants
-              </span>
-            </h4>
             <h4
               style={
                 Object {
@@ -143,7 +130,51 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
                 }
               }
             >
-              Prep:
+              Price:
+            </h4>
+            <div
+              className="innerHtmlStyles"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Free",
+                }
+              }
+              style={
+                Object {
+                  "fontWeight": "normal",
+                }
+              }
+            />
+            <h4
+              style={
+                Object {
+                  "marginBottom": "0px",
+                }
+              }
+            >
+              Target Audience: 
+            </h4>
+            <div
+              className="innerHtmlStyles"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Accountants",
+                }
+              }
+              style={
+                Object {
+                  "fontWeight": "normal",
+                }
+              }
+            />
+            <h4
+              style={
+                Object {
+                  "marginBottom": "0px",
+                }
+              }
+            >
+              Prep: 
             </h4>
             <div
               className="innerHtmlStyles"
@@ -165,7 +196,7 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
                 }
               }
             >
-              Prerequisites:
+              Prerequisites: 
             </h4>
             <div
               className="innerHtmlStyles"
@@ -180,18 +211,6 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
                 }
               }
             />
-            <h4>
-              Level: 
-              <span
-                style={
-                  Object {
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Basic
-              </span>
-            </h4>
             <h4
               style={
                 Object {
@@ -199,7 +218,29 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
                 }
               }
             >
-              Learning Objectives:
+              Level: 
+            </h4>
+            <div
+              className="innerHtmlStyles"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Basic",
+                }
+              }
+              style={
+                Object {
+                  "fontWeight": "normal",
+                }
+              }
+            />
+            <h4
+              style={
+                Object {
+                  "marginBottom": "0px",
+                }
+              }
+            >
+              Learning Objectives: 
             </h4>
             <div
               className="innerHtmlStyles"
@@ -221,7 +262,7 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
                 }
               }
             >
-              Description:
+              Description: 
             </h4>
             <div
               className="innerHtmlStyles"
@@ -240,16 +281,26 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
         </td>
       </tr>
       <tr>
-        <td
-          align="left"
-        >
-          <div>
+        <td>
+          <div
+            style={
+              Object {
+                "backgroundColor": "#72C02C",
+                "borderRadius": "3px",
+                "color": "#ffffff",
+                "display": "inline-block",
+                "margin": "auto",
+                "marginBottom": "3px",
+                "padding": "0px 0px 5px 0px",
+                "textAlign": "middle",
+              }
+            }
+          >
             <div
               align="center"
               className="customButton"
               style={
                 Object {
-                  "maxWidth": "100%",
                   "padding": "20px 0px 20px 0px",
                   "textAlign": "center",
                 }
@@ -260,10 +311,10 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
                 style={
                   Object {
                     "borderRadius": "3px",
-                    "color": "white",
+                    "color": "#ffffff",
+                    "height": "50px",
                     "padding": "14px 14px 14px 14px",
                     "textDecoration": "none",
-                    "width": "200px",
                   }
                 }
               >
