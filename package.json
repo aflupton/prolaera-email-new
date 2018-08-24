@@ -5,6 +5,7 @@
   "author": "Chris Hansen",
   "license": "MIT",
   "scripts": {
+    "clean": "node_modules/.bin/jest src --updateSnapshot",
     "build": "babel src -d lib",
     "precommit": "pretty-quick src --staged",
     "test": "node_modules/.bin/jest src --runInBand",

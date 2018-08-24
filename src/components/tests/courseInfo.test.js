@@ -39,7 +39,7 @@ describe('CourseInfo component custom input tests', () => {
     expect(courseJson).toMatchSnapshot();
   });
 
-  it('checks all custom inputs', async () => {
+  it.skip('checks all custom inputs', async () => {
     const wrapper = shallow(<CourseInfo {...course} />);
     expect(wrapper.contains(<em>Tax Preparation 102 (Group-Live)</em>)).toBe(true);
     expect(

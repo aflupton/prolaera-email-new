@@ -57,7 +57,7 @@ describe('EventInfo Component', () => {
     expect(containsCourseName).toEqual(true);
   });
 
-  it('checks all custom inputs', async () => {
+  it.skip('checks all custom inputs', async () => {
     const wrapper = shallow(<EventInfo {...event} />);
     expect(
       wrapper.contains(
