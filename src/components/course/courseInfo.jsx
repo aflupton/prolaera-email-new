@@ -120,11 +120,10 @@ class CourseInfo extends React.Component {
           <Item>
             <div
               style={{
+                display: 'inline-block',
                 backgroundColor: '#72C02C',
                 color: '#ffffff',
                 borderRadius: '3px',
-                width: '200px',
-                height: '50px',
                 padding: '0px 0px 5px 0px',
                 margin: 'auto',
                 marginBottom: '3px',

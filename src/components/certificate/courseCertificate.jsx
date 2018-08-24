@@ -96,8 +96,6 @@ class CourseCertificate extends React.Component {
                   style={{
                     backgroundColor: '#72C02C',
                     borderRadius: '3px',
-                    width: '200px',
-                    height: '50px',
                     margin: 'auto',
                     marginBottom: '10px'
                   }}
@@ -108,8 +106,6 @@ class CourseCertificate extends React.Component {
                   style={{
                     backgroundColor: '#2F4050',
                     borderRadius: '3px',
-                    width: '200px',
-                    height: '50px',
                     margin: 'auto'
                   }}
                 >
