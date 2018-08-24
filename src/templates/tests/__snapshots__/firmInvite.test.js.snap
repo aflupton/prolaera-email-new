@@ -2,16 +2,15 @@
 
 exports[`Firm Invite component creates and checks snapshot of FirmInvite component html 1`] = `
 <div
+  id="subHeaderWrapper"
   style={
     Object {
       "backgroundColor": "white",
-      "borderRadius": "5px",
       "display": "block",
-      "fontFamily": "Arial, sans-serif",
-      "marginBottom": "20px",
+      "fontFamily": "source-sans-pro, sans-serif",
+      "marginBottom": "0px",
       "marginLeft": "auto",
       "marginRight": "auto",
-      "maxWidth": "500px",
       "padding": "20px",
       "textAlign": "left",
     }
@@ -61,14 +60,13 @@ exports[`Firm Invite component creates and checks snapshot of FirmInvite compone
           <div>
             <div>
               <p>
-                That's it! You're ready to explore the new tools and resources you have access to.
+                You're ready to explore the new tools and resources you have access to.
               </p>
               <div
                 align="center"
                 className="customButton"
                 style={
                   Object {
-                    "maxWidth": "100%",
                     "padding": "20px 0px 20px 0px",
                     "textAlign": "center",
                   }
@@ -79,10 +77,10 @@ exports[`Firm Invite component creates and checks snapshot of FirmInvite compone
                   style={
                     Object {
                       "borderRadius": "3px",
-                      "color": "white",
+                      "color": "#ffffff",
+                      "height": "50px",
                       "padding": "14px 14px 14px 14px",
                       "textDecoration": "none",
-                      "width": "200px",
                     }
                   }
                 >
