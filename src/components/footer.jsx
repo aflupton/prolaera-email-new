@@ -48,7 +48,7 @@ export default () => (
         © Prolaera 2017
       </Item> */}
 
-        <div style={{ float: 'left' }}>
+        <div style={{ float: 'left', marginLeft: '5%' }}>
           <Span style={{ ...FooterText, float: 'left', padding: '10px 5px 10px 10px' }}>Powered By</Span>
           <Image
             src="https://gallery.mailchimp.com/eb930e30a15249a18d658c183/images/196fa069-3113-464c-a304-a1aa9f99fe22.png"
@@ -58,7 +58,7 @@ export default () => (
             style={{ paddingTop: '5px' }}
           />
         </div>
-        <div style={{ ...FooterText, textAlign: 'right', padding: '10px 10px 10px 10px' }}>
+        <div style={{ ...FooterText, textAlign: 'right', padding: '10px 10px 10px 10px', marginLeft: '5%' }}>
           © Prolaera {now.getFullYear()}
         </div>
       </Item>
