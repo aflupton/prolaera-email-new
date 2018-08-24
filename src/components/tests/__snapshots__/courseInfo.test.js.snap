@@ -301,24 +301,30 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
               className="customButton"
               style={
                 Object {
+                  "height": "100%",
                   "padding": "20px 0px 20px 0px",
                   "textAlign": "center",
+                  "width": "100%",
                 }
               }
             >
               <a
                 href="https://app.prolaera.com/#/admin/testAdminProfileId/testButtonLink/review"
-                style={
-                  Object {
-                    "borderRadius": "3px",
-                    "color": "#ffffff",
-                    "height": "50px",
-                    "padding": "14px 14px 14px 14px",
-                    "textDecoration": "none",
-                  }
-                }
               >
-                Test Button Text
+                <button
+                  style={
+                    Object {
+                      "borderRadius": "3px",
+                      "color": "black",
+                      "height": "100%",
+                      "padding": "14px 14px 14px 14px",
+                      "textDecoration": "none",
+                      "width": "100%",
+                    }
+                  }
+                >
+                  Test Button Text
+                </button>
               </a>
             </div>
           </div>

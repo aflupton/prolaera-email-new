@@ -15,7 +15,7 @@ const team = {
   buttonLink: 'testButtonLink'
 };
 
-describe('TeamInfo component', () => {
+describe.skip('TeamInfo component', () => {
   it('checks custom inputs', async () => {
     const wrapper = shallow(<TeamInfo {...team} />);
     expect(
@@ -34,7 +34,7 @@ describe('TeamInfo component', () => {
   });
 });
 
-describe('TeamInfo button', () => {
+describe.skip('TeamInfo button', () => {
   it('checks conditional rendering', async () => {
     const wrapper = shallow(<TeamInfo />);
     expect(wrapper.contains(<span className="buttonSpan" />)).toBe(true);

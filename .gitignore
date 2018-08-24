@@ -4,4 +4,6 @@ yarn.lock
 test.html
 .DS_Store
 lib/
-templates/tests/*
+templates/tests/html/*
+templates/tests/__snapshots__/*
+.idea

@@ -67,24 +67,30 @@ exports[`Firm Invite component creates and checks snapshot of FirmInvite compone
                 className="customButton"
                 style={
                   Object {
+                    "height": "100%",
                     "padding": "20px 0px 20px 0px",
                     "textAlign": "center",
+                    "width": "100%",
                   }
                 }
               >
                 <a
                   href="https://app.prolaera.com/#/users/test@email.com"
-                  style={
-                    Object {
-                      "borderRadius": "3px",
-                      "color": "#ffffff",
-                      "height": "50px",
-                      "padding": "14px 14px 14px 14px",
-                      "textDecoration": "none",
-                    }
-                  }
                 >
-                  Create Your Account
+                  <button
+                    style={
+                      Object {
+                        "borderRadius": "3px",
+                        "color": "black",
+                        "height": "100%",
+                        "padding": "14px 14px 14px 14px",
+                        "textDecoration": "none",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    Create Your Account
+                  </button>
                 </a>
               </div>
             </div>
