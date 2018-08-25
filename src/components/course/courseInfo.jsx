@@ -47,7 +47,7 @@ class CourseInfo extends React.Component {
         }}
       >
         <Box className="courseReview" align="center" width="100%">
-          <Item align="left">
+          <Item align="left" style={{ padding: '10px 10px 0px' }}>
             <h3 align="center" style={{ marginTop: '5px', fontSize: '16pt' }}>
               Course Information:
             </h3>
@@ -56,16 +56,41 @@ class CourseInfo extends React.Component {
                 href={'https://app.prolaera.com/#/courses/' + `${course_id}`}
                 style={{ textDecoration: 'underline', color: '#2F4050', height: '100%' }}
               >
-                <em>
-                  {name} ({deliveryHelper(delivery_method)})
-                </em>
+                <em>{name}</em>
               </a>
             </h4>
           </Item>
           <Item align="left">
             <div style={{ paddingLeft: '40px' }}>
-              <h4>
-                By: <span style={{ fontWeight: 'normal' }}>{by}</span>
+              <h4 style={{ marginBottom: '0px' }}>
+                By:{' '}
+                <span class="innerHtmlStyles" style={{ fontWeight: 'normal' }}>
+                  {by}
+                </span>
+              </h4>
+              <h4 style={{ marginBottom: '0px' }}>Description: </h4>
+              <div
+                className="innerHtmlStyles"
+                style={{ fontWeight: 'normal' }}
+                dangerouslySetInnerHTML={setInnerHtml(summary)}
+              />
+              <h4 style={{ marginBottom: '0px' }}>Learning Objectives:</h4>
+              <div
+                className="innerHtmlStyles"
+                style={{ fontWeight: 'normal' }}
+                dangerouslySetInnerHTML={setInnerHtml(objectives)}
+              />
+              <h4 style={{ marginBottom: '0px' }}>Delivery Method:</h4>
+              <div
+                className="innerHtmlStyles"
+                style={{ fontWeight: 'normal' }}
+                dangerouslySetInnerHTML={setInnerHtml(deliveryHelper(delivery_method))}
+              />
+              <h4 style={{ marginBottom: '0px' }}>
+                Price:{' '}
+                <span class="innerHtmlStyles" style={{ fontWeight: 'normal' }}>
+                  {{ price } > 0 ? { price } : 'Free'}
+                </span>
               </h4>
               <h4 style={{ marginBottom: '0px' }}>Recommended CPE Credit(s):</h4>
               <ul style={{ marginTop: '10px' }}>
@@ -73,23 +98,17 @@ class CourseInfo extends React.Component {
                   {hours[0].subject_area} - {hours[0].credits} Hour(s)
                 </li>
               </ul>
-              <h4 style={{ marginBottom: '0px' }}>Price:</h4>
-              <div
-                className="innerHtmlStyles"
-                style={{ fontWeight: 'normal' }}
-                dangerouslySetInnerHTML={setInnerHtml({ price } > 0 ? { price } : 'Free')}
-              />
+              <h4 style={{ marginBottom: '0px' }}>
+                Level:{' '}
+                <span class="innerHtmlStyles" style={{ fontWeight: 'normal' }}>
+                  {level}
+                </span>
+              </h4>
               <h4 style={{ marginBottom: '0px' }}>Target Audience: </h4>
               <div
                 className="innerHtmlStyles"
                 style={{ fontWeight: 'normal' }}
                 dangerouslySetInnerHTML={setInnerHtml(courseAudience)}
-              />
-              <h4 style={{ marginBottom: '0px' }}>Prep: </h4>
-              <div
-                className="innerHtmlStyles"
-                style={{ fontWeight: 'normal' }}
-                dangerouslySetInnerHTML={setInnerHtml(prep)}
               />
               <h4 style={{ marginBottom: '0px' }}>Prerequisites: </h4>
               <div
@@ -97,23 +116,11 @@ class CourseInfo extends React.Component {
                 style={{ fontWeight: 'normal' }}
                 dangerouslySetInnerHTML={setInnerHtml(prerequisites)}
               />
-              <h4 style={{ marginBottom: '0px' }}>Level: </h4>
+              <h4 style={{ marginBottom: '0px' }}>Prep: </h4>
               <div
                 className="innerHtmlStyles"
                 style={{ fontWeight: 'normal' }}
-                dangerouslySetInnerHTML={setInnerHtml(level)}
-              />
-              <h4 style={{ marginBottom: '0px' }}>Learning Objectives: </h4>
-              <div
-                className="innerHtmlStyles"
-                style={{ fontWeight: 'normal' }}
-                dangerouslySetInnerHTML={setInnerHtml(objectives)}
-              />
-              <h4 style={{ marginBottom: '0px' }}>Description: </h4>
-              <div
-                className="innerHtmlStyles"
-                style={{ fontWeight: 'normal' }}
-                dangerouslySetInnerHTML={setInnerHtml(summary)}
+                dangerouslySetInnerHTML={setInnerHtml(prep)}
               />
             </div>
           </Item>
@@ -124,9 +131,8 @@ class CourseInfo extends React.Component {
                 backgroundColor: '#72C02C',
                 color: '#ffffff',
                 borderRadius: '3px',
-                padding: '0px 0px 5px 0px',
+                padding: '0px 10px 0px 10px',
                 margin: 'auto',
-                marginBottom: '3px',
                 textAlign: 'middle'
               }}
             >

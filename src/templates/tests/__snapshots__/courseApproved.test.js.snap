@@ -1,7 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`courseApproved Email checks snapshot 1`] = `
-"<!DOCTYPE html PUBLIC \\"-//W3C//DTD XHTML 1.0 Strict//EN\\" \\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\\"><html lang=\\"en\\" xmlns=\\"http://www.w3.org/1999/xhtml\\"><head><meta http-equiv=\\"Content-Type\\" content=\\"text/html; charset=utf-8\\"/><meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0\\"/><title>ASC 606 (Self-Study) has been approved</title><style type=\\"text/css\\">#subHeaderWrapper {
+"<!DOCTYPE html PUBLIC \\"-//W3C//DTD XHTML 1.0 Strict//EN\\" \\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\\"><html lang=\\"en\\" xmlns=\\"http://www.w3.org/1999/xhtml\\"><head><meta http-equiv=\\"Content-Type\\" content=\\"text/html; charset=utf-8\\"/><meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0\\"/><title>ASC 606 (Self-Study) has been approved</title><style type=\\"text/css\\">@import {
+	font-family: &quot;source-sans-pro&quot;;
+	url(&#x27;https://fonts.googleapis.com/css?family=Source+Sans+Pro&#x27;);
+
+}
+html {
+	font-family: &#x27;Source Sans Pro&#x27;, sans-serif;
+}
+
+#subHeaderWrapper {
 	padding-top: 20px;
 	padding-bottom:20px;
 }
