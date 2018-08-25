@@ -7,9 +7,9 @@ class Button extends React.Component {
       <div
         className="customButton"
         align="center"
-        style={{ textAlign: 'center', padding: '20px 0px 20px 0px', height: '100%', width: '100%' }}
+        style={{ textAlign: 'center', padding: '0px', height: '100%', width: '100%' }}
       >
-        <a href={link}>
+        <a style={{}} href={link}>
           <button
             style={{
               height: '100%',
@@ -18,7 +18,8 @@ class Button extends React.Component {
               backgroundColor: '#72C02C',
               width: '100%',
               textDecoration: 'none',
-              borderRadius: '3px'
+              borderRadius: '3px',
+              borderStyle: 'none'
             }}
           >
             {text}

@@ -96,7 +96,7 @@ class CourseCertificate extends React.Component {
                 <td
                   style={{
                     backgroundColor: '#72C02C',
-                    borderRadius: '3px',
+                    borderRadius: '2px',
                     margin: 'auto',
                     width: '50%'
                   }}
@@ -106,12 +106,12 @@ class CourseCertificate extends React.Component {
                 <td
                   style={{
                     backgroundColor: '#2F4050',
-                    borderRadius: '3px',
+                    borderRadius: '2px',
                     margin: 'auto',
                     width: '50%'
                   }}
                 >
-                  <Button text={button2Text} link={button2Link} />
+                  <Button style={{ borderStyle: 'none' }} text={button2Text} link={button2Link} />
                 </td>
               </tr>
             </table>
