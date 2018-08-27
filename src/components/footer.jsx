@@ -12,11 +12,12 @@ var now = new Date();
 export default () => (
   <div>
     <Box
-      id="subHeaderWrapper"
+      id="footerId"
       className="emailFooter"
       align="center"
       cellSpacing={20}
       style={{ backgroundColor: '#333333' }}
+      height={300}
     >
       <Item>
         {/* <Item align="center" style={{ fontSize: '19px', ...FooterText }}>
@@ -48,17 +49,17 @@ export default () => (
         © Prolaera 2017
       </Item> */}
 
-        <div style={{ float: 'left' }}>
-          <Span style={{ ...FooterText, float: 'left', padding: '10px 5px 10px 10px' }}>Powered By</Span>
-          <Image
+        <div id="div1">
+          <span id="span1" style={{ ...FooterText }}>
+            Powered By
+          </span>
+          <img
+            id="one"
             src="https://gallery.mailchimp.com/eb930e30a15249a18d658c183/images/196fa069-3113-464c-a304-a1aa9f99fe22.png"
             alt="react"
-            height={23}
-            width={100}
-            style={{ paddingTop: '5px' }}
           />
         </div>
-        <div style={{ ...FooterText, textAlign: 'right', padding: '10px 10px 10px 10px' }}>
+        <div id="div2" style={{ ...FooterText }}>
           © Prolaera {now.getFullYear()}
         </div>
       </Item>

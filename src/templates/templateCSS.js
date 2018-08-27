@@ -103,6 +103,21 @@ only screen and (max-width: 768px)  {
 		color:black;
 		
 	}
+	#div1{
+		text-align:center;
+	}
+	#one{
+		
+		position:relative;
+		top:5px;
+		paddingTop: 5px;
+		height:23px;
+		width:100px
+	}
+	#div2{
+		text-align:center;
+		padding-top:5px;
+	}
 }
 	@media (min-width: 769px) {
 
@@ -140,6 +155,9 @@ only screen and (max-width: 768px)  {
 		} 
 	
 		.emailFooter {
+			padding-top:10px;
+			padding-bottom:10px;
+			max-height:100px;
 			width:100%;
 			color: #F7F7F7;
 			margin-right: auto;
@@ -179,10 +197,30 @@ only screen and (max-width: 768px)  {
 	
 		.customButton:hover {
 			color:black;
-			
-
 		
 	  }
+    #div1 {
+		float:left;
+		margin-left:5%;
+	}
+	#span1{
+		float:left;
+		padding:10px 5px 10px 10px;
+	}
+	#div2{
+		text-align:right;
+		padding:10px 10px 10px 10px;
+		margin-left:5%
+	}
+	#one{
+		paddingTop: 5px;
+		height:23px;
+		width:100px
+	}
+	#footerId{
+		padding-top:20px;
+		padding-bottom:0px;
+	}
 /*End of media query*/
 }
 
