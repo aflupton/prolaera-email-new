@@ -33,13 +33,12 @@ class CourseInfo extends React.Component {
 
     return (
       <div
-        id="subHeaderWrapper"
         style={{
           display: 'block',
           marginLeft: 'auto',
           marginRight: 'auto',
           textAlign: 'center',
-          padding: '20px',
+          padding: '0px 20px 20px',
           fontFamily: 'source-sans-pro, sans-serif',
           fontWeight: '100',
           marginBottom: '0px',
@@ -47,9 +46,9 @@ class CourseInfo extends React.Component {
         }}
       >
         <Box className="courseReview" align="center" width="100%">
-          <Item align="left" style={{ padding: '10px 10px 0px' }}>
-            <h3 align="center" style={{ marginTop: '5px', fontSize: '16pt' }}>
-              Course Information:
+          <Item align="left" style={{ padding: '10px' }}>
+            <h3 align="center" style={{ marginTop: '5px', letterSpacing: '1pt', fontWeight: '600' }}>
+              <span style={{ letterSpacing: '0pt', fontSize: '12pt' }}>Course Information:</span>
             </h3>
             <h4 align="center" style={{ marginTop: '0px', marginBottom: '0px' }}>
               <a
@@ -64,7 +63,7 @@ class CourseInfo extends React.Component {
             <div style={{ paddingLeft: '40px' }}>
               <h4 style={{ marginBottom: '0px' }}>
                 By:{' '}
-                <span class="innerHtmlStyles" style={{ fontWeight: 'normal' }}>
+                <span className="innerHtmlStyles" style={{ fontWeight: 'normal' }}>
                   {by}
                 </span>
               </h4>
@@ -88,7 +87,7 @@ class CourseInfo extends React.Component {
               />
               <h4 style={{ marginBottom: '0px' }}>
                 Price:{' '}
-                <span class="innerHtmlStyles" style={{ fontWeight: 'normal' }}>
+                <span className="innerHtmlStyles" style={{ fontWeight: 'normal' }}>
                   {{ price } > 0 ? { price } : 'Free'}
                 </span>
               </h4>
@@ -100,7 +99,7 @@ class CourseInfo extends React.Component {
               </ul>
               <h4 style={{ marginBottom: '0px' }}>
                 Level:{' '}
-                <span class="innerHtmlStyles" style={{ fontWeight: 'normal' }}>
+                <span className="innerHtmlStyles" style={{ fontWeight: 'normal' }}>
                   {level}
                 </span>
               </h4>
@@ -128,8 +127,6 @@ class CourseInfo extends React.Component {
             <div
               style={{
                 display: 'inline-block',
-                color: '#ffffff',
-                borderRadius: '3px',
                 margin: 'auto'
               }}
             >

@@ -37,7 +37,7 @@ class CourseCertificate extends React.Component {
           marginBottom: '0px',
           textAlign: 'center',
           fontFamily: 'source-sans-pro, sans-serif',
-          backgroundColor: '#ffffff'
+          backgroundColor: '#FFFFFF'
         }}
       >
         <Box className="courseCertificate" align="center" width="100%">
@@ -49,7 +49,7 @@ class CourseCertificate extends React.Component {
               <div
                 style={{
                   padding: '25px 15px 15px',
-                  backgroundColor: '#ffffff',
+                  backgroundColor: '#FFFFFF',
                   fontFamily: 'source-sans-pro, sans-serif',
                   fontStyle: 'normal',
                   color: '#333333',

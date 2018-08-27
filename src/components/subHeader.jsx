@@ -20,15 +20,14 @@ class SubHeader extends React.Component {
       <div
         id="subHeaderWrapper"
         style={{
-          display: 'block',
+          backgroundColor: '#FFFFFF',
           marginLeft: 'auto',
           marginRight: 'auto',
-          fontFamily: 'source-sans-pro, sans-serif',
           fontStyle: 'normal',
           color: '#333333',
-          backgroundColor: '#ffffff',
-          fontWeight: '400',
-          letterSpacing: '3pt'
+          fontWeight: '500',
+          display: 'block',
+          letterSpacing: '2pt'
         }}
       >
         <Box className="subHeader" align="center" width="100%">
