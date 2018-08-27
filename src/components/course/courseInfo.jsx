@@ -128,15 +128,12 @@ class CourseInfo extends React.Component {
             <div
               style={{
                 display: 'inline-block',
-                backgroundColor: '#72C02C',
                 color: '#ffffff',
                 borderRadius: '3px',
-                padding: '0px',
-                margin: 'auto',
-                textAlign: 'middle'
+                margin: 'auto'
               }}
             >
-              <Button text={buttonText} link={'https://app.prolaera.com/#/' + newButtonLink} />
+              <Button color={'#72C02C'} text={buttonText} link={'https://app.prolaera.com/#/' + newButtonLink} />
             </div>
           </Item>
         </Box>
