@@ -179,3 +179,195 @@ only screen and (max-width: 768px)  {
 /*End of media query*/
 }</style></head><body style=\\"width:100%;margin:0;padding:0;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%\\"><table width=\\"100%\\" height=\\"100%\\" cellPadding=\\"0\\" cellSpacing=\\"0\\" border=\\"0\\" align=\\"left\\" valign=\\"top\\"><tbody><tr><td align=\\"center\\" valign=\\"top\\"><table width=\\"600\\" align=\\"center\\" cellPadding=\\"0\\" cellSpacing=\\"0\\" border=\\"0\\" valign=\\"top\\"><tbody><table class=\\"emailHeader\\" align=\\"center\\" width=\\"100%\\" style=\\"background-color:#F7F7F7\\" cellPadding=\\"0\\" cellSpacing=\\"0\\" border=\\"0\\" valign=\\"top\\"><tbody><tr><td align=\\"center\\"><table align=\\"center\\" cellSpacing=\\"0\\" style=\\"padding:15px;max-width:584px;margin-top:25px;margin-bottom:20px\\"><tr align=\\"center\\"><td width=\\"292px\\"><img alt=\\"logo\\" src=\\"https://assets.prolaera.com/prolaeraLogo_fullText.png\\" width=\\"199.00305623471883\\" height=\\"47\\" style=\\"display:block;outline:none;border:none;text-decoration:none\\"/></td></tr></table></td></tr></tbody></table><div id=\\"subHeaderWrapper\\" style=\\"display:block;margin-left:auto;margin-right:auto;font-family:source-sans-pro, sans-serif;font-style:normal;color:#333333;background-color:#ffffff;font-weight:400;letter-spacing:3pt\\"><table class=\\"subHeader\\" align=\\"center\\" width=\\"100%\\" cellPadding=\\"0\\" cellSpacing=\\"0\\" border=\\"0\\" valign=\\"top\\"><tbody><tr><td><table id=\\"subHeaderTable\\" style=\\"text-align:center;margin-left:auto;margin-right:auto\\"><tr><td><p style=\\"font-size:18pt;margin-bottom:5px\\">New team</p></td></tr><tr><td><p style=\\"font-size:28px;margin-top:0px;margin-bottom:0px\\">Leader</p></td></tr><tr style=\\"margin:auto;padding:0px 10px 10px 10px\\"><td style=\\"width:100%\\"><div style=\\"letter-spacing:2pt;padding:20px 20px 0px 20px\\">You have been added to Test CPA Team as team leader.</div><div><div></div></div></td></tr></table></td></tr></tbody></table></div><div id=\\"subHeaderWrapper\\" style=\\"display:block;margin-left:auto;margin-right:auto;text-align:center;max-width:500px;font-family:sans-source-pro, sans-serif;margin-bottom:0px;background-color:#ffffff\\"><table class=\\"teamInfo\\" align=\\"center\\" style=\\"padding:0px 30px 0px 30px\\" cellPadding=\\"0\\" cellSpacing=\\"0\\" border=\\"0\\" valign=\\"top\\"><tbody><tr><td align=\\"center\\"><h3 style=\\"margin-top:0px;font-size:16pt\\">Team Information:</h3></td></tr><tr><td align=\\"left\\"><h4>Name:</h4><div class=\\"innerHtmlStyles\\" style=\\"font-weight:normal\\">Test CPA Team</div><h4>Description:</h4><div class=\\"innerHtmlStyles\\" style=\\"font-weight:normal\\">This team of CPAs handles all of the tax preparation in the firm.</div></td></tr><tr><td align=\\"left\\" style=\\"align:justify;padding-top:20px\\"><p>More information about your team can be found by navigating to the Prolaera website.</p><div style=\\"background-color:#72C02C;color:#FFFFFF;border-radius:3px;width:200px;height:50px;margin:auto;margin-bottom:3px;text-align:middle\\"><div class=\\"customButton\\" align=\\"center\\" style=\\"text-align:center;padding:20px 0px 20px 0px;height:100%;width:100%\\"><a href=\\"https://app.prolaera.com/#/admin/adminProfileId/dashboard\\"><button style=\\"height:100%;padding:14px 14px 14px 14px;color:black;width:100%;text-decoration:none;border-radius:3px\\">View Team</button></a></div></div></td></tr></tbody></table></div><div><table id=\\"subHeaderWrapper\\" class=\\"emailFooter\\" align=\\"center\\" cellSpacing=\\"20\\" style=\\"background-color:#333333\\" cellPadding=\\"0\\" border=\\"0\\" valign=\\"top\\"><tbody><tr><td><div style=\\"float:left\\"><span style=\\"font-family:source-sans-pro, sans-serif;font-size:10pt;font-weight:100;line-height:14px;color:#F7F7F7;letter-spacing:1pt;float:left;padding:10px 5px 10px 10px\\">Powered By</span><img alt=\\"react\\" src=\\"https://gallery.mailchimp.com/eb930e30a15249a18d658c183/images/196fa069-3113-464c-a304-a1aa9f99fe22.png\\" width=\\"100\\" height=\\"23\\" style=\\"display:block;outline:none;border:none;text-decoration:none;padding-top:5px\\"/></div><div style=\\"font-family:source-sans-pro, sans-serif;color:#F7F7F7;font-size:10pt;font-weight:100;letter-spacing:1pt;text-align:right;padding:10px 10px 10px 10px\\">© Prolaera 2018</div></td></tr></tbody></table></div></tbody></table></td></tr></tbody></table></body></html>"
 `;
+
+exports[`teamLead Email writes an html file 1`] = `
+"<!DOCTYPE html PUBLIC \\"-//W3C//DTD XHTML 1.0 Strict//EN\\" \\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\\"><html lang=\\"en\\" xmlns=\\"http://www.w3.org/1999/xhtml\\"><head><meta http-equiv=\\"Content-Type\\" content=\\"text/html; charset=utf-8\\"/><meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0\\"/><title>You&#x27;ve been added as a team leader</title><style type=\\"text/css\\">@import {
+	font-family: &quot;source-sans-pro&quot;;
+	url(&#x27;https://fonts.googleapis.com/css?family=Source+Sans+Pro&#x27;);
+
+}
+html {
+	font-family: &#x27;Source Sans Pro&#x27;, sans-serif;
+}
+
+#subHeaderWrapper {
+	padding-top: 20px;
+	padding-bottom:20px;
+}
+
+.innerHtmlStyles {
+	margin-top: 10px;
+}
+.innerHtmlStyles p, .innerHtmlStyles ol, .innerHtmlStyles ul  {
+	margin-top: 10px;
+}
+
+button.buttonWidths {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+@media
+only screen and (max-width: 768px)  {
+	
+	body{
+		background-color: #F7F7F7;
+		margin-left: auto;
+		margin-right: auto;
+		font-family: source-sans-pro, sans-serif;
+		
+	}
+
+	
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr {
+		display: block;		
+	}
+	
+	#courseCertificate {
+		max-width: 100%;
+	}
+
+	.courseCertificate {
+		width: 100%;
+		margin: auto;
+	}
+	
+	.emailHeader td {
+		width: 100%;
+	}
+
+	.emailHeader td img {
+		margin-left: auto;
+		margin-right: auto;
+	} 
+
+	.emailFooter {
+		width:500px
+		color: #F7F7F7;
+		margin-right: auto;
+		margin-left: auto;
+		font-size: 10pt;
+		// padding: 15px 0px 10px 0px;
+	}
+
+	.emailFooter td {
+	
+		color: #F7F7F7;
+		margin-right: auto;
+		margin-left: auto;
+		font-size: 10pt;
+		
+	}
+
+	#subHeaderWrapper {
+		
+	}
+
+	.report td {
+		/* Behave  like a &quot;row&quot; */
+		border: none;
+		border-bottom: 1px solid #eee;
+    	position: relative;
+    	text-align: top;
+	}
+
+	.report td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+	
+	.customButton:hover {
+		color:black;
+		
+	}
+}
+	@media (min-width: 769px) {
+
+		html{
+			padding-left:25%;
+		}
+		body{
+			background-color: #F7F7F7;
+			margin-left: auto;
+			margin-right: auto;
+			font-family: source-sans-pro, sans-serif;
+			max-width:55%;
+			
+		}
+		/* Force table to not be like tables anymore */
+		table, thead, tbody, th, td, tr {
+			// display: block;		
+		}
+
+		#courseCertificate {
+			max-width: 100%;
+		}
+		.courseCertificate {
+			width: 100%;
+			margin: auto;
+		}
+		
+		.emailHeader td {
+			
+		}
+	
+		.emailHeader td img {
+			margin-left: auto;
+			margin-right: auto;
+		} 
+	
+		.emailFooter {
+			width:100%;
+			color: #F7F7F7;
+			margin-right: auto;
+			margin-left: auto;
+			font-size: 10pt;
+			// padding: 15px 0px 10px 0px;
+		}
+
+		.emailFooter td {
+			width:100%;
+			color: #F7F7F7;
+			margin-right: auto;
+			margin-left: auto;
+			font-size: 10pt;
+			
+		}
+
+	
+		.report td {
+			/* Behave  like a &quot;row&quot; */
+			border: none;
+			border-bottom: 1px solid #eee;
+			position: relative;
+			text-align: top;
+		}
+	
+		.report td:before {
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 6px;
+			left: 6px;
+			width: 45%;
+			padding-right: 10px;
+			white-space: nowrap;
+		}
+	
+		.customButton:hover {
+			color:black;
+			
+
+		
+	  }
+/*End of media query*/
+}</style></head><body style=\\"width:100%;margin:0;padding:0;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%\\"><table width=\\"100%\\" height=\\"100%\\" cellPadding=\\"0\\" cellSpacing=\\"0\\" border=\\"0\\" align=\\"left\\" valign=\\"top\\"><tbody><tr><td align=\\"center\\" valign=\\"top\\"><table width=\\"600\\" align=\\"center\\" cellPadding=\\"0\\" cellSpacing=\\"0\\" border=\\"0\\" valign=\\"top\\"><tbody><table class=\\"emailHeader\\" align=\\"center\\" width=\\"100%\\" style=\\"background-color:#F7F7F7\\" cellPadding=\\"0\\" cellSpacing=\\"0\\" border=\\"0\\" valign=\\"top\\"><tbody><tr><td align=\\"center\\"><table align=\\"center\\" cellSpacing=\\"0\\" style=\\"padding:15px;max-width:584px;margin-top:25px;margin-bottom:20px\\"><tr align=\\"center\\"><td width=\\"292px\\"><img alt=\\"logo\\" src=\\"https://assets.prolaera.com/prolaeraLogo_fullText.png\\" width=\\"199.15254237288136\\" height=\\"47\\" style=\\"display:block;outline:none;border:none;text-decoration:none\\"/></td></tr></table></td></tr></tbody></table><div id=\\"subHeaderWrapper\\" style=\\"display:block;margin-left:auto;margin-right:auto;font-family:source-sans-pro, sans-serif;font-style:normal;color:#333333;background-color:#ffffff;font-weight:400;letter-spacing:3pt\\"><table class=\\"subHeader\\" align=\\"center\\" width=\\"100%\\" cellPadding=\\"0\\" cellSpacing=\\"0\\" border=\\"0\\" valign=\\"top\\"><tbody><tr><td><table id=\\"subHeaderTable\\" style=\\"text-align:center;margin-left:auto;margin-right:auto\\"><tr><td><p style=\\"font-size:18pt;margin-bottom:5px\\">New team</p></td></tr><tr><td><p style=\\"font-size:28px;margin-top:0px;margin-bottom:0px\\">Leader</p></td></tr><tr style=\\"margin:auto;padding:0px 10px 10px 10px\\"><td style=\\"width:100%\\"><div style=\\"letter-spacing:2pt;padding:20px 20px 0px 20px\\">You have been added to Test CPA Team as team leader.</div><div><div></div></div></td></tr></table></td></tr></tbody></table></div><div id=\\"subHeaderWrapper\\" style=\\"display:block;margin-left:auto;margin-right:auto;text-align:center;max-width:500px;font-family:sans-source-pro, sans-serif;margin-bottom:0px;background-color:#ffffff\\"><table class=\\"teamInfo\\" align=\\"center\\" style=\\"padding:0px 30px 0px 30px\\" cellPadding=\\"0\\" cellSpacing=\\"0\\" border=\\"0\\" valign=\\"top\\"><tbody><tr><td align=\\"center\\"><h3 style=\\"margin-top:0px;font-size:16pt\\">Team Information:</h3></td></tr><tr><td align=\\"left\\"><h4>Name:</h4><div class=\\"innerHtmlStyles\\" style=\\"font-weight:normal\\">Test CPA Team</div><h4>Description:</h4><div class=\\"innerHtmlStyles\\" style=\\"font-weight:normal\\">This team of CPAs handles all of the tax preparation in the firm.</div></td></tr><tr><td align=\\"left\\" style=\\"align:justify;padding-top:20px\\"><p>More information about your team can be found by navigating to the Prolaera website.</p><div style=\\"background-color:#72C02C;color:#FFFFFF;border-radius:3px;width:200px;height:50px;margin:auto;margin-bottom:3px;text-align:middle\\"><div class=\\"customButton\\" align=\\"center\\" style=\\"text-align:center;height:100%;width:100%\\"><a href=\\"https://app.prolaera.com/#/admin/adminProfileId/dashboard\\"><button class=\\"buttonWidths\\" style=\\"height:100%;padding:14px 14px 14px 14px;color:#ffffff;width:100%;text-decoration:none;border-radius:3px\\">View Team</button></a></div></div></td></tr></tbody></table></div><div><table id=\\"subHeaderWrapper\\" class=\\"emailFooter\\" align=\\"center\\" cellSpacing=\\"20\\" style=\\"background-color:#333333\\" cellPadding=\\"0\\" border=\\"0\\" valign=\\"top\\"><tbody><tr><td><div style=\\"float:left\\"><span style=\\"font-family:source-sans-pro, sans-serif;font-size:10pt;font-weight:100;line-height:14px;color:#F7F7F7;letter-spacing:1pt;float:left;padding:10px 5px 10px 10px\\">Powered By</span><img alt=\\"react\\" src=\\"https://gallery.mailchimp.com/eb930e30a15249a18d658c183/images/196fa069-3113-464c-a304-a1aa9f99fe22.png\\" width=\\"100\\" height=\\"23\\" style=\\"display:block;outline:none;border:none;text-decoration:none;padding-top:5px\\"/></div><div style=\\"font-family:source-sans-pro, sans-serif;color:#F7F7F7;font-size:10pt;font-weight:100;letter-spacing:1pt;text-align:right;padding:10px 10px 10px 10px\\">© Prolaera 2018</div></td></tr></tbody></table></div></tbody></table></td></tr></tbody></table></body></html>"
+`;
