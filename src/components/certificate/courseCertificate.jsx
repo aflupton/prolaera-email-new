@@ -37,19 +37,19 @@ class CourseCertificate extends React.Component {
           marginBottom: '0px',
           textAlign: 'center',
           fontFamily: 'source-sans-pro, sans-serif',
-          backgroundColor: '#ffffff'
+          backgroundColor: '#FFFFFF'
         }}
       >
         <Box className="courseCertificate" align="center" width="100%">
           <Item style={{ backgroundColor: '#ffffff', maxWidth: '100%' }}>
             <a
               href={'https://app.prolaera.com/#/courses/' + `${course_id}`}
-              style={{ textDecoration: 'none', color: '#333333', height: '100%' }}
+              style={{ textDecoration: 'none', color: '#333333' }}
             >
               <div
                 style={{
-                  padding: '20px 15px 20px',
-                  backgroundColor: '#ffffff',
+                  padding: '25px 15px 15px',
+                  backgroundColor: '#FFFFFF',
                   fontFamily: 'source-sans-pro, sans-serif',
                   fontStyle: 'normal',
                   color: '#333333',
@@ -61,7 +61,7 @@ class CourseCertificate extends React.Component {
               </div>
             </a>
           </Item>
-          <Item>
+          <Item align="center">
             <table
               style={{
                 textAlign: 'center',
@@ -73,7 +73,7 @@ class CourseCertificate extends React.Component {
               <tr>
                 <td>
                   <p>{message}</p>
-                  <div style={{ boxSizing: 'border-box', padding: '5px 30px' }}>
+                  <div style={{ boxSizing: 'border-box', padding: '0px 50px' }}>
                     {profile_uid ? <p>{certMessage}</p> : <div />}
                   </div>
                 </td>
@@ -88,30 +88,27 @@ class CourseCertificate extends React.Component {
               style={{
                 textAlign: 'center',
                 margin: 'auto',
-                borderSpacing: '10px',
-                width: '70%'
+                borderSpacing: '10px'
               }}
             >
               <tr>
                 <td
                   style={{
-                    backgroundColor: '#72C02C',
                     borderRadius: '2px',
                     margin: 'auto',
                     width: '50%'
                   }}
                 >
-                  <Button text={button1Text} link={button1Link} />
+                  <Button color={'#72C02C'} text={button1Text} link={button1Link} />
                 </td>
                 <td
                   style={{
-                    backgroundColor: '#2F4050',
                     borderRadius: '2px',
                     margin: 'auto',
                     width: '50%'
                   }}
                 >
-                  <Button style={{ borderStyle: 'none' }} text={button2Text} link={button2Link} />
+                  <Button color={'#2F4050'} text={button2Text} link={button2Link} />
                 </td>
               </tr>
             </table>

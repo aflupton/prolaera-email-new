@@ -11,7 +11,7 @@ html {
 
 #subHeaderWrapper {
 	padding-top: 20px;
-	padding-bottom:20px;
+	padding-bottom: 0px;
 }
 
 .innerHtmlStyles {
@@ -21,8 +21,14 @@ html {
 	margin-top: 10px;
 }
 
+button.buttonWidths {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
 @media
 only screen and (max-width: 768px)  {
+	
 	body{
 		background-color: #F7F7F7;
 		margin-left: auto;
@@ -30,13 +36,18 @@ only screen and (max-width: 768px)  {
 		font-family: source-sans-pro, sans-serif;
 		
 	}
+
+	
+
 	/* Force table to not be like tables anymore */
 	table, thead, tbody, th, td, tr {
 		display: block;		
 	}
+	
 	#courseCertificate {
 		max-width: 100%;
 	}
+
 	.courseCertificate {
 		width: 100%;
 		margin: auto;
@@ -59,16 +70,13 @@ only screen and (max-width: 768px)  {
 		font-size: 10pt;
 		// padding: 15px 0px 10px 0px;
 	}
+
 	.emailFooter td {
 	
 		color: #F7F7F7;
 		margin-right: auto;
 		margin-left: auto;
 		font-size: 10pt;
-		
-	}
-
-	#subHeaderWrapper {
 		
 	}
 
@@ -112,6 +120,7 @@ only screen and (max-width: 768px)  {
 	}
 }
 	@media (min-width: 769px) {
+
 		html{
 			padding-left:25%;
 		}
@@ -127,6 +136,7 @@ only screen and (max-width: 768px)  {
 		table, thead, tbody, th, td, tr {
 			// display: block;		
 		}
+
 		#courseCertificate {
 			max-width: 100%;
 		}
@@ -155,6 +165,7 @@ only screen and (max-width: 768px)  {
 			font-size: 10pt;
 			// padding: 15px 0px 10px 0px;
 		}
+
 		.emailFooter td {
 			width:100%;
 			color: #F7F7F7;
@@ -164,6 +175,7 @@ only screen and (max-width: 768px)  {
 			
 		}
 
+	
 		.report td {
 			/* Behave  like a "row" */
 			border: none;

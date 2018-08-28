@@ -68,7 +68,6 @@ exports[`Firm Invite component creates and checks snapshot of FirmInvite compone
                 style={
                   Object {
                     "height": "100%",
-                    "padding": "20px 0px 20px 0px",
                     "textAlign": "center",
                     "width": "100%",
                   }
@@ -78,10 +77,11 @@ exports[`Firm Invite component creates and checks snapshot of FirmInvite compone
                   href="https://app.prolaera.com/#/users/test@email.com"
                 >
                   <button
+                    className="buttonWidths"
                     style={
                       Object {
                         "borderRadius": "3px",
-                        "color": "black",
+                        "color": "#ffffff",
                         "height": "100%",
                         "padding": "14px 14px 14px 14px",
                         "textDecoration": "none",

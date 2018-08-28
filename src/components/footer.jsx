@@ -17,7 +17,7 @@ export default () => (
       align="center"
       cellSpacing={20}
       style={{ backgroundColor: '#333333' }}
-      height={300}
+      height={100}
     >
       <Item>
         {/* <Item align="center" style={{ fontSize: '19px', ...FooterText }}>
