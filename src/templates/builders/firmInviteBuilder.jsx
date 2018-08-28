@@ -34,6 +34,7 @@ const firmInviteBuilder = async (completeUser, completeCompany, imageUrl) => {
           }}
         >
           <Button
+            color={'#72C02C'}
             text={'Create Your Account'}
             link={'https://app.prolaera.com/#/registration?email=${' + completeUser.email + '}' + "'"}
           />
