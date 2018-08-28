@@ -13,8 +13,10 @@ class CategoryRow extends React.Component {
     return (
       <div>
         <tr>
-          <td style={{ fontSize: '16px', fontFamily: 'verdana,geneva,sans-serif', verticalAlign: 'top' }}>
-            <span>{categoryName(category)}</span>
+          <td style={{ fontSize: '12px', verticalAlign: 'top' }}>
+            <span>
+              <h4 style={{ fontWeight: '' }}>{categoryName(category)}</h4>
+            </span>
           </td>
           <ComplianceBox text="Hours Earned" hours={hoursEarned} color={reportIndex} />
           <ComplianceBox text="Hours Applied" hours={hoursApplied} color={reportIndex} />
@@ -24,7 +26,7 @@ class CategoryRow extends React.Component {
             <ComplianceBox text="Hours Required" hours={hoursRequired} color={reportIndex} />
           )}
           {hoursRequired == 'N/A' ? (
-            <ComplianceBox text=" " hours=" " color="white" />
+            <ComplianceBox text=" " hours=" " color="#FFFFFF" />
           ) : (
             <ComplianceBox text="Remaining" hours={hoursRemaining} color={reportIndex} />
           )}

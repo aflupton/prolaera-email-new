@@ -26,13 +26,46 @@ exports[`Firm Invite component creates and checks snapshot of FirmInvite compone
   >
     <tbody>
       <tr>
-        <td>
-          <div>
-            <p>
-              You've been added to 
-              Test CPA Firm
-               on Prolaera
-            </p>
+        <td
+          align="center"
+          style={
+            Object {
+              "paddingBottom": "20px",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "borderBottom": "1px solid grey",
+                "boxSizing": "border-box",
+                "height": "20px",
+                "margin": "auto",
+                "padding": "10px",
+                "position": "relative",
+                "textAlign": "center",
+                "width": "100%",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "backgroundColor": "#FFFFFF",
+                  "boxSizing": "border-box",
+                  "fontSize": "16pt",
+                  "fontWeight": "lighter",
+                  "margin": "0",
+                  "padding": "0px 20px",
+                }
+              }
+            >
+              <p>
+                You've been added to 
+                Test CPA Firm
+                 on Prolaera
+              </p>
+            </span>
           </div>
         </td>
       </tr>
@@ -80,8 +113,12 @@ exports[`Firm Invite component creates and checks snapshot of FirmInvite compone
                     className="buttonWidths"
                     style={
                       Object {
+                        "backgroundColor": "undefined",
+                        "borderColor": "undefined",
                         "borderRadius": "3px",
-                        "color": "#ffffff",
+                        "borderStyle": "none",
+                        "color": "#FFFFFF",
+                        "fontSize": "10pt",
                         "height": "100%",
                         "padding": "14px 14px 14px 14px",
                         "textDecoration": "none",

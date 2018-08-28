@@ -19,7 +19,7 @@ class TrackInfo extends React.Component {
           backgroundColor: '#FFFFFF'
         }}
       >
-        <Box className="trackInfo" align="center" width="100%">
+        <Box align="center" width="100%">
           <Item align="center" style={{ paddingBottom: '20px' }}>
             <div
               style={{
@@ -35,7 +35,7 @@ class TrackInfo extends React.Component {
             >
               <span
                 style={{
-                  fontSize: '16pt',
+                  fontSize: '14pt',
                   backgroundColor: '#FFFFFF',
                   padding: '0px 20px',
                   fontWeight: 'lighter',

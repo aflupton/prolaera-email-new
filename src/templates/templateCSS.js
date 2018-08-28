@@ -1,20 +1,13 @@
 const css = `
 
-@import {
+@font-face {
 	font-family: source-sans-pro;
 	url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 }
 html {
-	font-family: Source Sans Pro, sans-serif;
-	
+	font-family: source-sans-pro, sans-serif;
 }
-
-// .infoHeader {
-// 	font-size: 14pt;
-// 	letter-spacing: 1pt;
-// 	font-weight: 500;
-// }
 
 .textMuted {
 	color: #333333;
@@ -39,12 +32,14 @@ button.buttonWidths {
 
 @media
 only screen and (max-width: 768px)  {
-	
+	html {
+		font-family: source-sans-pro, sans-serif;
+	}
+
 	body{
 		background-color: #F7F7F7;
 		margin-left: auto;
 		margin-right: auto;
-		font-family: source-sans-pro;
 	}
 
 	
@@ -78,7 +73,6 @@ only screen and (max-width: 768px)  {
 		margin-right: auto;
 		margin-left: auto;
 		font-size: 10pt;
-		// padding: 15px 0px 10px 0px;
 	}
 
 	.emailFooter td {
@@ -133,6 +127,7 @@ only screen and (max-width: 768px)  {
 
 		html{
 			padding-left:25%;
+			font-family: source-sans-pro, sans-serif;
 		}
 		body{
 			background-color: #F7F7F7;
@@ -172,7 +167,6 @@ only screen and (max-width: 768px)  {
 			margin-right: auto;
 			margin-left: auto;
 			font-size: 10pt;
-			// padding: 15px 0px 10px 0px;
 		}
 
 		.emailFooter td {

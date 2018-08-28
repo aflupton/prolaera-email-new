@@ -9,7 +9,7 @@ class ComplianceReports extends React.Component {
     return (
       <Box align="center" width="100%" height="auto" style={{ backgroundColor: '#F7F7F7' }}>
         <Item>
-          <Box cellSpacing={20} align="center">
+          <Box cellSpacing={0} cellPadding={20} align="center" width="100%">
             {Object.keys(complianceDict).map((key, index) => {
               return (
                 <ComplianceReport

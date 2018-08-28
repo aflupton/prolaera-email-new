@@ -2,7 +2,6 @@
 
 exports[`CourseInfo component custom input tests creates and checks a snapshot of CourseInfo html 1`] = `
 <div
-  id="subHeaderWrapper"
   style={
     Object {
       "backgroundColor": "#FFFFFF",
@@ -12,7 +11,7 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
       "marginBottom": "0px",
       "marginLeft": "auto",
       "marginRight": "auto",
-      "padding": "20px",
+      "padding": "0px 20px 20px",
       "textAlign": "center",
     }
   }
@@ -32,20 +31,22 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
           align="left"
           style={
             Object {
-              "padding": "10px 10px 0px",
+              "padding": "10px",
             }
           }
         >
           <h3
             align="center"
+            className="infoHeader"
             style={
               Object {
-                "fontSize": "16pt",
                 "marginTop": "5px",
               }
             }
           >
-            Course Information:
+            <span>
+              Course Information:
+            </span>
           </h3>
           <h4
             align="center"
@@ -94,7 +95,7 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
               By:
                
               <span
-                class="innerHtmlStyles"
+                className="innerHtmlStyles"
                 style={
                   Object {
                     "fontWeight": "normal",
@@ -180,7 +181,7 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
               Price:
                
               <span
-                class="innerHtmlStyles"
+                className="innerHtmlStyles"
                 style={
                   Object {
                     "fontWeight": "normal",
@@ -229,7 +230,7 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
               Level:
                
               <span
-                class="innerHtmlStyles"
+                className="innerHtmlStyles"
                 style={
                   Object {
                     "fontWeight": "normal",
@@ -313,13 +314,9 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
           <div
             style={
               Object {
-                "backgroundColor": "#72C02C",
-                "borderRadius": "3px",
-                "color": "#ffffff",
                 "display": "inline-block",
                 "margin": "auto",
-                "padding": "0px",
-                "textAlign": "middle",
+                "padding": "20px 0px",
               }
             }
           >
@@ -341,8 +338,12 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
                   className="buttonWidths"
                   style={
                     Object {
+                      "backgroundColor": "#72C02C",
+                      "borderColor": "#72C02C",
                       "borderRadius": "3px",
-                      "color": "#ffffff",
+                      "borderStyle": "none",
+                      "color": "#FFFFFF",
+                      "fontSize": "10pt",
                       "height": "100%",
                       "padding": "14px 14px 14px 14px",
                       "textDecoration": "none",
