@@ -8,7 +8,7 @@ class ComplianceBox extends React.Component {
       fontFamily: 'arial',
       color: '#ffffff',
       backgroundColor: colors[color % 7],
-      padding: '26px 14px',
+      padding: '20px 14px',
       borderLeft: '5px solid #FFFFFF',
       textAlign: 'center'
     };

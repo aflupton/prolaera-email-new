@@ -230,6 +230,7 @@ only screen and (max-width: 768px)  {
 		padding-top:20px;
 		padding-bottom:0px;
 	}
+	
 /*End of media query*/
 }
 
