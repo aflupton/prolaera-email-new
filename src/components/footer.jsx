@@ -50,7 +50,7 @@ export default () => (
 
         <div id="div1">
           <span id="span1" style={{ ...FooterText }}>
-            Powered By
+            Powered By{' '}
           </span>
           <img
             id="one"
