@@ -218,12 +218,15 @@ only screen and (max-width: 768px)  {
 	#one{
 		paddingTop: 5px;
 		height:23px;
-		width:100px
+		width:100px;
+		position:relative;
+		top:5px;
 	}
 	#footerId{
 		padding-top:20px;
 		padding-bottom:0px;
 	}
+	
 /*End of media query*/
 }
 
