@@ -14,8 +14,8 @@ const teamLeadBuilder = async (completeTeam, imageUrl) => {
       <Email title="You've been added as a team leader" headCSS={css}>
         <Header text={'View Team'} link={'https://app.prolaera.com/#/admin/' + adminProfileId + '/dashboard'} />
         <SubHeader
-          subText={'New team'}
-          header={'Leader'}
+          subText={'New'}
+          header={'Team Leader'}
           message={'You have been added to ' + completeTeam.name + ' as team leader.'}
         />
         <TeamInfo {...completeTeam} buttonText={'View Team'} buttonLink={adminProfileId} />

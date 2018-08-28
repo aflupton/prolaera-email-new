@@ -15,14 +15,15 @@ class TrackInfo extends React.Component {
           marginRight: 'auto',
           textAlign: 'center',
           padding: '20px',
-          fontFamily: 'source-sans-pro, sans-serif',
           marginBottom: '0px',
-          backgroundColor: '#ffffff'
+          backgroundColor: '#FFFFFF'
         }}
       >
         <Box className="trackInfo" align="center" width="100%">
           <Item>
-            <h3 style={{ marginTop: '0px' }}>Learning Track Information:</h3>
+            <h3 className="infoHeader" style={{ marginTop: '0px' }}>
+              Learning Track Information:
+            </h3>
           </Item>
           <Item align="left">
             <h4 style={{ marginTop: '0px' }}>

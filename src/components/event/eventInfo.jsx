@@ -38,13 +38,12 @@ class EventInfo extends React.Component {
           marginBottom: '0px',
           textAlign: 'center',
           padding: '20px',
-          fontFamily: 'source-sans-pro, sans-serif',
-          backgroundColor: 'white'
+          backgroundColor: '#FFFFFF'
         }}
       >
         <Box className="eventInfo" align="center" width="100%">
           <Item align="left">
-            <h3 align="center" style={{ marginTop: '0px' }}>
+            <h3 className="infoHeader" align="center" style={{ marginTop: '0px' }}>
               Event Information:
             </h3>
             <h4 align="center">

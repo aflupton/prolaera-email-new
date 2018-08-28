@@ -16,17 +16,18 @@ class teamInfo extends React.Component {
           marginRight: 'auto',
           textAlign: 'center',
           maxWidth: '100%',
-          fontFamily: 'sans-source-pro, sans-serif',
           marginBottom: '0px',
-          backgroundColor: '#ffffff'
+          backgroundColor: '#FFFFFF'
         }}
       >
-        <Box className="teamInfo" align="center" style={{ padding: '0px 30px 0px 30px' }}>
+        <Box className="teamInfo" align="center" style={{ padding: '20px 30px 0px 30px' }}>
           <Item align="center">
-            <h3 style={{ marginTop: '0px', fontSize: '16pt' }}>Team Information:</h3>
+            <h3 className="infoHeader" style={{ marginTop: '10px' }}>
+              Team Information:
+            </h3>
           </Item>
           <Item align="left">
-            <h4 style={{}}>Name:</h4>
+            <h4 style={{ marginTop: '10px' }}>Name:</h4>
             <div
               className="innerHtmlStyles"
               style={{ fontWeight: 'normal' }}
@@ -39,18 +40,16 @@ class teamInfo extends React.Component {
               dangerouslySetInnerHTML={setInnerHtml(description)}
             />
           </Item>
-          <Item align="left" style={{ align: 'justify', paddingTop: '20px' }}>
-            <p>More information about your team can be found by navigating to the Prolaera website.</p>
+          <Item align="center" style={{ align: 'justify', padding: '20px 0px 20px' }}>
+            <p style={{ textAlign: 'left' }}>
+              More information about your team can be found by navigating to the Prolaera website.
+            </p>
             <div
+              align="center"
               style={{
-                backgroundColor: '#72C02C',
-                color: '#FFFFFF',
-                borderRadius: '3px',
-                width: '200px',
-                height: '50px',
+                display: 'inline-block',
                 margin: 'auto',
-                marginBottom: '3px',
-                textAlign: 'middle'
+                marginBottom: '3px'
               }}
             >
               <Button

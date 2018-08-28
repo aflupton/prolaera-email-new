@@ -7,6 +7,15 @@ const css = `
 }
 html {
 	font-family: 'Source Sans Pro', sans-serif;
+	
+}
+.infoHeader {
+	font-size: 14pt;
+	letter-spacing: 1pt;
+	font-weight: 500;
+}
+.textMuted {
+	color: #333333;
 }
 
 #subHeaderWrapper {

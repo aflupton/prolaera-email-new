@@ -47,8 +47,8 @@ class CourseInfo extends React.Component {
       >
         <Box className="courseReview" align="center" width="100%">
           <Item align="left" style={{ padding: '10px' }}>
-            <h3 align="center" style={{ marginTop: '5px', letterSpacing: '1pt', fontWeight: '600' }}>
-              <span style={{ letterSpacing: '0pt', fontSize: '12pt' }}>Course Information:</span>
+            <h3 className="infoHeader" align="center" style={{ marginTop: '5px' }}>
+              <span>Course Information:</span>
             </h3>
             <h4 align="center" style={{ marginTop: '0px', marginBottom: '0px' }}>
               <a

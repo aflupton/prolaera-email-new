@@ -24,10 +24,10 @@ class SubHeader extends React.Component {
           marginLeft: 'auto',
           marginRight: 'auto',
           fontStyle: 'normal',
-          color: '#333333',
+          color: 'black',
           fontWeight: '500',
           display: 'block',
-          letterSpacing: '2pt'
+          letterSpacing: '1pt'
         }}
       >
         <Box className="subHeader" align="center" width="100%">
@@ -45,7 +45,7 @@ class SubHeader extends React.Component {
               </tr>
               <tr style={{ margin: 'auto', padding: '0px 10px 10px 10px' }}>
                 <td style={{ width: '100%' }}>
-                  <div style={{ letterSpacing: '2pt', padding: '20px 20px 0px 20px' }}>{message}</div>
+                  <div style={{ letterSpacing: '1pt', padding: '20px 20px 0px 20px' }}>{message}</div>
                   <div>{profile_uid ? <p>{certMessage}</p> : <div />}</div>
                 </td>
               </tr>

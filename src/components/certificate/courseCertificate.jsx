@@ -36,12 +36,11 @@ class CourseCertificate extends React.Component {
           height: 'auto',
           marginBottom: '0px',
           textAlign: 'center',
-          fontFamily: 'source-sans-pro, sans-serif',
           backgroundColor: '#FFFFFF'
         }}
       >
         <Box className="courseCertificate" align="center" width="100%">
-          <Item style={{ backgroundColor: '#ffffff', maxWidth: '100%' }}>
+          <Item style={{ backgroundColor: '#FFFFFF', maxWidth: '100%' }}>
             <a
               href={'https://app.prolaera.com/#/courses/' + `${course_id}`}
               style={{ textDecoration: 'none', color: '#333333' }}
@@ -50,10 +49,8 @@ class CourseCertificate extends React.Component {
                 style={{
                   padding: '25px 15px 15px',
                   backgroundColor: '#FFFFFF',
-                  fontFamily: 'source-sans-pro, sans-serif',
                   fontStyle: 'normal',
-                  color: '#333333',
-                  fontWeight: '400'
+                  fontWeight: '500'
                 }}
               >
                 <p style={{ fontSize: '28px', letterSpacing: '3px', marginBottom: '0px' }}>{name}</p>

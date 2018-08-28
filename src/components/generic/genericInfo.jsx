@@ -21,7 +21,7 @@ class GenericInfo extends React.Component {
       >
         <Box align="center" width="100%">
           <Item>
-            <div>{header}</div>
+            <div className="infoHeader">{header}</div>
           </Item>
           <Item>
             <div>{body}</div>

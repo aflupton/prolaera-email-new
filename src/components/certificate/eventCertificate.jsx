@@ -49,7 +49,9 @@ class EventCertificate extends React.Component {
                 // boxShadow: '1px 1px 8px darkgray'
               }}
             >
-              <h3 style={{ marginBottom: '5px', fontSize: '16pt' }}>{course_name}</h3>
+              <h3 className="infoHeader" style={{ marginBottom: '5px' }}>
+                {course_name}
+              </h3>
               <h5 style={{ marginTop: '0px', fontSize: '12pt' }}>
                 {PrettyDate(delivery_date)} - {PrettyDate(delivery_end_date)}
               </h5>
