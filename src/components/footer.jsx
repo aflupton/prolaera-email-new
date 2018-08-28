@@ -2,7 +2,6 @@ import React from 'react';
 import { Box, Image, Item, Span } from 'react-html-email';
 
 const FooterText = {
-  fontFamily: 'source-sans-pro, sans-serif',
   color: '#F7F7F7',
   fontSize: '10pt',
   fontWeight: '100',

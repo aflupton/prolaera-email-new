@@ -16,6 +16,8 @@ class Button extends React.Component {
               width: '100%',
               textDecoration: 'none',
               borderRadius: '3px',
+              borderStyle: 'none',
+              borderColor: `${this.props.color}`,
               backgroundColor: `${this.props.color}`
             }}
           >
