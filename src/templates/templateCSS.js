@@ -1,19 +1,21 @@
 const css = `
 
 @import {
-	font-family: "source-sans-pro";
+	font-family: source-sans-pro;
 	url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 }
 html {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: Source Sans Pro, sans-serif;
 	
 }
-.infoHeader {
-	font-size: 14pt;
-	letter-spacing: 1pt;
-	font-weight: 500;
-}
+
+// .infoHeader {
+// 	font-size: 14pt;
+// 	letter-spacing: 1pt;
+// 	font-weight: 500;
+// }
+
 .textMuted {
 	color: #333333;
 }
@@ -42,8 +44,7 @@ only screen and (max-width: 768px)  {
 		background-color: #F7F7F7;
 		margin-left: auto;
 		margin-right: auto;
-		font-family: source-sans-pro, sans-serif;
-		
+		font-family: source-sans-pro;
 	}
 
 	
@@ -137,7 +138,6 @@ only screen and (max-width: 768px)  {
 			background-color: #F7F7F7;
 			margin-left: auto;
 			margin-right: auto;
-			font-family: source-sans-pro, sans-serif;
 			max-width:55%;
 			
 		}

@@ -35,12 +35,37 @@ class ActivityInfo extends React.Component {
                 marginLeft: 'auto',
                 marginRight: 'auto',
                 marginBottom: '10px',
-                maxWidth: '300px',
+                maxWidth: '100%',
                 backgroundColor: '#FFFFFF'
               }}
             >
-              <p style={{ marginBottom: '0px', fontSize: '16pt' }}>{name}</p>
-              <p style={{ marginTop: '7px' }}>
+              <div
+                style={{
+                  width: '100%',
+                  height: '20px',
+                  borderBottom: '1px solid grey',
+                  textAlign: 'center',
+                  boxSizing: 'border-box',
+                  position: 'relative',
+                  margin: 'auto',
+                  padding: '10px'
+                }}
+              >
+                <span
+                  style={{
+                    fontSize: '16pt',
+                    backgroundColor: '#FFFFFF',
+                    padding: '0px 20px',
+                    fontWeight: 'lighter',
+                    boxSizing: 'border-box',
+                    margin: '0'
+                  }}
+                >
+                  {name}
+                </span>
+              </div>
+              {/* <p style={{ marginBottom: '0px', fontSize: '16pt' }}>{name}</p> */}
+              <p style={{ marginTop: '20px' }}>
                 By: <span style={{ fontWeight: '300' }}>{author}</span>
               </p>
             </div>

@@ -17,14 +17,37 @@ class teamInfo extends React.Component {
           textAlign: 'center',
           maxWidth: '100%',
           marginBottom: '0px',
-          backgroundColor: '#FFFFFF'
+          backgroundColor: '#FFFFFF',
+          paddingTop: '30px'
         }}
       >
         <Box className="teamInfo" align="center" style={{ padding: '20px 30px 0px 30px' }}>
-          <Item align="center">
-            <h3 className="infoHeader" style={{ marginTop: '10px' }}>
-              Team Information:
-            </h3>
+          <Item align="center" style={{ paddingBottom: '20px' }}>
+            <div
+              style={{
+                width: '100%',
+                height: '20px',
+                borderBottom: '1px solid grey',
+                textAlign: 'center',
+                boxSizing: 'border-box',
+                position: 'relative',
+                margin: 'auto',
+                padding: '10px'
+              }}
+            >
+              <span
+                style={{
+                  fontSize: '16pt',
+                  backgroundColor: '#FFFFFF',
+                  padding: '0px 20px',
+                  fontWeight: 'lighter',
+                  boxSizing: 'border-box',
+                  margin: '0'
+                }}
+              >
+                Team Information
+              </span>
+            </div>
           </Item>
           <Item align="left">
             <h4 style={{ marginTop: '10px' }}>Name:</h4>

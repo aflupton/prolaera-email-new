@@ -44,9 +44,9 @@ class SubHeader extends React.Component {
                 </td>
               </tr>
               <tr style={{ margin: 'auto', padding: '0px 10px 10px 10px' }}>
-                <td style={{ width: '100%' }}>
-                  <div style={{ letterSpacing: '1pt', padding: '20px 20px 0px 20px' }}>{message}</div>
-                  <div>{profile_uid ? <p>{certMessage}</p> : <div />}</div>
+                <td style={{ width: '100%' }} align="center">
+                  <div style={{ maxWidth: '85%', letterSpacing: '1pt', padding: '20px 20px 0px 20px' }}>{message}</div>
+                  <div style={{ maxWidth: '85%' }}>{profile_uid ? <p>{certMessage}</p> : <div />}</div>
                 </td>
               </tr>
             </table>

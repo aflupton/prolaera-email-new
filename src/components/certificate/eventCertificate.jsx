@@ -33,7 +33,7 @@ class EventCertificate extends React.Component {
           borderRadius: '0px',
           padding: '20px',
           fontFamily: 'source-sans-pro, sans-serif',
-          backgroundColor: '#ffffff'
+          backgroundColor: '#FFFFFF'
         }}
       >
         <Box align="center" width="100%">
@@ -72,10 +72,6 @@ class EventCertificate extends React.Component {
               <tr>
                 <td
                   style={{
-                    backgroundColor: '#72C02C',
-                    borderRadius: '3px',
-                    width: '200px',
-                    height: '50px',
                     margin: 'auto',
                     marginBottom: '10px'
                   }}
@@ -84,14 +80,10 @@ class EventCertificate extends React.Component {
                 </td>
                 <td
                   style={{
-                    backgroundColor: '#2F4050',
-                    borderRadius: '3px',
-                    width: '200px',
-                    height: '50px',
                     margin: 'auto'
                   }}
                 >
-                  <Button color={'#72C02C'} text={button2Text} link={button2Link} />
+                  <Button color={'#2F4050'} text={button2Text} link={button2Link} />
                 </td>
               </tr>
             </table>

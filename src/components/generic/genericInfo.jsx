@@ -20,8 +20,32 @@ class GenericInfo extends React.Component {
         }}
       >
         <Box align="center" width="100%">
-          <Item>
-            <div className="infoHeader">{header}</div>
+          <Item align="center" style={{ paddingBottom: '20px' }}>
+            <div
+              style={{
+                width: '100%',
+                height: '20px',
+                borderBottom: '1px solid grey',
+                textAlign: 'center',
+                boxSizing: 'border-box',
+                position: 'relative',
+                margin: 'auto',
+                padding: '10px'
+              }}
+            >
+              <span
+                style={{
+                  fontSize: '16pt',
+                  backgroundColor: '#FFFFFF',
+                  padding: '0px 20px',
+                  fontWeight: 'lighter',
+                  boxSizing: 'border-box',
+                  margin: '0'
+                }}
+              >
+                {header}
+              </span>
+            </div>
           </Item>
           <Item>
             <div>{body}</div>

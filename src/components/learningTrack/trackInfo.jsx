@@ -20,10 +20,32 @@ class TrackInfo extends React.Component {
         }}
       >
         <Box className="trackInfo" align="center" width="100%">
-          <Item>
-            <h3 className="infoHeader" style={{ marginTop: '0px' }}>
-              Learning Track Information:
-            </h3>
+          <Item align="center" style={{ paddingBottom: '20px' }}>
+            <div
+              style={{
+                width: '100%',
+                height: '20px',
+                borderBottom: '1px solid grey',
+                textAlign: 'center',
+                boxSizing: 'border-box',
+                position: 'relative',
+                margin: 'auto',
+                padding: '10px'
+              }}
+            >
+              <span
+                style={{
+                  fontSize: '16pt',
+                  backgroundColor: '#FFFFFF',
+                  padding: '0px 20px',
+                  fontWeight: 'lighter',
+                  boxSizing: 'border-box',
+                  margin: '0'
+                }}
+              >
+                Learning Track Information
+              </span>
+            </div>
           </Item>
           <Item align="left">
             <h4 style={{ marginTop: '0px' }}>

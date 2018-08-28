@@ -42,11 +42,37 @@ class EventInfo extends React.Component {
         }}
       >
         <Box className="eventInfo" align="center" width="100%">
+          <Item align="center" style={{ paddingBottom: '20px' }} />
           <Item align="left">
-            <h3 className="infoHeader" align="center" style={{ marginTop: '0px' }}>
+            <div
+              style={{
+                width: '90%',
+                height: '20px',
+                borderBottom: '1px solid grey',
+                textAlign: 'center',
+                boxSizing: 'border-box',
+                position: 'relative',
+                margin: 'auto',
+                padding: '10px'
+              }}
+            >
+              <span
+                style={{
+                  fontSize: '16pt',
+                  backgroundColor: '#FFFFFF',
+                  padding: '0px 20px',
+                  fontWeight: 'lighter',
+                  boxSizing: 'border-box',
+                  margin: '0'
+                }}
+              >
+                Event Information
+              </span>
+            </div>
+            {/* <h3 className="infoHeader" align="center" style={{ marginTop: '0px' }}>
               Event Information:
-            </h3>
-            <h4 align="center">
+            </h3> */}
+            <h4 align="center" style={{ paddingTop: '20px' }}>
               <em>
                 {course_name} ({deliveryHelper(delivery_method)})
               </em>
