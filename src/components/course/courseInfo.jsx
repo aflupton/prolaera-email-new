@@ -3,6 +3,7 @@ import { Box, Item } from 'react-html-email';
 import deliveryHelper from '../../helpers/deliveryHelper';
 import setInnerHtml from '../../helpers/domHelpers';
 import Button from '../button';
+import InfoHeader from '../infoHeader';
 
 class CourseInfo extends React.Component {
   render() {
@@ -35,44 +36,25 @@ class CourseInfo extends React.Component {
       <div
         style={{
           display: 'block',
-          marginLeft: 'auto',
-          marginRight: 'auto',
+          margin: 'auto',
           textAlign: 'center',
           padding: '0px 20px 10px',
-          fontFamily: 'source-sans-pro, sans-serif',
           fontWeight: '400',
           marginBottom: '0px',
           backgroundColor: '#FFFFFF'
         }}
       >
-        <Box className="courseReview" align="center" width="100%">
-          <Item align="center" style={{ padding: '20px' }}>
+        <Box align="center" width="100%">
+          <Item align="center" width="100%">
             <div
               style={{
-                width: '90%',
-                height: '20px',
-                borderBottom: '1px solid grey',
-                textAlign: 'center',
-                boxSizing: 'border-box',
-                position: 'relative',
-                margin: 'auto',
-                padding: '10px'
+                width: '100%',
+                margin: 'auto'
               }}
             >
-              <span
-                style={{
-                  fontSize: '16pt',
-                  backgroundColor: '#FFFFFF',
-                  padding: '0px 20px',
-                  fontWeight: 'lighter',
-                  boxSizing: 'border-box',
-                  margin: '0'
-                }}
-              >
-                Course Information
-              </span>
+              <InfoHeader info={'Course'} />
             </div>
-            <h4 align="center" style={{ paddingTop: '15px', maerginTop: '0px', marginBottom: '0px' }}>
+            <h4 align="center" style={{ paddingTop: '15px', marginTop: '0px' }}>
               <a
                 href={'https://app.prolaera.com/#/courses/' + `${course_id}`}
                 style={{ textDecoration: 'underline', color: '#2F4050', height: '100%' }}

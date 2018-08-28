@@ -18,30 +18,26 @@ class ActivityInfo extends React.Component {
       <div
         style={{
           display: 'block',
-          marginLeft: 'auto',
-          marginRight: 'auto',
+          margin: 'auto',
           marginBottom: '0px',
           textAlign: 'center',
           padding: '20px',
-          fontFamily: 'source-sans-pro, sans-serif',
           fontStyle: 'normal',
-          fontWeight: '100',
+          fontWeight: '400',
           backgroundColor: '#ffffff'
         }}
       >
         <Box align="center" width="100%">
-          <Item width="100%">
+          <Item align="center" width="100%">
             <div
               style={{
-                marginLeft: 'auto',
-                marginRight: 'auto',
-                marginBottom: '10px',
+                margin: 'auto',
                 width: '100%',
                 backgroundColor: '#FFFFFF'
               }}
             >
-              <InfoHeader name={name} />
-              <p style={{ marginTop: '20px' }}>
+              <InfoHeader info={name} />
+              <p style={{ paddingTop: '15px', marginTop: '0px' }}>
                 By: <span style={{ fontWeight: '300' }}>{author}</span>
               </p>
             </div>
