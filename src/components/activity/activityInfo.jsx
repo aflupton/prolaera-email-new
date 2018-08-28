@@ -73,7 +73,9 @@ class ActivityInfo extends React.Component {
           <Item style={{ paddingBottom: '15px' }}>
             <div
               style={{
-                width: '50%',
+                backgroundColor: '#72C02C',
+                borderRadius: '3px',
+                width: '20%',
                 margin: 'auto'
               }}
             >

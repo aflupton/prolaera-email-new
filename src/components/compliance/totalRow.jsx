@@ -31,12 +31,6 @@ class TotalRow extends React.Component {
             <ComplianceBox text="Remaining" hours={hoursRemaining} color={reportIndex} />
           )}
         </tr>
-        <tr>
-          <td colSpan="5" style={{ borderBottom: '1px #333333 solid', paddingTop: '4px' }} />
-        </tr>
-        <tr>
-          <td colSpan="5" style={{ paddingBottom: '3px' }} />
-        </tr>
       </div>
     );
   }
