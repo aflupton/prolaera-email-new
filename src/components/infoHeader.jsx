@@ -3,10 +3,10 @@ import { Box, Item } from 'react-html-email';
 
 class InfoHeader extends React.Component {
   render() {
-    const { infoHeader = '' } = this.props;
+    const { name = '' } = this.props;
 
     return (
-      <div style={{}}>
+      <div>
         <Box>
           <Item align="center" style={{ paddingBottom: '20px' }}>
             <div
@@ -26,12 +26,11 @@ class InfoHeader extends React.Component {
                   fontSize: '14pt',
                   backgroundColor: '#FFFFFF',
                   padding: '0px 20px',
-                  fontWeight: '',
                   boxSizing: 'border-box',
                   margin: '0'
                 }}
               >
-                {infoHeader} Information
+                {name} Information
               </span>
             </div>
           </Item>

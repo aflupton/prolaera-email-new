@@ -91,7 +91,6 @@ class CourseCertificate extends React.Component {
               <tr>
                 <td
                   style={{
-                    borderRadius: '2px',
                     margin: 'auto',
                     width: '50%'
                   }}

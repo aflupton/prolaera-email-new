@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Item } from 'react-html-email';
 import Button from '../button';
+import InfoHeader from '../infoHeader';
 
 class ActivityInfo extends React.Component {
   render() {
@@ -29,7 +30,23 @@ class ActivityInfo extends React.Component {
         }}
       >
         <Box align="center" width="100%">
-          <Item>
+          <Item width="100%">
+            <div
+              style={{
+                marginLeft: 'auto',
+                marginRight: 'auto',
+                marginBottom: '10px',
+                width: '100%',
+                backgroundColor: '#FFFFFF'
+              }}
+            >
+              <InfoHeader name={name} />
+              <p style={{ marginTop: '20px' }}>
+                By: <span style={{ fontWeight: '300' }}>{author}</span>
+              </p>
+            </div>
+          </Item>
+          {/* <Item>
             <div
               style={{
                 marginLeft: 'auto',
@@ -64,12 +81,11 @@ class ActivityInfo extends React.Component {
                   {name}
                 </span>
               </div>
-              {/* <p style={{ marginBottom: '0px', fontSize: '16pt' }}>{name}</p> */}
               <p style={{ marginTop: '20px' }}>
                 By: <span style={{ fontWeight: '300' }}>{author}</span>
               </p>
             </div>
-          </Item>
+          </Item> */}
           <Item style={{ paddingBottom: '15px' }}>
             <div
               style={{

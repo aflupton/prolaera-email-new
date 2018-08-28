@@ -13,9 +13,9 @@ class CategoryRow extends React.Component {
     return (
       <div>
         <tr>
-          <td style={{ fontSize: '12px', verticalAlign: 'top' }}>
+          <td style={{ fontSize: '16px', verticalAlign: 'top' }}>
             <span>
-              <h4 style={{ fontWeight: '' }}>{categoryName(category)}</h4>
+              <h5>{categoryName(category)}</h5>
             </span>
           </td>
           <ComplianceBox text="Hours Earned" hours={hoursEarned} color={reportIndex} />

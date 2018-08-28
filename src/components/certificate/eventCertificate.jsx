@@ -64,8 +64,7 @@ class EventCertificate extends React.Component {
             <table
               style={{
                 textAlign: 'center',
-                marginLeft: 'auto',
-                marginRight: 'auto',
+                margin: 'auto',
                 borderSpacing: '10px'
               }}
             >
@@ -73,14 +72,15 @@ class EventCertificate extends React.Component {
                 <td
                   style={{
                     margin: 'auto',
-                    marginBottom: '10px'
+                    width: '50%'
                   }}
                 >
                   <Button color={'#72C02C'} text={button1Text} link={button1Link} />
                 </td>
                 <td
                   style={{
-                    margin: 'auto'
+                    margin: 'auto',
+                    width: '50%'
                   }}
                 >
                   <Button color={'#2F4050'} text={button2Text} link={button2Link} />

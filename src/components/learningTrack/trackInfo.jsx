@@ -20,7 +20,7 @@ class TrackInfo extends React.Component {
         }}
       >
         <Box align="center" width="100%">
-          <Item align="center" style={{ paddingBottom: '20px' }}>
+          <Item align="center" style={{ paddingBottom: '30px' }}>
             <div
               style={{
                 width: '100%',
@@ -57,19 +57,15 @@ class TrackInfo extends React.Component {
             <h4 style={{ marginBottom: '0px' }}>Description:</h4>
             <p style={{ marginTop: '10px' }}>{description}</p>
           </Item>
-          <Item align="left">
+          <Item>
             <p>More information about this track can be found by navigating to the Prolaera website.</p>
             {profileId ? (
               <div
                 style={{
-                  backgroundColor: '#72C02C',
-                  borderRadius: '3px',
-                  width: '200px',
-                  height: '50px',
+                  display: 'inline-block',
                   margin: 'auto',
-                  marginBottom: '3px',
                   paddingBottom: '5px',
-                  textAlign: 'middle'
+                  textAlign: 'center'
                 }}
               >
                 {profileId ? (

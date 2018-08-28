@@ -13,9 +13,9 @@ class YearRow extends React.Component {
     return (
       <div>
         <tr>
-          <td style={{ fontSize: '14px', verticalAlign: 'top' }}>
+          <td style={{ fontSize: '16px', verticalAlign: 'top' }}>
             <span>
-              <h4 style={{}}>Annual</h4>
+              <h5>Annual</h5>
             </span>
           </td>
           <ComplianceBox text="Hours Earned" hours={hoursEarned} color={reportIndex} />

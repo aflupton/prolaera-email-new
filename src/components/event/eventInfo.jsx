@@ -42,8 +42,7 @@ class EventInfo extends React.Component {
         }}
       >
         <Box className="eventInfo" align="center" width="100%">
-          <Item align="center" style={{ paddingBottom: '20px' }} />
-          <Item align="left">
+          <Item align="center">
             <div
               style={{
                 width: '90%',
@@ -69,13 +68,15 @@ class EventInfo extends React.Component {
                 Event Information
               </span>
             </div>
-            {/* <h3 className="infoHeader" align="center" style={{ marginTop: '0px' }}>
-              Event Information:
-            </h3> */}
-            <h4 align="center" style={{ paddingTop: '20px' }}>
-              <em>
-                {course_name} ({deliveryHelper(delivery_method)})
-              </em>
+            <h4 align="center" style={{ paddingTop: '15px' }}>
+              <a
+                href={'https://app.prolaera.com/#/events/' + `${event_id}`}
+                style={{ textDecoration: 'underline', color: '#2F4050', height: '100%' }}
+              >
+                <em>
+                  {course_name} ({deliveryHelper(delivery_method)})
+                </em>
+              </a>
             </h4>
           </Item>
           <Item align="left">
@@ -159,12 +160,13 @@ class EventInfo extends React.Component {
               />
             </div>
           </Item>
-          <Item align="center">
+          <Item align="center" style={{ paddingBottom: '20px' }}>
             {buttonText ? (
               <div
                 style={{
+                  display: 'inline-block',
                   margin: 'auto',
-                  textAlign: 'middle'
+                  textAlign: 'center'
                 }}
               >
                 {buttonText ? (
@@ -174,7 +176,7 @@ class EventInfo extends React.Component {
                 )}
               </div>
             ) : (
-              <span color={'#72C02C'} className="buttonSpan" />
+              <span className="buttonSpan" />
             )}
           </Item>
         </Box>

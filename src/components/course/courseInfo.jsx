@@ -38,19 +38,41 @@ class CourseInfo extends React.Component {
           marginLeft: 'auto',
           marginRight: 'auto',
           textAlign: 'center',
-          padding: '0px 20px 20px',
+          padding: '0px 20px 10px',
           fontFamily: 'source-sans-pro, sans-serif',
-          fontWeight: '100',
+          fontWeight: '400',
           marginBottom: '0px',
           backgroundColor: '#FFFFFF'
         }}
       >
         <Box className="courseReview" align="center" width="100%">
-          <Item align="left" style={{ padding: '10px' }}>
-            <h3 className="infoHeader" align="center" style={{ marginTop: '5px' }}>
-              <span>Course Information:</span>
-            </h3>
-            <h4 align="center" style={{ marginTop: '0px', marginBottom: '0px' }}>
+          <Item align="center" style={{ padding: '20px' }}>
+            <div
+              style={{
+                width: '90%',
+                height: '20px',
+                borderBottom: '1px solid grey',
+                textAlign: 'center',
+                boxSizing: 'border-box',
+                position: 'relative',
+                margin: 'auto',
+                padding: '10px'
+              }}
+            >
+              <span
+                style={{
+                  fontSize: '16pt',
+                  backgroundColor: '#FFFFFF',
+                  padding: '0px 20px',
+                  fontWeight: 'lighter',
+                  boxSizing: 'border-box',
+                  margin: '0'
+                }}
+              >
+                Course Information
+              </span>
+            </div>
+            <h4 align="center" style={{ paddingTop: '15px', maerginTop: '0px', marginBottom: '0px' }}>
               <a
                 href={'https://app.prolaera.com/#/courses/' + `${course_id}`}
                 style={{ textDecoration: 'underline', color: '#2F4050', height: '100%' }}

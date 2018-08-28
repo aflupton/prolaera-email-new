@@ -4,7 +4,6 @@ import ActivityInfo from '../../components/activity/activityInfo';
 import Footer from '../../components/footer';
 import buildHeader from '../../components/header';
 import SubHeader from '../../components/subHeader';
-import InfoHeader from '../../components/infoHeader';
 import css from '../templateCSS';
 
 const activityAssignedEmail = async (activity, user, imageUrl) => {
@@ -14,7 +13,6 @@ const activityAssignedEmail = async (activity, user, imageUrl) => {
       <Email title="You have been Assigned" headCSS={css}>
         <Header />
         <SubHeader subText="You have been" header="Assigned" message="A new Activity" />
-        <InfoHeader InfoHeader={'header'} />
         <ActivityInfo {...user} {...activity} />
         <Footer />
       </Email>
