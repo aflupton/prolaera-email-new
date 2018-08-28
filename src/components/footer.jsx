@@ -15,8 +15,8 @@ export default () => (
       className="emailFooter"
       align="center"
       cellSpacing={20}
-      style={{ backgroundColor: '#333333' }}
-      height={'60px'}
+      style={{ backgroundColor: '#333333', paddingTop: '5px' }}
+      height={60}
     >
       <Item>
         {/* <Item align="center" style={{ fontSize: '19px', ...FooterText }}>
@@ -50,7 +50,7 @@ export default () => (
 
         <div id="div1">
           <span id="span1" style={{ ...FooterText }}>
-            Powered By
+            Powered By{' '}
           </span>
           <img
             id="one"
