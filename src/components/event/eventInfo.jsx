@@ -137,20 +137,18 @@ class EventInfo extends React.Component {
             {buttonText ? (
               <div
                 style={{
-                  backgroundColor: '#72C02C',
-                  borderRadius: '3px',
-                  color: '#ffffff',
-                  width: '200px',
-                  height: '50px',
                   margin: 'auto',
-                  marginBottom: '3px',
                   textAlign: 'middle'
                 }}
               >
-                {buttonText ? <Button text={buttonText} link={buttonLink} /> : <span className="buttonSpan" />}
+                {buttonText ? (
+                  <Button color={'#72C02C'} text={buttonText} link={buttonLink} />
+                ) : (
+                  <span className="buttonSpan" />
+                )}
               </div>
             ) : (
-              <span style={{ backgroundColor: '#72C02C' }} className="buttonSpan" />
+              <span color={'#72C02C'} className="buttonSpan" />
             )}
           </Item>
         </Box>
