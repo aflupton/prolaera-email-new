@@ -52,6 +52,7 @@ class TrackInfo extends React.Component {
               >
                 {profileId ? (
                   <Button
+                    color={'#72C02C'}
                     text={buttonText}
                     link={'https://app.prolaera.com/#/users/' + profileId + '/learning/track?track=' + trackId}
                   />

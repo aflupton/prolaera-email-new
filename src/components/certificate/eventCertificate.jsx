@@ -80,7 +80,7 @@ class EventCertificate extends React.Component {
                     marginBottom: '10px'
                   }}
                 >
-                  <Button text={button1Text} link={button1Link} />
+                  <Button color={'#72C02C'} text={button1Text} link={button1Link} />
                 </td>
                 <td
                   style={{
@@ -91,7 +91,7 @@ class EventCertificate extends React.Component {
                     margin: 'auto'
                   }}
                 >
-                  <Button text={button2Text} link={button2Link} />
+                  <Button color={'#72C02C'} text={button2Text} link={button2Link} />
                 </td>
               </tr>
             </table>

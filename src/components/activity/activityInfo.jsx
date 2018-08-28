@@ -48,13 +48,11 @@ class ActivityInfo extends React.Component {
           <Item style={{ paddingBottom: '15px' }}>
             <div
               style={{
-                backgroundColor: '#72C02C',
-                borderRadius: '3px',
                 width: '50%',
                 margin: 'auto'
               }}
             >
-              <Button text={buttonText} link={button1Link} />
+              <Button color={'#72C02C'} text={buttonText} link={button1Link} />
             </div>
           </Item>
         </Box>
