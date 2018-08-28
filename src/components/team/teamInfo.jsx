@@ -15,7 +15,7 @@ class teamInfo extends React.Component {
           marginLeft: 'auto',
           marginRight: 'auto',
           textAlign: 'center',
-          maxWidth: '500px',
+          maxWidth: '100%',
           fontFamily: 'sans-source-pro, sans-serif',
           marginBottom: '0px',
           backgroundColor: '#ffffff'
@@ -53,7 +53,11 @@ class teamInfo extends React.Component {
                 textAlign: 'middle'
               }}
             >
-              <Button text={buttonText} link={'https://app.prolaera.com/#/admin/' + buttonLink + '/dashboard'} />
+              <Button
+                color={'#72C02C'}
+                text={buttonText}
+                link={'https://app.prolaera.com/#/admin/' + buttonLink + '/dashboard'}
+              />
             </div>
           </Item>
         </Box>
