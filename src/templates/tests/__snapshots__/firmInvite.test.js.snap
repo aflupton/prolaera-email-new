@@ -28,44 +28,69 @@ exports[`Firm Invite component creates and checks snapshot of FirmInvite compone
       <tr>
         <td
           align="center"
-          style={
-            Object {
-              "paddingBottom": "20px",
-            }
-          }
         >
           <div
             style={
               Object {
-                "borderBottom": "1px solid grey",
-                "boxSizing": "border-box",
-                "height": "20px",
                 "margin": "auto",
-                "padding": "10px",
-                "position": "relative",
-                "textAlign": "center",
-                "width": "100%",
+                "width": "90%",
               }
             }
           >
-            <span
-              style={
-                Object {
-                  "backgroundColor": "#FFFFFF",
-                  "boxSizing": "border-box",
-                  "fontSize": "16pt",
-                  "fontWeight": "lighter",
-                  "margin": "0",
-                  "padding": "0px 20px",
-                }
-              }
-            >
-              <p>
-                You've been added to 
-                Test CPA Firm
-                 on Prolaera
-              </p>
-            </span>
+            <div>
+              <table
+                align="center"
+                border="0"
+                cellPadding={0}
+                cellSpacing={0}
+                className="courseReview"
+                valign="top"
+                width="100%"
+              >
+                <tbody>
+                  <tr>
+                    <td
+                      align="center"
+                      style={
+                        Object {
+                          "padding": "20px",
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          Object {
+                            "borderBottom": "1px solid grey",
+                            "boxSizing": "border-box",
+                            "height": "20px",
+                            "margin": "auto",
+                            "padding": "10px",
+                            "position": "relative",
+                            "textAlign": "center",
+                            "width": "100%",
+                          }
+                        }
+                      >
+                        <span
+                          style={
+                            Object {
+                              "backgroundColor": "#FFFFFF",
+                              "boxSizing": "border-box",
+                              "fontSize": "14pt",
+                              "margin": "0",
+                              "padding": "0px 20px",
+                            }
+                          }
+                        >
+                          header
+                           Information
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </td>
       </tr>

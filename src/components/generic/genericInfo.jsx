@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Item } from 'react-html-email';
+import InfoHeader from '../infoHeader';
 
 class GenericInfo extends React.Component {
   render() {
