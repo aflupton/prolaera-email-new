@@ -20,17 +20,14 @@ const firmInviteBuilder = async (completeUser, completeCompany, imageUrl) => {
       </div>
     );
     const footerText = (
-      <div>
+      <div align="center">
         <p>That's it! You're ready to explore the new tools and resources you have access to.</p>
         <div
           style={{
+            display: 'inline-block',
             backgroundColor: '#72C02C',
             borderRadius: '3px',
-            width: '200px',
-            height: '50px',
-            margin: 'auto',
-            marginBottom: '3px',
-            textAlign: 'middle'
+            margin: 'auto'
           }}
         >
           <Button
