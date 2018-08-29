@@ -1,29 +1,16 @@
 import React from 'react';
+import { Colorpick } from './colorpick';
 
 class Button extends React.Component {
   render() {
     const { text = '', link } = this.props;
     return (
-      <div className="customButton" align="center" style={{ textAlign: 'center', height: '100%', width: '100%' }}>
-        <a href={link}>
-          <button
-            className="buttonWidths"
-            style={{
-              height: '100%',
-              padding: '14px 14px 14px 14px',
-              color: '#FFFFFF',
-              fontSize: '10pt',
-              width: '100%',
-              textDecoration: 'none',
-              borderRadius: '3px',
-              borderStyle: 'none',
-              borderColor: `${this.props.color}`,
-              backgroundColor: `${this.props.color}`
-            }}
-          >
-            {text}
-          </button>
-        </a>
+      <div>
+        <div align="center" style={{ textAlign: 'center', height: '100%', width: '100%' }}>
+          <a href={link}>
+            <button className={Colorpick(this.props.color)}>{text}</button>
+          </a>
+        </div>
       </div>
     );
   }
