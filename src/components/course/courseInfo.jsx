@@ -128,6 +128,7 @@ class CourseInfo extends React.Component {
           </Item>
           <Item align="center" style={{ width: '100%', paddingBottom: '20px' }}>
             <div
+              className="customButton"
               style={{
                 display: 'inline-block',
                 margin: 'auto',

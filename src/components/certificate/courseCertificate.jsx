@@ -90,6 +90,7 @@ class CourseCertificate extends React.Component {
             >
               <tr>
                 <td
+                  className="customButton"
                   style={{
                     margin: 'auto',
                     width: '50%'
@@ -98,6 +99,7 @@ class CourseCertificate extends React.Component {
                   <Button color={'#72C02C'} text={button1Text} link={button1Link} />
                 </td>
                 <td
+                  className="customButton"
                   style={{
                     borderRadius: '2px',
                     margin: 'auto',

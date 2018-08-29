@@ -26,17 +26,16 @@ html {
 	margin-top: 10px;
 }
 
-button.buttonWidths {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-}
+
 
 @media
 only screen and (max-width: 768px)  {
 	html {
 		font-family: source-sans-pro, sans-serif;
 	}
-
+	button.buttonWidths {
+		padding: 14px 14px 14px 14px;
+	}
 	body{
 		background-color: #F7F7F7;
 		margin-left: auto;
@@ -104,8 +103,9 @@ only screen and (max-width: 768px)  {
 		white-space: nowrap;
 	}
 	
-	.customButton:hover {
-		color:black;
+	.customButton {
+		height:10%;
+		padding:14px;
 		
 	}
 	#div1{
@@ -127,7 +127,7 @@ only screen and (max-width: 768px)  {
 	@media (min-width: 769px) {
 
 		html{
-			padding-left:25%;
+			
 			font-family: source-sans-pro, sans-serif;
 		}
 		body{
