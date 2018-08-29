@@ -38,9 +38,8 @@ class CourseInfo extends React.Component {
           display: 'block',
           margin: 'auto',
           textAlign: 'center',
-          padding: '0px 20px 10px',
+          fontStyle: 'normal',
           fontWeight: '400',
-          marginBottom: '0px',
           backgroundColor: '#FFFFFF'
         }}
       >
@@ -48,7 +47,7 @@ class CourseInfo extends React.Component {
           <Item align="center" width="100%">
             <div
               style={{
-                width: '100%',
+                width: '90%',
                 margin: 'auto'
               }}
             >
@@ -127,12 +126,12 @@ class CourseInfo extends React.Component {
               />
             </div>
           </Item>
-          <Item>
+          <Item align="center" style={{ width: '100%', paddingBottom: '20px' }}>
             <div
               style={{
                 display: 'inline-block',
                 margin: 'auto',
-                padding: '20px 0px'
+                padding: '20px'
               }}
             >
               <Button color={'#72C02C'} text={buttonText} link={'https://app.prolaera.com/#/' + newButtonLink} />

@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Item } from 'react-html-email';
 import Button from '../../components/button';
 import setInnerHtml from '../../helpers/domHelpers';
+import InfoHeader from '../infoHeader';
 
 class teamInfo extends React.Component {
   render() {
@@ -12,58 +13,41 @@ class teamInfo extends React.Component {
         id="subHeaderWrapper"
         style={{
           display: 'block',
-          marginLeft: 'auto',
-          marginRight: 'auto',
+          width: '100%',
+          margin: 'auto',
+          marginBottom: '0',
           textAlign: 'center',
-          maxWidth: '100%',
-          marginBottom: '0px',
-          backgroundColor: '#FFFFFF',
-          paddingTop: '30px'
+          fontStyle: 'normal',
+          fontWeight: '400',
+          backgroundColor: '#FFFFFF'
         }}
       >
-        <Box className="teamInfo" align="center" style={{ padding: '20px 30px 0px 30px' }}>
-          <Item align="center" style={{ paddingBottom: '20px' }}>
+        <Box align="center">
+          <Item align="center" width="100%">
             <div
               style={{
-                width: '100%',
-                height: '20px',
-                borderBottom: '1px solid grey',
-                textAlign: 'center',
-                boxSizing: 'border-box',
-                position: 'relative',
-                margin: 'auto',
-                padding: '10px'
+                width: '90%',
+                margin: 'auto'
               }}
             >
-              <span
-                style={{
-                  fontSize: '16pt',
-                  backgroundColor: '#FFFFFF',
-                  padding: '0px 20px',
-                  fontWeight: 'lighter',
-                  boxSizing: 'border-box',
-                  margin: '0'
-                }}
-              >
-                Team Information
-              </span>
+              <InfoHeader info={'Team'} />
             </div>
           </Item>
-          <Item align="left">
-            <h4 style={{ marginTop: '10px' }}>Name:</h4>
+          <Item align="left" style={{ padding: '0px 40px 0px 40px' }}>
+            <h4 style={{ marginBottom: '0' }}>Name:</h4>
             <div
               className="innerHtmlStyles"
               style={{ fontWeight: 'normal' }}
               dangerouslySetInnerHTML={setInnerHtml(name)}
             />
-            <h4 style={{}}>Description:</h4>
+            <h4 style={{ marginBottom: '0' }}>Description:</h4>
             <div
               className="innerHtmlStyles"
               style={{ fontWeight: 'normal' }}
               dangerouslySetInnerHTML={setInnerHtml(description)}
             />
           </Item>
-          <Item align="center" style={{ align: 'justify', padding: '20px 0px 20px' }}>
+          <Item align="center" style={{ align: 'center', padding: '20px 40px 10px 40px' }}>
             <p style={{ textAlign: 'left' }}>
               More information about your team can be found by navigating to the Prolaera website.
             </p>
@@ -72,7 +56,7 @@ class teamInfo extends React.Component {
               style={{
                 display: 'inline-block',
                 margin: 'auto',
-                marginBottom: '3px'
+                padding: '20px'
               }}
             >
               <Button

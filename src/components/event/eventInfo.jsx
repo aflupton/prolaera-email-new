@@ -4,6 +4,7 @@ import { PrettyDate } from '../../helpers/dateHelpers';
 import deliveryHelper from '../../helpers/deliveryHelper';
 import setInnerHtml from '../../helpers/domHelpers';
 import Button from '../button';
+import InfoHeader from '../infoHeader';
 
 class EventInfo extends React.Component {
   render() {
@@ -33,42 +34,24 @@ class EventInfo extends React.Component {
         id="subHeaderWrapper"
         style={{
           display: 'block',
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          marginBottom: '0px',
+          margin: 'auto',
           textAlign: 'center',
-          padding: '20px',
+          fontStyle: 'normal',
+          fontWeight: '400',
           backgroundColor: '#FFFFFF'
         }}
       >
-        <Box className="eventInfo" align="center" width="100%">
-          <Item align="center">
+        <Box align="center" width="100%">
+          <Item align="center" width="100%">
             <div
               style={{
                 width: '90%',
-                height: '20px',
-                borderBottom: '1px solid grey',
-                textAlign: 'center',
-                boxSizing: 'border-box',
-                position: 'relative',
-                margin: 'auto',
-                padding: '10px'
+                margin: 'auto'
               }}
             >
-              <span
-                style={{
-                  fontSize: '16pt',
-                  backgroundColor: '#FFFFFF',
-                  padding: '0px 20px',
-                  fontWeight: 'lighter',
-                  boxSizing: 'border-box',
-                  margin: '0'
-                }}
-              >
-                Event Information
-              </span>
+              <InfoHeader info={'Event'} />
             </div>
-            <h4 align="center" style={{ paddingTop: '15px' }}>
+            <h4 align="center">
               <a
                 href={'https://app.prolaera.com/#/events/' + `${event_id}`}
                 style={{ textDecoration: 'underline', color: '#2F4050', height: '100%' }}
@@ -80,7 +63,7 @@ class EventInfo extends React.Component {
             </h4>
           </Item>
           <Item align="left">
-            <div style={{ paddingLeft: '30px' }}>
+            <div style={{ paddingLeft: '40px' }}>
               <h4>Start Time:</h4>
               <div
                 className="innerHtmlStyles"
@@ -160,13 +143,13 @@ class EventInfo extends React.Component {
               />
             </div>
           </Item>
-          <Item align="center" style={{ paddingBottom: '20px' }}>
+          <Item align="center" style={{ width: '100%', paddingBottom: '20px' }}>
             {buttonText ? (
               <div
                 style={{
                   display: 'inline-block',
                   margin: 'auto',
-                  textAlign: 'center'
+                  padding: '20px'
                 }}
               >
                 {buttonText ? (
