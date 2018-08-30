@@ -40,7 +40,7 @@ class CourseCertificate extends React.Component {
         }}
       >
         <Box className="courseCertificate" align="center" width="100%">
-          <Item style={{ backgroundColor: '#FFFFFF', maxWidth: '100%' }}>
+          <Item style={{ backgroundColor: '#FFFFFF', width: '100%' }}>
             <a
               href={'https://app.prolaera.com/#/courses/' + `${course_id}`}
               style={{ textDecoration: 'none', color: '#333333' }}

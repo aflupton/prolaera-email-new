@@ -15,7 +15,7 @@ const info = {
 };
 
 describe('GenericInfo component', () => {
-  it('checks custom inputs using enzyme', async () => {
+  it.skip('checks custom inputs using enzyme', async () => {
     const wrapper = shallow(<GenericInfo {...info} />);
     expect(
       wrapper.contains(

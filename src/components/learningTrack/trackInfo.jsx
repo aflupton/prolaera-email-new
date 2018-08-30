@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Item } from 'react-html-email';
 import Button from '../../components/button';
+import InfoHeader from '../infoHeader';
 
 class TrackInfo extends React.Component {
   render() {
@@ -11,60 +12,58 @@ class TrackInfo extends React.Component {
         id="subHeaderWrapper"
         style={{
           display: 'block',
-          marginLeft: 'auto',
-          marginRight: 'auto',
+          margin: 'auto',
           textAlign: 'center',
-          padding: '20px',
-          marginBottom: '0px',
+          fontStyle: 'normal',
+          fontWeight: '400',
           backgroundColor: '#FFFFFF'
         }}
       >
         <Box align="center" width="100%">
-          <Item align="center" style={{ paddingBottom: '30px' }}>
+          <Item align="center" width="100%">
             <div
               style={{
-                width: '100%',
-                height: '20px',
-                borderBottom: '1px solid grey',
-                textAlign: 'center',
-                boxSizing: 'border-box',
-                position: 'relative',
+                width: '90%',
                 margin: 'auto',
-                padding: '10px'
+                wordWrap: 'break-word'
               }}
             >
-              <span
-                style={{
-                  fontSize: '14pt',
-                  backgroundColor: '#FFFFFF',
-                  padding: '0px 20px',
-                  fontWeight: 'lighter',
-                  boxSizing: 'border-box',
-                  margin: '0'
-                }}
-              >
-                Learning Track Information
-              </span>
+              <InfoHeader info={'Learning Track'} />
             </div>
           </Item>
-          <Item align="left">
-            <h4 style={{ marginTop: '0px' }}>
-              Name: <span style={{ fontWeight: 'normal' }}>{name}</span>
-            </h4>
-            <h4>
-              Author: <span style={{ fontWeight: 'normal' }}>{author}</span>
-            </h4>
-            <h4 style={{ marginBottom: '0px' }}>Description:</h4>
-            <p style={{ marginTop: '10px' }}>{description}</p>
+          <Item width="100%" align="left">
+            <div
+              style={{
+                paddingLeft: '40px',
+                paddingBottom: '10px'
+              }}
+            >
+              <h4>
+                Name: <span style={{ fontWeight: 'normal' }}>{name}</span>
+              </h4>
+              <h4>
+                Author: <span style={{ fontWeight: 'normal' }}>{author}</span>
+              </h4>
+              <h4 style={{ marginBottom: '0px' }}>Description:</h4>
+              <p style={{ marginTop: '10px', fontWeight: 'normal' }}>{description}</p>
+            </div>
           </Item>
-          <Item>
-            <p>More information about this track can be found by navigating to the Prolaera website.</p>
+          <Item
+            align="center"
+            style={{
+              width: '100%',
+              paddingBottom: '10px'
+            }}
+          >
+            <p style={{ padding: '0px 40px' }}>
+              More information about this track can be found by navigating to the Prolaera website.
+            </p>
             {profileId ? (
               <div
                 style={{
                   display: 'inline-block',
                   margin: 'auto',
-                  paddingBottom: '5px',
+                  padding: '20px',
                   textAlign: 'center'
                 }}
               >

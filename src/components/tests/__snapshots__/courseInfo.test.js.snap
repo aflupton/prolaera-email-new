@@ -6,12 +6,9 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
     Object {
       "backgroundColor": "#FFFFFF",
       "display": "block",
-      "fontFamily": "source-sans-pro, sans-serif",
-      "fontWeight": "100",
-      "marginBottom": "0px",
-      "marginLeft": "auto",
-      "marginRight": "auto",
-      "padding": "0px 20px 20px",
+      "fontStyle": "normal",
+      "fontWeight": "400",
+      "margin": "auto",
       "textAlign": "center",
     }
   }
@@ -21,39 +18,83 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
     border="0"
     cellPadding={0}
     cellSpacing={0}
-    className="courseReview"
     valign="top"
     width="100%"
   >
     <tbody>
       <tr>
         <td
-          align="left"
-          style={
-            Object {
-              "padding": "10px",
-            }
-          }
+          align="center"
         >
-          <h3
-            align="center"
-            className="infoHeader"
+          <div
             style={
               Object {
-                "marginTop": "5px",
+                "margin": "auto",
+                "width": "90%",
               }
             }
           >
-            <span>
-              Course Information:
-            </span>
-          </h3>
+            <div>
+              <table
+                align="center"
+                border="0"
+                cellPadding={0}
+                cellSpacing={0}
+                className="courseReview"
+                valign="top"
+                width="100%"
+              >
+                <tbody>
+                  <tr>
+                    <td
+                      align="center"
+                      style={
+                        Object {
+                          "padding": "20px",
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          Object {
+                            "borderBottom": "1px solid grey",
+                            "boxSizing": "border-box",
+                            "height": "20px",
+                            "margin": "auto",
+                            "padding": "10px",
+                            "position": "relative",
+                            "textAlign": "center",
+                            "width": "100%",
+                          }
+                        }
+                      >
+                        <span
+                          style={
+                            Object {
+                              "backgroundColor": "#FFFFFF",
+                              "boxSizing": "border-box",
+                              "fontSize": "14pt",
+                              "margin": "0",
+                              "padding": "0px 20px",
+                            }
+                          }
+                        >
+                          Course
+                           Information
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
           <h4
             align="center"
             style={
               Object {
-                "marginBottom": "0px",
                 "marginTop": "0px",
+                "paddingTop": "15px",
               }
             }
           >
@@ -310,13 +351,21 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
         </td>
       </tr>
       <tr>
-        <td>
+        <td
+          align="center"
+          style={
+            Object {
+              "paddingBottom": "20px",
+              "width": "100%",
+            }
+          }
+        >
           <div
             style={
               Object {
                 "display": "inline-block",
                 "margin": "auto",
-                "padding": "20px 0px",
+                "padding": "20px",
               }
             }
           >
