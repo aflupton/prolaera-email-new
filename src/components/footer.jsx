@@ -15,7 +15,7 @@ export default () => (
       className="emailFooter"
       align="center"
       cellSpacing={20}
-      style={{ backgroundColor: '#333333', paddingTop: '5px' }}
+      style={{ backgroundColor: '#333333', paddingTop: '5px', width: '100%' }}
       height={60}
     >
       <Item>
@@ -47,20 +47,19 @@ export default () => (
       <Item align="center" style={{ fontSize: '12px', ...FooterText }}>
         © Prolaera 2017
       </Item> */}
-
-        <div id="div1">
-          <span id="span1" style={{ ...FooterText }}>
-            Powered By{' '}
-          </span>
-          <img
-            id="one"
-            src="https://gallery.mailchimp.com/eb930e30a15249a18d658c183/images/196fa069-3113-464c-a304-a1aa9f99fe22.png"
-            alt="react"
-          />
-        </div>
-        <div id="div2" style={{ ...FooterText }}>
-          © Prolaera {now.getFullYear()}
-        </div>
+        <table style={{ width: '100%' }}>
+          <tr>
+            <th id="div1" style={{ paddingRight: '15%' }}>
+              <span id="span1" style={{ ...FooterText, width: '50%' }}>
+                Powered By{' '}
+              </span>
+              <span style={{ ...FooterText }}>Proalera</span>
+            </th>
+            <th id="div2" style={{ ...FooterText }}>
+              © Prolaera {now.getFullYear()}
+            </th>
+          </tr>
+        </table>
       </Item>
     </Box>
   </div>

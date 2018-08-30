@@ -26,15 +26,35 @@ html {
 	margin-top: 10px;
 }
 
-
-
 @media
 only screen and (max-width: 768px)  {
 	html {
 		font-family: source-sans-pro, sans-serif;
 	}
-	button.buttonWidths {
-		padding: 14px 14px 14px 14px;
+	.green{
+		height: 100% ;
+		padding: 14px 14px 14px 14px ;
+		color: #FFFFFF;
+		font-size: 10pt;
+		width: 100%;
+		text-decoration: none;
+		border-radius: 3px;
+		border-style: none;
+		background-color:#72C02C;
+		border-color:#72C02C;
+	}
+
+	.notgreen{
+		height: 100% ;
+		padding: 14px 14px 14px 14px ;
+		color: #FFFFFF;
+		font-size: 10pt;
+		width: 100%;
+		text-decoration: none;
+		border-radius: 3px;
+		border-style: none;
+		background-color:#2F4050;
+		border-color:#2F4050;
 	}
 	body{
 		background-color: #F7F7F7;
@@ -105,8 +125,6 @@ only screen and (max-width: 768px)  {
 	
 	.customButton {
 		height:10%;
-		padding:14px;
-		
 	}
 	#div1{
 		text-align:center;
@@ -199,10 +217,30 @@ only screen and (max-width: 768px)  {
 			white-space: nowrap;
 		}
 	
-		.customButton:hover {
-			color:black;
-		
+		.green {
+			height: 100%;
+			padding: 14px 14px 14px 14px;
+			color: #FFFFFF;
+			font-size: 10pt;
+			width: 100%;
+			text-decoration: none;
+			border-radius: 3px;
+			border-style: none;
+			background-color:#72C02C;
+			border-color:#72C02C;
 	  }
+	  .notgreen {
+		height: 100%;
+		padding: 14px 14px 14px 14px;
+		color: #FFFFFF;
+		font-size: 10pt;
+		width: 100%;
+		text-decoration: none;
+		border-radius: 3px;
+		border-style: none;
+		background-color:#2F4050;
+		border-color:#2F4050;
+  }
     #div1 {
 		float:left;
 		margin-left:5%;
